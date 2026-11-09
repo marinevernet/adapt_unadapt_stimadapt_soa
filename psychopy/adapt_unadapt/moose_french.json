@@ -1,0 +1,16 @@
+{   
+    "text_general_label" : "Je pense qu'avec mon clic, j'ai contrôlé le cri de l'élan\u00A0:",
+    "text_left_label" : "0%\n\n... pas du tout,",
+    "text_center_label" : "50%\n\nmoyennement,",
+    "text_right_label" : "100%\n\ntotalement\u00A0!",
+
+    "text_instruction" : "Veuillez cliquer sur le nez de l'élan le plus rapidement possible\u00A0! \n\n[Appuyez sur Espace pour continuer]",
+    "text_instruction_adapt" : "Pendant le prochain block\u00A0: \n\nCHAQUE clic sur le nez fera crier l'élan. \n\n[Appuyez sur Espace pour continuer]",
+    "text_instruction_test" : "Pendant le prochain block\u00A0: \n\n Un clic sur le nez fera souvent crier l'élan. \n\nMais dans certains essais, l'élan criera INDEPENDAMMENT du clic.\n\n[Appuyez sur Espace pour continuer]",
+
+    "text_pause" : "Pause\u00A0! \n\nVous entendrez un BIP quand nous reprendrons.\n\nEn attendant, vous pouvez fermer les yeux.",
+    "text_goodbye" : "Merci de votre participation\u00A0!\n\nVeuillez attendre l'experimentateur/trice. \n\n[A]",
+    
+    "text_no_click" : "Vous n'avez pas cliqué à temps.",
+    "text_outside" : "Veuillez cliquer sur le nez."
+}

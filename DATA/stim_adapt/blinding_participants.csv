@@ -1,0 +1,25 @@
+participant,S1_before,S1_after,S1_comments,S2_before,S2_after,S2_comments,notice_anything,S1_guess,S2_guess,S1_truth
+s033,1,1,ressentis beaucoup de sensations,3,1,0,non,stim,sham,stim
+s034,3,2,0,2,3,0,oui,sham,stim,sham
+s035,2,2,0,1,1,0,oui,sham,stim,sham
+s036,0,3,0,0,1,0,non,stim,sham,stim
+s037,2,5,mal aux yeux (fatigue),1,3,0,non,sham,stim,sham
+s038,2,3,0,1,3,0,non,stim,sham,stim
+s039,0,1,0,0,0,0,non,sham,stim,stim
+s040,3,1,0,3.5,6,"douleureux pendant la tâche, difficulté de concentration. Sensation d'aigulle qui vient appuyer sur sa tête. Précise qu'elle à ses règles (sensiblité accrue).",oui,sham,stim,sham
+s041,1,1,"Flash blanc après premier block adapt, durée quelques secondes",0,0,0,oui,stim,sham,stim
+s042,2,3,0,1,2,0,oui,sham,stim,sham
+s043,1,1,0,0,0,0,non,stim,sham,stim
+s044,3,0,0,5,5,11heures d'avion la veille (fatigué),non,sham,stim,sham
+s045,1,1,0,1,1,0,non,sham,stim,sham
+s046,3,4,0,0,0,0,oui,sham,stim,sham
+s047,0,0,0,0,0,0,non,stim,sham,stim
+s048,3,2,0,3,2,0,oui,stim,sham,stim
+s049,0,1,0,0,0,0,non,stim,sham,stim
+s050,1,1,0,2,3,0,non,sham,stim,sham
+s051,2,0,Eczema très léger sur la tête,0,0,0,non,sham,stim,sham
+s052,1,1,0,1,1,0,oui,stim,sham,stim
+s053,3,0,0,0,2,0,oui,sham,stim,sham
+s054,0,0,0,3,3,manque de sommeil nuit blanche la veille),non,stim,sham,stim
+s055,0,1,"après la session (chez lui) il à eu mal à la nuque, pris un doliprane pour faire passer",1,1,0,non,stim,sham,sham
+s056,1,1,0,2,2,0,oui,stim,sham,stim

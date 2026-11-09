@@ -1,0 +1,38 @@
+N = 24 participants (12 real first, 12 sham first)
+
+*************** Sensations (mean +/- SD, median) ***************
+real_before: 1.15 +/- 1.26, median 1.0
+real_after: 1.75 +/- 1.54, median 1.0
+sham_before: 1.58 +/- 1.25, median 2.0
+sham_after: 1.38 +/- 1.41, median 1.0
+real_increase: 0.60 +/- 0.97, median 0.0
+sham_increase: -0.21 +/- 1.44, median 0.0
+Same increase for real and sham: 10 participants
+
+*************** Yes / No ***************
+Increase after rAG stim.: yes 10, no 14
+Increase after sham stim.: yes 6, no 18
+Sensations during rAG stim.: yes 3, no 21
+Sensations during sham stim.: yes 2, no 22
+Noticed a difference: yes 10, no 14
+Identified rAG stim. session: yes 22, no 2
+Participants reporting sensations during the real stimulation: s033, s040, s041
+Participants reporting sensations during the sham stimulation: s037, s051
+
+Correct identification of the real session against chance (binomial test, two-sided): 22/24, p=3.59e-05
+
+*************** Real vs sham (paired, two-sided) ***************
+Sensation rating before, real vs sham: 1.15 +/- 1.26 vs 1.58 +/- 1.25
+   (Paired t-test): t(23)=-1.54; p=0.138; Cohen's d=0.31
+Sensation rating after, real vs sham: 1.75 +/- 1.54 vs 1.38 +/- 1.41
+   (Paired t-test): t(23)=0.90; p=0.377; Cohen's d=0.18
+Change in sensation rating (after - before), real vs sham: 0.60 +/- 0.97 vs -0.21 +/- 1.44
+   (Wilcoxon signed-rank test, zero-split, n=24): W=83.5; p=0.0545; effect size (RBC)=0.44; participants with a difference of 0: 10
+Increase of sensations: real yes 10, sham yes 6; yes for real only 6, yes for sham only 2; (exact McNemar test): p=0.289
+Sensations reported during the stimulation: real yes 3, sham yes 2; yes for real only 3, yes for sham only 2; (exact McNemar test): p=1
+
+*************** After vs before, within each session (paired, two-sided) ***************
+Real: after vs before: 1.75 +/- 1.54 vs 1.15 +/- 1.26
+   (Wilcoxon signed-rank test, zero-split, n=24): W=62.5; p=0.0106; effect size (RBC)=0.58; participants with a difference of 0: 13
+Sham: after vs before: 1.38 +/- 1.41 vs 1.58 +/- 1.25
+   (Wilcoxon signed-rank test, zero-split, n=24): W=133.5; p=0.633; effect size (RBC)=-0.11; participants with a difference of 0: 11

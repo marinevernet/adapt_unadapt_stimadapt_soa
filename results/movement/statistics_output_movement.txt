@@ -1,0 +1,76 @@
+
+*************** Cleaning of the trajectories (method used: new) ***************
+Trials: 5616
+Trials with frozen samples at the beginning: 1570 (28.0%); 1 sample: 1352; 2 to 29 samples: 218
+Old cleaning: 47 trials excluded (0.8%) {'removed by hand': 47}
+New cleaning: 4 trials excluded (0.1%) {'movement started during the frozen samples': 4}
+Old cleaning: 1 kept trials still contain frozen samples (more than the samples reset)
+
+*************** Movement parameters: rAG vs sham (paired, two-sided, Holm correction across the 10 parameters) ***************
+            Parameter                 Unit                rAG              Sham  Shapiro p          Test     p  Effect size  p (Holm)
+Pause before movement                    s      0.287 ± 0.022     0.287 ± 0.023      0.469 t(23) = -0.08 0.937    d = -0.02       1.0
+    Movement duration                    s      0.324 ± 0.041      0.327 ± 0.03      0.017     W = 114.0 0.304 r_rb = -0.24       1.0
+    Acceleration time                    s     0.0961 ± 0.016    0.0936 ± 0.014      0.469  t(23) = 0.87 0.394     d = 0.18       1.0
+           Click time                    s      0.682 ± 0.057     0.687 ± 0.042      0.633 t(23) = -0.54 0.592    d = -0.11       1.0
+           Peak speed                 cm/s          72.5 ± 15         73.6 ± 17      0.000     W = 128.0 0.546  r_rb = 0.15       1.0
+           Mean speed                 cm/s         31.8 ± 5.4        31.7 ± 4.5      0.000     W = 104.0 0.197  r_rb = 0.31       1.0
+    Peak acceleration                cm/s² 1.16e+03 ± 3.3e+02 1.2e+03 ± 3.8e+02      0.000     W = 150.0 1.000  r_rb = 0.00       1.0
+          Path length                   cm        9.97 ± 0.46         10 ± 0.43      0.412 t(23) = -0.89 0.381    d = -0.18       1.0
+           Tortuosity                            1.05 ± 0.042       1.05 ± 0.04      0.239 t(23) = -0.56 0.580    d = -0.11       1.0
+            Overshoot proportion of trials     0.0435 ± 0.032    0.0532 ± 0.048      0.482 t(23) = -1.09 0.286    d = -0.22       1.0
+
+*************** Movement parameters and ratings: 4749 trials, delays 50-250 ms ***************
+Variance inflation factors: pause_w 1.03, duration_w 1.11, speed_w 1.12, pause_b 1.03, duration_b 1.90, speed_b 1.91
+
+Random structure: maximal: random slopes for delay x stimulation and for the movement parameters, correlated
+  converged: False; warnings: ['Maximum Likelihood optimization failed to converge. Check mle_retvals', 'The Hessian matrix at the estimated parameter values is not positive definite.', 'The MLE may be on the boundary of the parameter space.']
+
+Random structure: random slopes for the movement parameters, not correlated
+  converged: False; warnings: ['Maximum Likelihood optimization failed to converge. Check mle_retvals', 'The Hessian matrix at the estimated parameter values is not positive definite.', 'The MLE may be on the boundary of the parameter space.']
+
+Random structure: no random slopes for the movement parameters
+  converged: True; warnings: none
+
+*************** Model kept ***************
+              Mixed Linear Model Regression Results
+=================================================================
+Model:               MixedLM    Dependent Variable:    rating_z  
+No. Observations:    4749       Method:                REML      
+No. Groups:          24         Scale:                 0.5161    
+Min. group size:     197        Log-Likelihood:        -5309.8430
+Max. group size:     198        Converged:             Yes       
+Mean group size:     197.9                                       
+-----------------------------------------------------------------
+                       Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------
+Intercept              -0.056    0.087 -0.637 0.524 -0.227  0.115
+delay                   0.398    0.083  4.827 0.000  0.237  0.560
+stim                   -0.003    0.068 -0.038 0.970 -0.135  0.130
+delay:stim              0.070    0.037  1.863 0.063 -0.004  0.143
+block                   0.011    0.006  1.773 0.076 -0.001  0.024
+pause_b                -0.011    0.042 -0.256 0.798 -0.092  0.071
+duration_b              0.011    0.058  0.191 0.848 -0.103  0.125
+speed_b                 0.006    0.055  0.106 0.915 -0.103  0.115
+pause_w                 0.020    0.011  1.874 0.061 -0.001  0.041
+duration_w              0.008    0.011  0.747 0.455 -0.014  0.030
+speed_w                 0.011    0.012  0.959 0.337 -0.012  0.034
+Group Var               0.153    0.066                           
+Group x delay Cov      -0.118    0.058                           
+delay Var               0.158    0.067                           
+Group x stim Cov       -0.050    0.042                           
+delay x stim Cov       -0.009    0.039                           
+stim Var                0.100    0.045                           
+Group x delay:stim Cov  0.025    0.022                           
+delay x delay:stim Cov -0.013    0.022                           
+stim x delay:stim Cov  -0.034    0.020                           
+delay:stim Var          0.023    0.014                           
+=================================================================
+
+Within-participant movement effects, Holm correction: pause_w p = 0.183, duration_w p = 0.675, speed_w p = 0.675
+Likelihood ratio test, the 3 within-participant movement effects together: chi2(3) = 5.04, p = 0.169 (warnings: none)
+
+Two-stage approach (one coefficient per participant, mean of the two sessions, n = 24):
+  pause_w: 0.015 +/- 0.054; Wilcoxon W = 109, p = 0.252
+  duration_w: 0.005 +/- 0.072; t(23) = 0.37, p = 0.718, d = 0.07
+  speed_w: 0.008 +/- 0.040; t(23) = 0.98, p = 0.335, d = 0.20
+  Holm correction: pause_w p = 0.757, duration_w p = 0.757, speed_w p = 0.757

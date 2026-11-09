@@ -1,0 +1,308 @@
+Processing: P20_moose_unadapt_2025_Nov_28_1126_clean.csv
+Processing: P15_moose_adapt_2025_Dec_01_1441_clean.csv
+Processing: P11_moose_unadapt_2025_Nov_28_1047_clean.csv
+Processing: P04_moose_adapt_2025_Nov_05_1144_clean.csv
+Processing: P16_moose_unadapt_2025_Nov_24_1420_clean.csv
+Processing: P13_moose_adapt_2025_Nov_24_0952_clean.csv
+Processing: P05_moose_adapt_2025_Oct_21_1007_clean.csv
+Processing: P12_moose_adapt_2025_Nov_21_0950_clean.csv
+Processing: P19_moose_unadapt_2025_Nov_26_1055_clean.csv
+Processing: P14_moose_adapt_2025_Nov_24_1018_clean.csv
+Processing: P05_moose_unadapt_2025_Oct_27_0944_clean.csv
+Processing: P03_moose_unadapt_2025_Oct_20_1256_clean.csv
+Processing: P04_moose_unadapt_2025_Oct_20_1358_clean.csv
+Processing: P14_moose_unadapt_2025_Dec_01_1025_clean.csv
+Processing: P10_moose_unadapt_2025_Oct_27_1305_clean.csv
+Processing: P01_moose_unadapt_2025_Oct_16_1142_clean.csv
+Processing: P08_moose_unadapt_2025_Nov_03_0946_clean.csv
+Processing: P17_moose_adapt_2025_Dec_05_2018_clean.csv
+Processing: P02_moose_unadapt_2025_Oct_20_0948_clean.csv
+Processing: P09_moose_adapt_2025_Oct_27_1136_clean.csv
+Processing: P12_moose_unadapt_2025_Nov_28_1206_clean.csv
+Processing: P15_moose_unadapt_2025_Nov_24_1409_clean.csv
+Processing: P02_moose_adapt_2025_Oct_27_1027_clean.csv
+Processing: P08_moose_adapt_2025_Oct_22_0927_clean.csv
+Processing: P16_moose_adapt_2025_Dec_01_1418_clean.csv
+Processing: P13_moose_unadapt_2025_Dec_01_1012_clean.csv
+Processing: P01_moose_adapt_2025_Oct_23_1001_clean.csv
+Processing: P09_moose_unadapt_2025_Nov_03_1120_clean.csv
+Processing: P03_moose_adapt_2025_Nov_04_1017_clean.csv
+Processing: P18_moose_adapt_2025_Nov_25_1059_clean.csv
+Processing: P11_moose_adapt_2025_Nov_19_1159_clean.csv
+Processing: P18_moose_unadapt_2025_Dec_02_1038_clean.csv
+Processing: P10_moose_adapt_2025_Nov_03_1031_clean.csv
+Processing: P06_moose_adapt_2025_Oct_21_1054_clean.csv
+Processing: P20_moose_adapt_2025_Dec_05_1058_clean.csv
+Processing: P19_moose_adapt_2025_Dec_03_1127_clean.csv
+Processing: P17_moose_unadapt_2025_Nov_24_1833_clean.csv
+Processing: P06_moose_unadapt_2025_Oct_27_1328_clean.csv
+Processing: P07_moose_unadapt_2025_Oct_27_1430_clean.csv
+Processing: P07_moose_adapt_2025_Oct_21_1254_clean.csv
+Processing: I02_moose_unadapt_2025_Nov_10_1148_clean.csv
+Processing: I09_moose_immediate_2025_Nov_13_1107_clean.csv
+Processing: I04_moose_unadapt_2025_Nov_13_1039_clean.csv
+Processing: I01_moose_unadapt_2025_Nov_10_1023_clean.csv
+Processing: I01_moose_immediate_2025_Nov_04_1353_clean.csv
+Processing: I02_moose_immediate_2025_Nov_04_1509_clean.csv
+Processing: I05_moose_immediate_2025_Nov_06_1034_clean.csv
+Processing: I06_moose_immediate_2025_Nov_13_0944_clean.csv
+Processing: I08_moose_unadapt_2025_Nov_07_1301_clean.csv
+Processing: I10_moose_unadapt_2025_Dec_05_1217_clean.csv
+Processing: I04_moose_immediate_2025_Nov_05_1405_clean.csv
+Processing: I03_moose_immediate_2025_Nov_05_1044_clean.csv
+Processing: I08_moose_immediate_2025_Nov_13_1014_clean.csv
+Processing: I09_moose_unadapt_2025_Nov_07_1335_clean.csv
+Processing: I10_moose_immediate_2025_Nov_28_0915_clean.csv
+Processing: I07_moose_unadapt_2025_Nov_06_1150_clean.csv
+Processing: I05_moose_unadapt_2025_Nov_13_0935_clean.csv
+Processing: I06_moose_unadapt_2025_Nov_06_1057_clean.csv
+Processing: I07_moose_immediate_2025_Nov_13_1139_clean.csv
+Processing: I03_moose_unadapt_2025_Nov_12_1120_clean.csv
+
+Summary of results:
+   experiment participant    session  ...       slope   n   soa_mean
+0    adapt250         P20    unadapt  ...  303.111111  45  77.817284
+1    adapt250         P20      adapt  ...  256.042941  99  80.447619
+2    adapt250         P15      adapt  ...   -0.062265  99  99.674780
+3    adapt250         P15    unadapt  ...    3.135802  45  97.234568
+4    adapt250         P11    unadapt  ...  150.765432  45  87.767901
+5    adapt250         P11      adapt  ...  125.694042  99  89.613757
+6    adapt250         P04      adapt  ...  -30.820183  99  88.980600
+7    adapt250         P04    unadapt  ...  -32.246914  45  95.925926
+8    adapt250         P16    unadapt  ...   -4.493827  45  86.711111
+9    adapt250         P16      adapt  ...   69.648953  99  85.737213
+10   adapt250         P13      adapt  ...   52.351047  99  87.332275
+11   adapt250         P13    unadapt  ...   36.074074  45  81.335802
+12   adapt250         P05      adapt  ...  138.001074  99  87.408113
+13   adapt250         P05    unadapt  ...   22.987654  45  93.839506
+14   adapt250         P12      adapt  ...  119.443908  99  85.055026
+15   adapt250         P12    unadapt  ...  259.135802  45  67.439506
+16   adapt250         P19    unadapt  ...  184.395062  45  88.703704
+17   adapt250         P19      adapt  ...  276.710682  99  78.983069
+18   adapt250         P14      adapt  ...   39.173376  99  77.639506
+19   adapt250         P14    unadapt  ...   72.024691  45  80.706173
+20   adapt250         P03    unadapt  ...   10.567901  45  78.153086
+21   adapt250         P03      adapt  ...  199.933441  99  63.719224
+22   adapt250         P10    unadapt  ...  102.395062  45  79.604938
+23   adapt250         P10      adapt  ...  251.877617  99  68.034921
+24   adapt250         P01    unadapt  ...   11.506173  45  98.264198
+25   adapt250         P01      adapt  ...   65.059581  99  95.033510
+26   adapt250         P08    unadapt  ...  399.827160  45  69.802469
+27   adapt250         P08      adapt  ...  317.528717  99  70.761199
+28   adapt250         P17      adapt  ...  -27.323671  99  85.674427
+29   adapt250         P17    unadapt  ...  -35.604938  45  90.222222
+30   adapt250         P02    unadapt  ...  183.333333  45  80.066667
+31   adapt250         P02      adapt  ...   46.587225  99  92.602822
+32   adapt250         P09      adapt  ...  190.898551  99  80.234921
+33   adapt250         P09    unadapt  ...   57.185185  45  95.318519
+34   adapt250         P18      adapt  ...   69.030596  99  95.202469
+35   adapt250         P18    unadapt  ...    3.950617  45  99.622222
+36   adapt250         P06      adapt  ...  148.181428  99  66.071958
+37   adapt250         P06    unadapt  ... -127.111111  45  74.772840
+38   adapt250         P07    unadapt  ...   66.246914  45  96.493827
+39   adapt250         P07      adapt  ...  331.782072  99  73.790829
+40     adapt0         I02    unadapt  ... -114.864198  45  90.059259
+41     adapt0         I02  immediate  ...  -25.851852  45  97.172840
+42     adapt0         I09  immediate  ...  -92.518519  45  76.906173
+43     adapt0         I09    unadapt  ...  301.432099  45  58.896296
+44     adapt0         I04    unadapt  ...   47.925926  45  90.291358
+45     adapt0         I04  immediate  ...   44.567901  45  84.600000
+46     adapt0         I01    unadapt  ...   16.691358  45  88.683951
+47     adapt0         I01  immediate  ...  -59.555556  45  79.412346
+48     adapt0         I05  immediate  ...    0.049383  45  99.765432
+49     adapt0         I05    unadapt  ...   -0.419753  45  99.409877
+50     adapt0         I06  immediate  ...  149.629630  45  58.671605
+51     adapt0         I06    unadapt  ...  284.790123  45  60.032099
+52     adapt0         I08    unadapt  ...   53.728395  45  90.395062
+53     adapt0         I08  immediate  ...  -22.197531  45  94.093827
+54     adapt0         I10    unadapt  ...  153.975309  45  59.637037
+55     adapt0         I10  immediate  ...   54.246914  45  88.014815
+56     adapt0         I03  immediate  ...  -42.148148  45  96.753086
+57     adapt0         I03    unadapt  ...  -48.345679  45  96.402469
+58     adapt0         I07    unadapt  ...  -12.419753  45  86.014815
+59     adapt0         I07  immediate  ...  -87.777778  45  80.464198
+
+[60 rows x 9 columns]
+   experiment participant  ... slope_session1  slope_session2
+0      adapt0         I01  ...     -59.555556       16.691358
+1      adapt0         I02  ...     -25.851852     -114.864198
+2      adapt0         I03  ...     -42.148148      -48.345679
+3      adapt0         I04  ...      44.567901       47.925926
+4      adapt0         I05  ...       0.049383       -0.419753
+5      adapt0         I06  ...     284.790123      149.629630
+6      adapt0         I07  ...     -12.419753      -87.777778
+7      adapt0         I08  ...      53.728395      -22.197531
+8      adapt0         I09  ...     301.432099      -92.518519
+9      adapt0         I10  ...      54.246914      153.975309
+10   adapt250         P01  ...      11.506173       65.059581
+11   adapt250         P02  ...     183.333333       46.587225
+12   adapt250         P03  ...      10.567901      199.933441
+13   adapt250         P04  ...     -32.246914      -30.820183
+14   adapt250         P05  ...     138.001074       22.987654
+15   adapt250         P06  ...     148.181428     -127.111111
+16   adapt250         P07  ...     331.782072       66.246914
+17   adapt250         P08  ...     317.528717      399.827160
+18   adapt250         P09  ...     190.898551       57.185185
+19   adapt250         P10  ...     102.395062      251.877617
+20   adapt250         P11  ...     125.694042      150.765432
+21   adapt250         P12  ...     119.443908      259.135802
+22   adapt250         P13  ...      52.351047       36.074074
+23   adapt250         P14  ...      39.173376       72.024691
+24   adapt250         P15  ...       3.135802       -0.062265
+25   adapt250         P16  ...      -4.493827       69.648953
+26   adapt250         P17  ...     -35.604938      -27.323671
+27   adapt250         P18  ...      69.030596        3.950617
+28   adapt250         P19  ...     184.395062      276.710682
+29   adapt250         P20  ...     303.111111      256.042941
+
+[30 rows x 17 columns]
+
+*************** R ***************
+
+*************** 0 ms delay is NOT in the correlation ***************
+
+*************** Experiment 1 (Unadapt vs Adapt 250) ***************
+paired
+alternative: less
+R_unadapt: 0.25 +/- 0.33
+R_adapt: 0.43 +/- 0.32
+(Paired t-test): t(19)=-3.32; p=0.00179; Cohen's effect size d=0.74
+
+*************** Experiment 1 (Unadapt vs Adapt 250) as unpaired ***************
+as_unpaired
+alternative: less
+R_unadapt: 0.25 +/- 0.33
+R_adapt: 0.43 +/- 0.32
+(Unpaired t-test): t(38.0)=-1.77; p=0.042; effect size d=0.56
+
+*************** Experiment 2 (Unadapt vs Adapt 0) ***************
+paired
+alternative: greater
+R_unadapt: 0.14 +/- 0.40
+R_adapt: -0.14 +/- 0.31
+(Wilcoxon signed-rank test): W=48; p=0.0185547; effect size (RBC)=0.75; CLES=0.69
+
+*************** Adapt sessions (Exp 1 vs 2) ***************
+unpaired
+alternative: less
+adapt0: -0.14 +/- 0.31
+adapt250: 0.43 +/- 0.32
+(Unpaired t-test): t(19.1)=-4.77; p=6.66e-05; effect size d=1.81
+
+*************** Unadapt sessions (Exp 1 vs 2) ***************
+unpaired
+alternative: two-sided
+adapt0: 0.14 +/- 0.40
+adapt250: 0.25 +/- 0.33
+(Unpaired t-test): t(15.2)=-0.75; p=0.467; effect size d=0.31
+
+*************** Session order (Both experiments) ***************
+paired
+alternative: two-sided
+R_session1: 0.27 +/- 0.37
+R_session2: 0.19 +/- 0.40
+(Wilcoxon signed-rank test): W=195; p=0.452164; effect size (RBC)=0.16; CLES=0.56
+
+*************** Session order - Exp1 ***************
+paired
+alternative: two-sided
+R_session1: 0.36 +/- 0.33
+R_session2: 0.33 +/- 0.34
+(Paired t-test): t(19)=0.48; p=0.635; Cohen's effect size d=0.11
+
+*************** Session order - Exp2 ***************
+paired
+alternative: two-sided
+R_session1: 0.09 +/- 0.39
+R_session2: -0.09 +/- 0.36
+(Wilcoxon signed-rank test): W=17; p=0.322266; effect size (RBC)=0.38; CLES=0.63
+
+*************** Adapt250 vs 0 ***************
+against_0
+alternative: greater
+adapt250_alone
+0.43 +/- 0.32
+(t-test) t(19) = 6.01; p = 4.43e-06; Cohen d=1.34
+
+*************** Adapt0 vs 0 ***************
+against_0
+alternative: less
+adapt0_alone
+-0.14 +/- 0.31
+(t-test) t(9) = -1.46; p = 0.0894; Cohen d=0.46
+
+*************** Unadapt vs 0 ***************
+against_0
+alternative: two-sided
+unadapt_alone
+0.22 +/- 0.35
+(t-test) t(29) = 3.40; p = 0.00198; Cohen d=0.62
+
+*************** Unadapt vs 0 - Exp1 ***************
+against_0
+alternative: two-sided
+unadapt_alone_exp1
+0.25 +/- 0.33
+(t-test) t(19) = 3.47; p = 0.00257; Cohen d=0.78
+
+*************** Unadapt vs 0 - Exp2 ***************
+against_0
+alternative: two-sided
+unadapt_alone_exp2
+0.14 +/- 0.40
+(t-test) t(9) = 1.14; p = 0.283; Cohen d=0.36
+
+*************** adapt250(exp1) vs unadapt(exp2) ***************
+unpaired
+alternative: less
+unadapt (exp2): 0.14 +/- 0.40
+adapt250 (exp1): 0.43 +/- 0.32
+(Unpaired t-test): t(15.1)=-2.00; p=0.0319; effect size d=0.83
+
+*************** Experiment 1 (Unadapt vs Adapt 250), mean SoA ***************
+paired
+alternative: two-sided
+soa_mean_unadapt: 85.99 +/- 9.83
+soa_mean_adapt: 82.60 +/- 10.19
+(Paired t-test): t(19)=1.60; p=0.125; Cohen's effect size d=0.36
+
++ *************** Tests that Gérard suggested ***************
+
++ 1. Counting the number of participants for which R is significantly different in the 2 sessions, in the predicted direction
+For adapt250, there are 7 participants (out of 20) with a R significantly different in the adapt and unadapt sessions
+For adapt0, there are 4 participants (out of 10) with a R significantly different in the adapt and unadapt sessions
+
++ 2. Treating all datapoints from all participants as if it was a single participant
+WARNING: this test may not be appropriate, and its p values should be considered as descriptive only.
+It assumes that all trials are independent, but trials from the same participant are not.
+In addition, for adapt250, adapt0 and session_order, the same participants are in both groups, whereas the test assumes independent correlations.
+The p values are therefore probably too small. The paired tests and the ANOVA above and below are more appropriate.
+For the comparison adapt250 (less), the p value for testing the difference of R between the two sessions is: 3.4026473216908415e-07
+For the comparison adapt0 (greater), the p value for testing the difference of R between the two sessions is: 0.00042111510364713667
+For the comparison adapt (greater), the p value for testing the difference of R between the two sessions is: 3.2712207989597314e-21
+For the comparison unadapt (two-sided), the p value for testing the difference of R between the two sessions is: 0.23990206712347684
+For the comparison session_order (two-sided), the p value for testing the difference of R between the two sessions is: 0.025812060693646197
+
++ 3. ANOVA on experiment * session
+        Source        SS  DF1  DF2  ...          F     p-unc       np2  eps
+0   experiment  1.558542    1   28  ...   8.933991  0.005773  0.241891  NaN
+1      session  0.010443    1   28  ...   0.211540  0.649114  0.007498  1.0
+2  Interaction  0.726539    1   28  ...  14.717921  0.000650  0.344537  NaN
+
+[3 rows x 9 columns]
+
++ 4. ANOVA on experiment * session_order
+          Source        SS  DF1  DF2  ...         F     p-unc       np2  eps
+0     experiment  1.558542    1   28  ...  8.933991  0.005773  0.241891  NaN
+1  session_order  0.097199    1   28  ...  1.392540  0.247905  0.047377  1.0
+2    Interaction  0.067580    1   28  ...  0.968190  0.333558  0.033423  NaN
+
+[3 rows x 9 columns]
+
++ Correlation between R_adapt and R_unadapt in adapt250: r=0.71; p=0.000399
+
++ ICC(3,1) between the adapt and unadapt sessions in adapt250 (R): ICC=0.71; 95% CI [0.41, 0.88]; F(19,19)=6.01; p=0.000136
+
++ Split-half reliability within each session in adapt250 (R)
+unadapt: split-half r=0.72; Spearman-Brown corrected=0.84
+adapt: split-half r=0.86; Spearman-Brown corrected=0.92

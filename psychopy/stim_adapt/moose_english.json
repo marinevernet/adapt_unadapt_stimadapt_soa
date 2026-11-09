@@ -1,0 +1,16 @@
+{   
+    "text_general_label" : "I think that with my mouse click I had...",
+    "text_left_label" : "0%\n\n... no control at all,",
+    "text_center_label" : "50%\n\nmedium control,",
+    "text_right_label" : "100%\n\ntotal control\n\n... over the moose's bellow!",
+
+    "text_instruction" : "Click on the moose’s nose as quickly as possible!\n\n[Space bar to continue]",
+    "text_instruction_adapt" : "During the next block:\n\nEVERY click on the nose will make the moose bellow.\n\n[Space bar to continue]",
+    "text_instruction_test" : "During the next block: \n\nA click on the nose will often make the moose bellow. \n\nBut in some trials, the moose may bellow INDEPENDENTLY of the click.\n\n[Space bar to continue]",
+
+    "text_pause" : "Break! \n\nYou will hear a BIP when we resume.\n\nIn the meantime, you can close your eyes.",
+    "text_goodbye" : "Thank you for your participation!\n\nPlease wait for the experimenter.\n\n[A]",
+    
+    "text_no_click" : "You did not click in time.",
+    "text_outside" : "Please click on the nose."
+}

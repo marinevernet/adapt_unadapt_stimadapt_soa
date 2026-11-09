@@ -1,0 +1,211 @@
+Processing: F1 session1 real
+Last trial time since stimulation begin: 1289.315984404543
+Processing: F1 session2 sham
+Last trial time since stimulation begin: 1301.5962353400173
+Processing: M1 session1 sham
+Last trial time since stimulation begin: 1290.6127481789854
+Processing: M1 session2 real
+Last trial time since stimulation begin: 1292.211514935906
+Processing: F2 session1 sham
+Last trial time since stimulation begin: 1292.8981675928137
+Processing: F2 session2 real
+Last trial time since stimulation begin: 1278.1331061697997
+Processing: F3 session1 real
+Last trial time since stimulation begin: 1290.4108138178967
+Processing: F3 session2 sham
+Last trial time since stimulation begin: 1299.108652582002
+Processing: F4 session1 sham
+Last trial time since stimulation begin: 1297.2313764892665
+Processing: F4 session2 real
+Last trial time since stimulation begin: 1279.209439059424
+Processing: F5 session1 real
+Last trial time since stimulation begin: 1296.8517762665915
+Processing: F5 session2 sham
+Last trial time since stimulation begin: 1313.7826999594872
+Processing: M2 session1 real
+Last trial time since stimulation begin: 1293.931963235974
+Processing: M2 session2 sham
+Last trial time since stimulation begin: 1288.0698698290034
+Processing: F6 session1 sham
+Last trial time since stimulation begin: 1277.134143747004
+Processing: F6 session2 real
+Last trial time since stimulation begin: 1277.237796336817
+Processing: F7 session1 real
+Last trial time since stimulation begin: 1307.774407775004
+Processing: F7 session2 sham
+Last trial time since stimulation begin: 1289.3234157556356
+Processing: F8 session1 sham
+Last trial time since stimulation begin: 1288.0468982037
+Processing: F8 session2 real
+Last trial time since stimulation begin: 1281.7121243104918
+Processing: F9 session1 real
+Last trial time since stimulation begin: 1301.1943375319854
+Processing: F9 session2 sham
+Last trial time since stimulation begin: 1288.2732171146758
+Processing: M3 session1 sham
+Last trial time since stimulation begin: 1306.5434085510008
+Processing: M3 session2 real
+Last trial time since stimulation begin: 1304.245131749616
+Processing: M4 session1 sham
+Last trial time since stimulation begin: 1281.2737860075702
+Processing: M4 session2 real
+Last trial time since stimulation begin: 1284.9362383964055
+Processing: F10 session1 sham
+Last trial time since stimulation begin: 1291.7623013430714
+Processing: F10 session2 real
+Last trial time since stimulation begin: 1286.444249993191
+Processing: M5 session1 real
+Last trial time since stimulation begin: 1296.177923107015
+Processing: M5 session2 sham
+Last trial time since stimulation begin: 1281.993831968127
+Processing: F11 session1 real
+Last trial time since stimulation begin: 1308.7910926777142
+Processing: F11 session2 sham
+Last trial time since stimulation begin: 1303.5696499028627
+Processing: M6 session1 real
+Last trial time since stimulation begin: 1356.227865306798
+Processing: M6 session2 sham
+Last trial time since stimulation begin: 1351.1972249403204
+Processing: M7 session1 sham
+Last trial time since stimulation begin: 1283.6128642241983
+Processing: M7 session2 real
+Last trial time since stimulation begin: 1277.9809365894353
+Processing: F12 session1 sham
+Last trial time since stimulation begin: 1304.4477496572072
+Processing: F12 session2 real
+Last trial time since stimulation begin: 1294.7294279562775
+Processing: M8 session1 real
+Last trial time since stimulation begin: 1320.3674588941387
+Processing: M8 session2 sham
+Last trial time since stimulation begin: 1308.6522239889814
+Processing: M9 session1 sham
+Last trial time since stimulation begin: 1285.5945991443996
+Processing: M9 session2 real
+Last trial time since stimulation begin: 1300.2197193214074
+Processing: M10 session1 real
+Last trial time since stimulation begin: 1352.81492262267
+Processing: M10 session2 sham
+Last trial time since stimulation begin: 1287.5215326207065
+Processing: M11 session1 sham
+Last trial time since stimulation begin: 1297.0641318119006
+Processing: M11 session2 real
+Last trial time since stimulation begin: 1302.8559093804554
+Processing: M12 session1 real
+Last trial time since stimulation begin: 1289.574185383181
+Processing: M12 session2 sham
+Last trial time since stimulation begin: 1273.1577335354962
+
+Summary of results:
+   participant stim_condition     order  ...             p       slope   soa_mean
+0           F1           real  session1  ...  9.192805e-01   -2.048611  88.937996
+1           F1           sham  session2  ...  2.154779e-04   24.112319  92.155258
+2           M1           sham  session1  ...  2.437722e-02   37.749094  95.740079
+3           M1           real  session2  ...  1.857017e-06   78.570350  93.989087
+4           F2           sham  session1  ...  4.966045e-11  308.186896  54.720734
+5           F2           real  session2  ...  3.232944e-14  200.086051  72.828869
+6           F3           real  session1  ...  1.425205e-08  212.706824  74.563988
+7           F3           sham  session2  ...  4.519574e-09  179.199879  72.229663
+8           F4           sham  session1  ...  1.465331e-05   90.366848  92.493056
+9           F4           real  session2  ...  1.950629e-17  264.519928  80.300595
+10          F5           real  session1  ...  2.380141e-16  320.926932  67.274802
+11          F5           sham  session2  ...  4.733109e-14  378.907005  50.420139
+12          M2           real  session1  ...  1.280352e-14  435.110205  44.115575
+13          M2           sham  session2  ...  6.023887e-14  337.859300  69.795635
+14          F6           sham  session1  ...  6.204585e-08   95.691425  84.187500
+15          F6           real  session2  ...  3.641210e-11  158.179348  74.171131
+16          F7           real  session1  ...  1.708577e-05   79.749396  91.197917
+17          F7           sham  session2  ...  1.054384e-03   47.690217  94.562500
+18          F8           sham  session1  ...  6.069439e-05   12.660024  97.200397
+19          F8           real  session2  ...  2.928422e-07   12.841184  97.912202
+20          F9           real  session1  ...  4.387430e-13  281.731582  69.524802
+21          F9           sham  session2  ...  2.310490e-14  193.596014  72.960317
+22          M3           sham  session1  ...  1.811791e-01   38.425423  80.535714
+23          M3           real  session2  ...  2.322443e-05   27.503019  97.588790
+24          M4           sham  session1  ...  4.265681e-14  235.935990  81.941468
+25          M4           real  session2  ...  7.472180e-14  212.069746  83.519345
+26         F10           sham  session1  ...  4.545573e-04   16.343599  97.881448
+27         F10           real  session2  ...  7.626588e-06   91.029589  92.545139
+28          M5           real  session1  ...  9.691405e-01    0.569143  97.558036
+29          M5           sham  session2  ...  2.004720e-01   -0.614432  99.622024
+30         F11           real  session1  ...  2.767327e-23  454.581824  43.752480
+31         F11           sham  session2  ...  3.233166e-25  436.133756  59.715774
+32          M6           real  session1  ...  6.879203e-08  171.582126  79.706349
+33          M6           sham  session2  ...  8.373928e-03   92.456220  80.235119
+34          M7           sham  session1  ...  6.486183e-18  146.216787  82.283234
+35          M7           real  session2  ...  5.633369e-08  107.303744  85.277282
+36         F12           sham  session1  ...  5.655083e-01   10.104167  95.217758
+37         F12           real  session2  ...  2.057885e-02   60.363829  92.367560
+38          M8           real  session1  ...  3.622932e-02   29.516908  95.885913
+39          M8           sham  session2  ...  2.735612e-04   21.568539  98.305060
+40          M9           sham  session1  ...  5.739776e-24  224.731280  78.980655
+41          M9           real  session2  ...  6.522145e-19  190.114734  83.929067
+42         M10           real  session1  ...  8.294485e-01   -0.525362  96.866567
+43         M10           sham  session2  ...  7.370953e-01   -1.197162  95.611607
+44         M11           sham  session1  ...  2.964535e-13  105.680857  92.005952
+45         M11           real  session2  ...  1.490453e-07  136.188104  88.420635
+46         M12           real  session1  ...  2.363195e-09  109.622585  80.222222
+47         M12           sham  session2  ...  2.582275e-05   50.709541  81.450893
+
+[48 rows x 7 columns]
+   participant first_session  ...  soa_mean_session2   delta_R
+0           F1          real  ...          92.155258 -0.373994
+1          F10          sham  ...          92.545139  0.087076
+2          F11          real  ...          59.715774 -0.019344
+3          F12          sham  ...          92.367560  0.174033
+4           F2          sham  ...          72.828869  0.069678
+5           F3          real  ...          72.229663 -0.015180
+6           F4          sham  ...          80.300595  0.305158
+7           F5          real  ...          50.420139  0.041282
+8           F6          sham  ...          74.171131  0.092279
+9           F7          real  ...          94.562500  0.093169
+10          F8          sham  ...          97.912202  0.096594
+11          F9          real  ...          72.960317 -0.025580
+12          M1          sham  ...          93.989087  0.231969
+13         M10          real  ...          95.611607  0.012238
+14         M11          sham  ...          88.420635 -0.152353
+15         M12          real  ...          81.450893  0.146333
+16          M2          real  ...          69.795635  0.012897
+17          M3          sham  ...          97.588790  0.276011
+18          M4          sham  ...          83.519345 -0.004777
+19          M5          real  ...          99.622024  0.133707
+20          M6          real  ...          80.235119  0.246553
+21          M7          sham  ...          85.277282 -0.219835
+22          M8          real  ...          98.305060 -0.147292
+23          M9          sham  ...          83.929067 -0.060260
+
+[24 rows x 17 columns]
+
+*************** soa_mean ***************
+
+*************** 0 ms delay is NOT in the correlation ***************
+
+*************** real vs sham ***************
+paired
+alternative: two-sided
+soa_mean_real: 82.19 +/- 15.02
+soa_mean_sham: 83.34 +/- 14.17
+(Wilcoxon signed-rank test): W=112; p=0.289667; effect size (RBC)=-0.25; CLES=0.47
+
+*************** Session order ***************
+paired
+alternative: two-sided
+soa_mean_session1: 81.78 +/- 16.07
+soa_mean_session2: 83.75 +/- 12.92
+(Paired t-test): t(23)=-1.00; p=0.326; Cohen's effect size d=0.20
+
+*************** First session (real first vs sham first) ***************
+unpaired
+alternative: two-sided
+real first (n=12): 77.47 +/- 18.77
+sham first (n=12): 86.10 +/- 12.12
+(pingouin Mann-Whitney): U=50.00; p=0.214; effect size r(rb)=-0.31
+
++ Bayes factors not computed for soa_mean: Experiment 1 does not provide an expected effect for this measure
+
++ Correlation between real and sham (soa_mean): r=0.78; p=7.14e-06
+
++ ICC(3,1) between the real and sham sessions (soa_mean): ICC=0.78; 95% CI [0.55, 0.90]; F(23,23)=8.02; p=2.33e-06
+
++ Split-half reliability within each condition (soa_mean)
+real: split-half r=0.94; Spearman-Brown corrected=0.97
+sham: split-half r=0.94; Spearman-Brown corrected=0.97

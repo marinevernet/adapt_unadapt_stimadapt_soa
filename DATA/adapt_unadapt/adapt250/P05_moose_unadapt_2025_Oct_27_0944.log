@@ -1,0 +1,1660 @@
+21.0380 	INFO 	Loaded monitor calibration from ['2024_12_12 12:44']
+21.7757 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0., 0., 0.]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8f059eafd0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f8f05ab5780>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='cm', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+21.7759 	EXP 	window1: mouseVisible = True
+21.7760 	EXP 	window1: recordFrameIntervals = False
+21.9416 	EXP 	window1: recordFrameIntervals = True
+22.1255 	DEBUG 	Screen (0) actual frame rate measured at 59.89
+22.1255 	EXP 	window1: recordFrameIntervals = False
+22.2263 	EXP 	window1: mouseVisible = False
+22.3074 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.8, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='cm', win=Window(...), wrapWidth=15.0)
+22.3090 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-10.,   0.],
+       [ 10.,   0.]]), win=Window(...), windingRule=None)
+22.3097 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-10. ,  -0.1],
+       [-10. ,   0.1]]), win=Window(...), windingRule=None)
+22.3103 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-8. , -0.1],
+       [-8. ,  0.1]]), win=Window(...), windingRule=None)
+22.3109 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-6. , -0.1],
+       [-6. ,  0.1]]), win=Window(...), windingRule=None)
+22.3115 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-4. , -0.1],
+       [-4. ,  0.1]]), win=Window(...), windingRule=None)
+22.3122 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-2. , -0.1],
+       [-2. ,  0.1]]), win=Window(...), windingRule=None)
+22.3128 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -0.1],
+       [ 0. ,  0.1]]), win=Window(...), windingRule=None)
+22.3134 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 2. , -0.1],
+       [ 2. ,  0.1]]), win=Window(...), windingRule=None)
+22.3140 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 4. , -0.1],
+       [ 4. ,  0.1]]), win=Window(...), windingRule=None)
+22.3146 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 6. , -0.1],
+       [ 6. ,  0.1]]), win=Window(...), windingRule=None)
+22.3152 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 8. , -0.1],
+       [ 8. ,  0.1]]), win=Window(...), windingRule=None)
+22.3159 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=2, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[10. , -0.1],
+       [10. ,  0.1]]), win=Window(...), windingRule=None)
+22.3682 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='left', alignVert=method-wrapper(...), anchorHoriz='left', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.6, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-10.,   2.]), rgb=array([1., 1., 1.]), text=str(...), units='cm', win=Window(...), wrapWidth=15.0)
+22.3755 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='left', alignVert=method-wrapper(...), anchorHoriz='left', anchorVert='top', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.6, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([-10.,  -1.]), rgb=array([1., 1., 1.]), text='0%\n\n... pas du tout,', units='cm', win=Window(...), wrapWidth=15.0)
+22.3801 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='top', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.6, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([ 0., -1.]), rgb=array([1., 1., 1.]), text='50%\n\nmoyennement,', units='cm', win=Window(...), wrapWidth=15.0)
+22.3847 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='right', alignVert=method-wrapper(...), anchorHoriz='right', anchorVert='top', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=0.6, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=1.0, ori=0.0, pos=array([10., -1.]), rgb=array([1., 1., 1.]), text='100%\n\ntotalement\xa0!', units='cm', win=Window(...), wrapWidth=15.0)
+22.3881 	EXP 	Created unnamed TextStim = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=0, flipHoriz=False, flipVert=False, font='', fontFiles=[], height=1, italic=False, languageStyle='LTR', name='unnamed TextStim', opacity=0.0, ori=0.0, pos=array([0., 0.]), rgb=array([255.,   0.,   0.]), text='X', units='cm', win=Window(...), wrapWidth=15.0)
+22.4215 	EXP 	Created Insctruction = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1, italic=False, languageStyle='LTR', name='Insctruction', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='cm', win=Window(...), wrapWidth=15.0)
+22.5190 	EXP 	Created Instruction_train = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1, italic=False, languageStyle='LTR', name='Instruction_train', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='cm', win=Window(...), wrapWidth=15.0)
+22.6821 	EXP 	Created moose = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='moose.png', interpolate=True, mask=None, maskParams=None, name='moose', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([13.25, 22.7 ]), texRes=512, units='cm', win=Window(...))
+22.6823 	EXP 	window1: mouseVisible = True
+22.6915 	EXP 	Created pause_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1, italic=False, languageStyle='LTR', name='pause_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='cm', win=Window(...), wrapWidth=15.0)
+22.6927 	EXP 	Sound sound_1 set volume 1.000
+22.7019 	EXP 	Created Instruction_test = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1, italic=False, languageStyle='LTR', name='Instruction_test', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='cm', win=Window(...), wrapWidth=15.0)
+22.8306 	EXP 	Created moose = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='moose.png', interpolate=True, mask=None, maskParams=None, name='moose', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([13.25, 22.7 ]), texRes=512, units='cm', win=Window(...))
+22.8310 	EXP 	window1: mouseVisible = True
+22.8310 	EXP 	window1: mouseVisible = True
+22.8376 	EXP 	Created pause_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1, italic=False, languageStyle='LTR', name='pause_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='cm', win=Window(...), wrapWidth=15.0)
+22.8389 	EXP 	Sound sound_1 set volume 1.000
+22.8456 	EXP 	Created GoodBye = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1, italic=False, languageStyle='LTR', name='GoodBye', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='cm', win=Window(...), wrapWidth=15.0)
+22.9173 	EXP 	window1: mouseVisible = False
+22.9276 	EXP 	Insctruction: autoDraw = True
+47.9499 	DATA 	Keypress: space
+47.9628 	EXP 	Insctruction: autoDraw = False
+47.9628 	EXP 	Instruction_train: autoDraw = True
+59.3694 	DEBUG 	Read csv file with pandas: delay_training_block_unadapt.csv
+59.3717 	DEBUG 	Clearing unnamed columns from delay_training_block_unadapt.csv
+59.3722 	EXP 	Imported delay_training_block_unadapt.csv as conditions, 8 conditions, 1 params
+59.3726 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+59.3729 	EXP 	New trial (rep=0, index=0): OrderedDict([('sound_delay', 0.1)])
+59.3731 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+59.3737 	EXP 	New trial (rep=0, index=0): None
+59.3738 	EXP 	window1: mouseVisible = False
+59.3746 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+59.3753 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+59.3779 	DATA 	Keypress: space
+59.3856 	EXP 	Instruction_train: autoDraw = False
+59.8860 	EXP 	window1: mouseVisible = True
+59.8999 	EXP 	moose: autoDraw = True
+60.7159 	DATA 	Mouse: Left button down, pos=(714,455)
+60.8162 	EXP 	Sound  started
+61.5282 	DATA 	Mouse:  Left button up, pos=(714,455)
+61.7278 	EXP 	New trial (rep=0, index=1): OrderedDict([('sound_delay', -1.0)])
+61.7281 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+61.7287 	EXP 	New trial (rep=0, index=0): None
+61.7293 	EXP 	window1: mouseVisible = False
+61.7301 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+61.7308 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+61.7392 	EXP 	moose: autoDraw = False
+62.2327 	EXP 	window1: mouseVisible = True
+62.2490 	EXP 	moose: autoDraw = True
+62.8495 	EXP 	Sound  started
+62.9955 	DATA 	Mouse: Left button down, pos=(730,464)
+63.6621 	EXP 	New trial (rep=0, index=2): OrderedDict([('sound_delay', 1.25)])
+63.6623 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+63.6630 	EXP 	New trial (rep=0, index=0): None
+63.6638 	EXP 	window1: mouseVisible = False
+63.6645 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+63.6652 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+63.6668 	DATA 	Mouse:  Left button up, pos=(726,460)
+63.6884 	EXP 	moose: autoDraw = False
+64.1667 	EXP 	window1: mouseVisible = True
+64.1827 	EXP 	moose: autoDraw = True
+65.2051 	EXP 	unnamed TextStim: text = "Vous n'avez pas cliqué à temps."
+65.2051 	EXP 	moose: autoDraw = False
+66.2072 	EXP 	New trial (rep=1, index=0): None
+66.2080 	EXP 	window1: mouseVisible = False
+66.2088 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+66.2095 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+66.2247 	EXP 	moose: autoDraw = False
+66.7168 	EXP 	window1: mouseVisible = True
+66.7331 	EXP 	moose: autoDraw = True
+67.2672 	DATA 	Mouse: Left button down, pos=(664,467)
+68.3198 	DATA 	Mouse:  Left button up, pos=(665,467)
+68.5188 	EXP 	Sound  started
+69.4936 	EXP 	New trial (rep=0, index=3): OrderedDict([('sound_delay', 0.0)])
+69.4939 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+69.4946 	EXP 	New trial (rep=0, index=0): None
+69.4953 	EXP 	window1: mouseVisible = False
+69.4961 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+69.4967 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+69.5145 	EXP 	moose: autoDraw = False
+70.0009 	EXP 	window1: mouseVisible = True
+70.0172 	EXP 	moose: autoDraw = True
+70.7181 	DATA 	Mouse: Left button down, pos=(707,464)
+70.7183 	EXP 	Sound  started
+71.3404 	DATA 	Mouse:  Left button up, pos=(707,464)
+71.5399 	EXP 	New trial (rep=0, index=4): OrderedDict([('sound_delay', 0.25)])
+71.5402 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+71.5409 	EXP 	New trial (rep=0, index=0): None
+71.5415 	EXP 	window1: mouseVisible = False
+71.5423 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+71.5429 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+71.5512 	EXP 	moose: autoDraw = False
+72.0512 	EXP 	window1: mouseVisible = True
+72.0695 	EXP 	moose: autoDraw = True
+72.5514 	DATA 	Mouse: Left button down, pos=(688,453)
+72.6833 	DATA 	Mouse:  Left button up, pos=(688,453)
+72.8020 	EXP 	Sound  started
+73.6316 	EXP 	New trial (rep=0, index=5): OrderedDict([('sound_delay', 0.2)])
+73.6318 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+73.6325 	EXP 	New trial (rep=0, index=0): None
+73.6331 	EXP 	window1: mouseVisible = False
+73.6338 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+73.6344 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+73.6428 	EXP 	moose: autoDraw = False
+74.1563 	EXP 	window1: mouseVisible = True
+74.1764 	EXP 	moose: autoDraw = True
+74.6518 	DATA 	Mouse: Left button down, pos=(712,448)
+74.7633 	DATA 	Mouse:  Left button up, pos=(712,448)
+74.8522 	EXP 	Sound  started
+75.7824 	EXP 	New trial (rep=0, index=6): OrderedDict([('sound_delay', 0.15)])
+75.7827 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+75.7833 	EXP 	New trial (rep=0, index=0): None
+75.7839 	EXP 	window1: mouseVisible = False
+75.7847 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+75.7853 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+75.7933 	EXP 	moose: autoDraw = False
+76.2998 	EXP 	window1: mouseVisible = True
+76.3105 	EXP 	moose: autoDraw = True
+76.8857 	DATA 	Mouse: Left button down, pos=(659,447)
+77.0032 	DATA 	Mouse:  Left button up, pos=(660,447)
+77.0359 	EXP 	Sound  started
+78.0315 	EXP 	New trial (rep=0, index=7): OrderedDict([('sound_delay', 0.05)])
+78.0318 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+78.0324 	EXP 	New trial (rep=0, index=0): None
+78.0330 	EXP 	window1: mouseVisible = False
+78.0338 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+78.0344 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+78.0426 	EXP 	moose: autoDraw = False
+78.5358 	EXP 	window1: mouseVisible = True
+78.5521 	EXP 	moose: autoDraw = True
+79.2028 	DATA 	Mouse: Left button down, pos=(736,466)
+79.2532 	EXP 	Sound  started
+80.0234 	DATA 	Mouse:  Left button up, pos=(737,465)
+80.2233 	EXP 	window1: mouseVisible = False
+80.2409 	EXP 	moose: autoDraw = False
+80.2409 	EXP 	pause_text: autoDraw = True
+85.2572 	EXP 	Sound sound_1 started
+85.2616 	EXP 	pause_text: autoDraw = False
+85.2616 	EXP 	unnamed TextStim: text = '5'
+86.2791 	EXP 	unnamed TextStim: text = '4'
+87.2998 	EXP 	unnamed TextStim: text = '3'
+88.3251 	EXP 	unnamed TextStim: text = '2'
+89.3452 	EXP 	unnamed TextStim: text = '1'
+90.3466 	EXP 	Sound sound_1 reached end of file
+90.3469 	EXP 	Created sequence: sequential, trialTypes=1, nReps=3, seed=None
+90.3471 	EXP 	New trial (rep=0, index=0): None
+90.3651 	EXP 	Instruction_test: autoDraw = True
+92.2571 	DEBUG 	Read csv file with pandas: delay_test_block_unadapt.csv
+92.2583 	DEBUG 	Clearing unnamed columns from delay_test_block_unadapt.csv
+92.2588 	EXP 	Imported delay_test_block_unadapt.csv as conditions, 24 conditions, 1 params
+92.2591 	EXP 	Created sequence: random, trialTypes=24, nReps=1, seed=None
+92.2593 	EXP 	New trial (rep=0, index=0): OrderedDict([('sound_delay', 0.1)])
+92.2595 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+92.2602 	EXP 	New trial (rep=0, index=0): None
+92.2603 	EXP 	window1: mouseVisible = False
+92.2612 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+92.2619 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+92.2636 	DATA 	Keypress: space
+92.2740 	EXP 	Instruction_test: autoDraw = False
+92.7720 	EXP 	window1: mouseVisible = True
+92.7881 	EXP 	moose: autoDraw = True
+93.3222 	DATA 	Mouse: Left button down, pos=(664,443)
+93.4226 	EXP 	Sound  started
+94.1966 	DATA 	Mouse:  Left button up, pos=(664,443)
+94.4172 	EXP 	moose: autoDraw = False
+95.5082 	DATA 	Mouse: Left button down, pos=(1149,440)
+95.5221 	EXP 	unnamed TextStim: pos = (9.533333333333333, 0)
+95.5221 	EXP 	unnamed TextStim: opacity = 1.0
+95.5914 	DATA 	Mouse:  Left button up, pos=(1149,440)
+96.0263 	EXP 	New trial (rep=0, index=1): OrderedDict([('sound_delay', 0.15)])
+96.0266 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+96.0273 	EXP 	New trial (rep=0, index=0): None
+96.0279 	EXP 	window1: mouseVisible = False
+96.0287 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+96.0294 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+96.0415 	EXP 	unnamed TextStim: opacity = 0.0
+96.5393 	EXP 	window1: mouseVisible = True
+96.5555 	EXP 	moose: autoDraw = True
+96.9896 	DATA 	Mouse: Left button down, pos=(704,454)
+97.0993 	DATA 	Mouse:  Left button up, pos=(704,454)
+97.1399 	EXP 	Sound  started
+98.0139 	EXP 	moose: autoDraw = False
+99.0420 	DATA 	Mouse: Left button down, pos=(1140,446)
+99.0556 	EXP 	unnamed TextStim: pos = (9.333333333333334, 0)
+99.0556 	EXP 	unnamed TextStim: opacity = 1.0
+99.1254 	DATA 	Mouse:  Left button up, pos=(1140,446)
+99.5598 	EXP 	New trial (rep=0, index=2): OrderedDict([('sound_delay', 0.05)])
+99.5601 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+99.5607 	EXP 	New trial (rep=0, index=0): None
+99.5613 	EXP 	window1: mouseVisible = False
+99.5621 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+99.5628 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+99.5746 	EXP 	unnamed TextStim: opacity = 0.0
+100.0734 	EXP 	window1: mouseVisible = True
+100.0896 	EXP 	moose: autoDraw = True
+100.5569 	DATA 	Mouse: Left button down, pos=(654,454)
+100.6072 	EXP 	Sound  started
+101.5112 	DATA 	Mouse:  Left button up, pos=(654,454)
+101.7368 	EXP 	moose: autoDraw = False
+103.1261 	DATA 	Mouse: Left button down, pos=(1159,447)
+103.1397 	EXP 	unnamed TextStim: pos = (9.755555555555556, 0)
+103.1397 	EXP 	unnamed TextStim: opacity = 1.0
+103.2597 	DATA 	Mouse:  Left button up, pos=(1159,447)
+103.6443 	EXP 	New trial (rep=0, index=3): OrderedDict([('sound_delay', 0.15)])
+103.6445 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+103.6452 	EXP 	New trial (rep=0, index=0): None
+103.6458 	EXP 	window1: mouseVisible = False
+103.6465 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+103.6472 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+103.6589 	EXP 	unnamed TextStim: opacity = 0.0
+104.1574 	EXP 	window1: mouseVisible = True
+104.1737 	EXP 	moose: autoDraw = True
+104.6576 	DATA 	Mouse: Left button down, pos=(695,449)
+104.7714 	DATA 	Mouse:  Left button up, pos=(695,449)
+104.8080 	EXP 	Sound  started
+105.7197 	EXP 	moose: autoDraw = False
+107.1770 	DATA 	Mouse: Left button down, pos=(1160,449)
+107.1905 	EXP 	unnamed TextStim: pos = (9.777777777777779, 0)
+107.1905 	EXP 	unnamed TextStim: opacity = 1.0
+107.2770 	DATA 	Mouse:  Left button up, pos=(1160,449)
+107.6949 	EXP 	New trial (rep=0, index=4): OrderedDict([('sound_delay', 0.0)])
+107.6951 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+107.6958 	EXP 	New trial (rep=0, index=0): None
+107.6963 	EXP 	window1: mouseVisible = False
+107.6971 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+107.6977 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+107.7099 	EXP 	unnamed TextStim: opacity = 0.0
+108.2082 	EXP 	window1: mouseVisible = True
+108.2244 	EXP 	moose: autoDraw = True
+108.7752 	DATA 	Mouse: Left button down, pos=(712,449)
+108.7754 	EXP 	Sound  started
+109.5714 	DATA 	Mouse:  Left button up, pos=(712,449)
+109.7821 	EXP 	moose: autoDraw = False
+110.9611 	DATA 	Mouse: Left button down, pos=(721,446)
+110.9747 	EXP 	unnamed TextStim: pos = (0.022222222222222223, 0)
+110.9747 	EXP 	unnamed TextStim: opacity = 1.0
+111.0616 	DATA 	Mouse:  Left button up, pos=(721,446)
+111.4787 	EXP 	New trial (rep=0, index=5): OrderedDict([('sound_delay', -1.0)])
+111.4790 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+111.4796 	EXP 	New trial (rep=0, index=0): None
+111.4802 	EXP 	window1: mouseVisible = False
+111.4810 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+111.4816 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+111.4938 	EXP 	unnamed TextStim: opacity = 0.0
+111.9904 	EXP 	window1: mouseVisible = True
+112.0181 	EXP 	moose: autoDraw = True
+112.3925 	EXP 	Sound  started
+112.5074 	DATA 	Mouse: Left button down, pos=(663,454)
+113.2504 	DATA 	Mouse:  Left button up, pos=(663,454)
+113.2593 	EXP 	moose: autoDraw = False
+115.3284 	DATA 	Mouse: Left button down, pos=(287,448)
+115.3422 	EXP 	unnamed TextStim: pos = (-9.622222222222222, 0)
+115.3422 	EXP 	unnamed TextStim: opacity = 1.0
+115.5197 	DATA 	Mouse:  Left button up, pos=(287,448)
+115.8465 	EXP 	New trial (rep=0, index=6): OrderedDict([('sound_delay', 0.1)])
+115.8468 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+115.8475 	EXP 	New trial (rep=0, index=0): None
+115.8482 	EXP 	window1: mouseVisible = False
+115.8490 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+115.8496 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+115.8609 	EXP 	unnamed TextStim: opacity = 0.0
+116.3599 	EXP 	window1: mouseVisible = True
+116.3761 	EXP 	moose: autoDraw = True
+116.8600 	DATA 	Mouse: Left button down, pos=(697,473)
+116.9603 	EXP 	Sound  started
+117.7093 	DATA 	Mouse:  Left button up, pos=(697,473)
+117.9331 	EXP 	moose: autoDraw = False
+119.5798 	DATA 	Mouse: Left button down, pos=(1159,450)
+119.6096 	EXP 	unnamed TextStim: pos = (9.755555555555556, 0)
+119.6096 	EXP 	unnamed TextStim: opacity = 1.0
+119.6793 	DATA 	Mouse:  Left button up, pos=(1159,450)
+120.1044 	EXP 	New trial (rep=0, index=7): OrderedDict([('sound_delay', 0.25)])
+120.1047 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+120.1053 	EXP 	New trial (rep=0, index=0): None
+120.1060 	EXP 	window1: mouseVisible = False
+120.1070 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+120.1076 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+120.1164 	EXP 	unnamed TextStim: opacity = 0.0
+120.6106 	EXP 	window1: mouseVisible = True
+120.6268 	EXP 	moose: autoDraw = True
+121.0442 	DATA 	Mouse: Left button down, pos=(693,457)
+121.1714 	DATA 	Mouse:  Left button up, pos=(693,457)
+121.2954 	EXP 	Sound  started
+122.1593 	EXP 	moose: autoDraw = False
+123.1302 	DATA 	Mouse: Left button down, pos=(718,451)
+123.1438 	EXP 	unnamed TextStim: pos = (-0.044444444444444446, 0)
+123.1438 	EXP 	unnamed TextStim: opacity = 1.0
+123.2136 	DATA 	Mouse:  Left button up, pos=(718,451)
+123.6479 	EXP 	New trial (rep=0, index=8): OrderedDict([('sound_delay', -1.0)])
+123.6481 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+123.6488 	EXP 	New trial (rep=0, index=0): None
+123.6494 	EXP 	window1: mouseVisible = False
+123.6501 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+123.6508 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+123.6625 	EXP 	unnamed TextStim: opacity = 0.0
+124.1613 	EXP 	window1: mouseVisible = True
+124.1775 	EXP 	moose: autoDraw = True
+124.5448 	EXP 	Sound  started
+124.6354 	DATA 	Mouse: Left button down, pos=(640,462)
+125.3519 	DATA 	Mouse:  Left button up, pos=(640,462)
+125.3612 	EXP 	moose: autoDraw = False
+126.7309 	DATA 	Mouse: Left button down, pos=(279,450)
+126.7444 	EXP 	unnamed TextStim: pos = (-9.8, 0)
+126.7444 	EXP 	unnamed TextStim: opacity = 1.0
+126.8308 	DATA 	Mouse:  Left button up, pos=(279,450)
+127.2484 	EXP 	New trial (rep=0, index=9): OrderedDict([('sound_delay', 0.2)])
+127.2487 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+127.2493 	EXP 	New trial (rep=0, index=0): None
+127.2500 	EXP 	window1: mouseVisible = False
+127.2507 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+127.2513 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+127.2631 	EXP 	unnamed TextStim: opacity = 0.0
+127.7619 	EXP 	window1: mouseVisible = True
+127.7783 	EXP 	moose: autoDraw = True
+128.4790 	DATA 	Mouse: Left button down, pos=(688,462)
+128.6112 	DATA 	Mouse:  Left button up, pos=(688,462)
+128.6793 	EXP 	Sound  started
+129.6368 	EXP 	moose: autoDraw = False
+130.9148 	DATA 	Mouse: Left button down, pos=(1151,450)
+130.9284 	EXP 	unnamed TextStim: pos = (9.577777777777778, 0)
+130.9284 	EXP 	unnamed TextStim: opacity = 1.0
+131.0485 	DATA 	Mouse:  Left button up, pos=(1151,450)
+131.4328 	EXP 	New trial (rep=0, index=10): OrderedDict([('sound_delay', 0.0)])
+131.4331 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+131.4337 	EXP 	New trial (rep=0, index=0): None
+131.4343 	EXP 	window1: mouseVisible = False
+131.4351 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+131.4358 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+131.4478 	EXP 	unnamed TextStim: opacity = 0.0
+131.9462 	EXP 	window1: mouseVisible = True
+131.9625 	EXP 	moose: autoDraw = True
+132.5964 	DATA 	Mouse: Left button down, pos=(731,444)
+132.5967 	EXP 	Sound  started
+133.2726 	DATA 	Mouse:  Left button up, pos=(731,444)
+133.4927 	EXP 	moose: autoDraw = False
+134.4990 	DATA 	Mouse: Left button down, pos=(811,450)
+134.5127 	EXP 	unnamed TextStim: pos = (2.022222222222222, 0)
+134.5127 	EXP 	unnamed TextStim: opacity = 1.0
+134.6156 	DATA 	Mouse:  Left button up, pos=(812,450)
+135.0239 	EXP 	New trial (rep=0, index=11): OrderedDict([('sound_delay', 0.2)])
+135.0242 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+135.0250 	EXP 	New trial (rep=0, index=0): None
+135.0256 	EXP 	window1: mouseVisible = False
+135.0264 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+135.0271 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+135.0500 	EXP 	unnamed TextStim: opacity = 0.0
+135.5302 	EXP 	window1: mouseVisible = True
+135.5464 	EXP 	moose: autoDraw = True
+136.1138 	DATA 	Mouse: Left button down, pos=(667,449)
+136.2993 	DATA 	Mouse:  Left button up, pos=(667,449)
+136.3140 	EXP 	Sound  started
+137.5218 	EXP 	moose: autoDraw = False
+138.6330 	DATA 	Mouse: Left button down, pos=(1163,436)
+138.6467 	EXP 	unnamed TextStim: pos = (9.844444444444445, 0)
+138.6467 	EXP 	unnamed TextStim: opacity = 1.0
+138.7164 	DATA 	Mouse:  Left button up, pos=(1163,436)
+139.1510 	EXP 	New trial (rep=0, index=12): OrderedDict([('sound_delay', 1.25)])
+139.1512 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+139.1519 	EXP 	New trial (rep=0, index=0): None
+139.1525 	EXP 	window1: mouseVisible = False
+139.1533 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+139.1539 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+139.1661 	EXP 	unnamed TextStim: opacity = 0.0
+139.6642 	EXP 	window1: mouseVisible = True
+139.6805 	EXP 	moose: autoDraw = True
+140.3318 	DATA 	Mouse: Left button down, pos=(628,461)
+140.3637 	EXP 	unnamed TextStim: text = 'Veuillez cliquer sur le nez.'
+140.3637 	EXP 	moose: autoDraw = False
+141.1661 	DATA 	Mouse:  Left button up, pos=(693,462)
+141.3661 	EXP 	New trial (rep=1, index=0): None
+141.3667 	EXP 	window1: mouseVisible = False
+141.3675 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+141.3681 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+141.3795 	EXP 	moose: autoDraw = False
+141.8814 	EXP 	window1: mouseVisible = True
+141.8977 	EXP 	moose: autoDraw = True
+142.7483 	DATA 	Mouse: Left button down, pos=(753,441)
+143.8011 	DATA 	Mouse:  Left button up, pos=(754,441)
+144.0000 	EXP 	Sound  started
+145.1369 	EXP 	moose: autoDraw = False
+147.0844 	DATA 	Mouse: Left button down, pos=(281,452)
+147.0986 	EXP 	unnamed TextStim: pos = (-9.755555555555556, 0)
+147.0986 	EXP 	unnamed TextStim: opacity = 1.0
+147.1851 	DATA 	Mouse:  Left button up, pos=(281,451)
+147.6026 	EXP 	New trial (rep=0, index=13): OrderedDict([('sound_delay', 0.25)])
+147.6029 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+147.6035 	EXP 	New trial (rep=0, index=0): None
+147.6041 	EXP 	window1: mouseVisible = False
+147.6048 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+147.6055 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+147.6169 	EXP 	unnamed TextStim: opacity = 0.0
+148.1229 	EXP 	window1: mouseVisible = True
+148.1535 	EXP 	moose: autoDraw = True
+148.6827 	DATA 	Mouse: Left button down, pos=(693,451)
+148.7953 	DATA 	Mouse:  Left button up, pos=(693,451)
+148.9339 	EXP 	Sound  started
+149.7836 	EXP 	moose: autoDraw = False
+150.9186 	DATA 	Mouse: Left button down, pos=(1173,451)
+151.0356 	DATA 	Mouse:  Left button up, pos=(1173,451)
+151.6859 	DATA 	Mouse: Left button down, pos=(1165,449)
+151.6992 	EXP 	unnamed TextStim: pos = (9.88888888888889, 0)
+151.6992 	EXP 	unnamed TextStim: opacity = 1.0
+151.8192 	DATA 	Mouse:  Left button up, pos=(1165,449)
+152.2033 	EXP 	New trial (rep=0, index=14): OrderedDict([('sound_delay', 0.25)])
+152.2035 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+152.2042 	EXP 	New trial (rep=0, index=0): None
+152.2048 	EXP 	window1: mouseVisible = False
+152.2056 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+152.2062 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+152.2180 	EXP 	unnamed TextStim: opacity = 0.0
+152.7241 	EXP 	window1: mouseVisible = True
+152.7534 	EXP 	moose: autoDraw = True
+153.3670 	DATA 	Mouse: Left button down, pos=(673,445)
+153.5073 	DATA 	Mouse:  Left button up, pos=(673,445)
+153.6184 	EXP 	Sound  started
+154.6212 	EXP 	moose: autoDraw = False
+155.8698 	DATA 	Mouse: Left button down, pos=(1156,447)
+155.8833 	EXP 	unnamed TextStim: pos = (9.688888888888888, 0)
+155.8833 	EXP 	unnamed TextStim: opacity = 1.0
+155.9867 	DATA 	Mouse:  Left button up, pos=(1156,447)
+156.3873 	EXP 	New trial (rep=0, index=15): OrderedDict([('sound_delay', 1.25)])
+156.3876 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+156.3882 	EXP 	New trial (rep=0, index=0): None
+156.3888 	EXP 	window1: mouseVisible = False
+156.3896 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+156.3902 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+156.4015 	EXP 	unnamed TextStim: opacity = 0.0
+156.9010 	EXP 	window1: mouseVisible = True
+156.9171 	EXP 	moose: autoDraw = True
+157.7349 	DATA 	Mouse: Left button down, pos=(709,443)
+158.7874 	DATA 	Mouse:  Left button up, pos=(709,443)
+158.9863 	EXP 	Sound  started
+159.8269 	EXP 	moose: autoDraw = False
+161.9407 	DATA 	Mouse: Left button down, pos=(274,450)
+161.9533 	EXP 	unnamed TextStim: pos = (-9.911111111111111, 0)
+161.9533 	EXP 	unnamed TextStim: opacity = 1.0
+162.0545 	DATA 	Mouse:  Left button up, pos=(275,450)
+162.4555 	EXP 	New trial (rep=0, index=16): OrderedDict([('sound_delay', 0.2)])
+162.4557 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+162.4564 	EXP 	New trial (rep=0, index=0): None
+162.4571 	EXP 	window1: mouseVisible = False
+162.4579 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+162.4586 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+162.4700 	EXP 	unnamed TextStim: opacity = 0.0
+162.9688 	EXP 	window1: mouseVisible = True
+162.9850 	EXP 	moose: autoDraw = True
+163.6197 	DATA 	Mouse: Left button down, pos=(755,453)
+163.7714 	DATA 	Mouse:  Left button up, pos=(755,453)
+163.8354 	EXP 	Sound  started
+164.6908 	EXP 	moose: autoDraw = False
+165.9216 	DATA 	Mouse: Left button down, pos=(1152,449)
+165.9353 	EXP 	unnamed TextStim: pos = (9.6, 0)
+165.9353 	EXP 	unnamed TextStim: opacity = 1.0
+166.0386 	DATA 	Mouse:  Left button up, pos=(1152,449)
+166.4398 	EXP 	New trial (rep=0, index=17): OrderedDict([('sound_delay', 1.25)])
+166.4400 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+166.4407 	EXP 	New trial (rep=0, index=0): None
+166.4413 	EXP 	window1: mouseVisible = False
+166.4420 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+166.4428 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+166.4545 	EXP 	unnamed TextStim: opacity = 0.0
+166.9529 	EXP 	window1: mouseVisible = True
+166.9691 	EXP 	moose: autoDraw = True
+167.4037 	DATA 	Mouse: Left button down, pos=(621,455)
+167.4357 	EXP 	unnamed TextStim: text = 'Veuillez cliquer sur le nez.'
+167.4357 	EXP 	moose: autoDraw = False
+168.3554 	DATA 	Mouse:  Left button up, pos=(784,450)
+168.4383 	EXP 	New trial (rep=1, index=0): None
+168.4389 	EXP 	window1: mouseVisible = False
+168.4397 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+168.4403 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+168.4523 	EXP 	moose: autoDraw = False
+168.9438 	EXP 	window1: mouseVisible = True
+168.9565 	EXP 	moose: autoDraw = True
+169.5872 	DATA 	Mouse: Left button down, pos=(663,469)
+170.6394 	DATA 	Mouse:  Left button up, pos=(663,469)
+170.8386 	EXP 	Sound  started
+172.0500 	EXP 	moose: autoDraw = False
+173.3563 	DATA 	Mouse: Left button down, pos=(283,450)
+173.3701 	EXP 	unnamed TextStim: pos = (-9.71111111111111, 0)
+173.3701 	EXP 	unnamed TextStim: opacity = 1.0
+173.5068 	DATA 	Mouse:  Left button up, pos=(283,450)
+173.8667 	EXP 	New trial (rep=0, index=18): OrderedDict([('sound_delay', 0.15)])
+173.8669 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+173.8675 	EXP 	New trial (rep=0, index=0): None
+173.8683 	EXP 	window1: mouseVisible = False
+173.8690 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+173.8697 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+173.8919 	EXP 	unnamed TextStim: opacity = 0.0
+174.3710 	EXP 	window1: mouseVisible = True
+174.3873 	EXP 	moose: autoDraw = True
+175.0045 	DATA 	Mouse: Left button down, pos=(731,453)
+175.1549 	EXP 	Sound  started
+175.9320 	DATA 	Mouse:  Left button up, pos=(731,453)
+176.1429 	EXP 	moose: autoDraw = False
+179.4909 	DATA 	Mouse: Left button down, pos=(717,451)
+179.5045 	EXP 	unnamed TextStim: pos = (-0.06666666666666667, 0)
+179.5045 	EXP 	unnamed TextStim: opacity = 1.0
+179.6243 	DATA 	Mouse:  Left button up, pos=(717,451)
+180.0164 	EXP 	New trial (rep=0, index=19): OrderedDict([('sound_delay', 0.05)])
+180.0167 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+180.0173 	EXP 	New trial (rep=0, index=0): None
+180.0179 	EXP 	window1: mouseVisible = False
+180.0186 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+180.0193 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+180.0277 	EXP 	unnamed TextStim: opacity = 0.0
+180.5223 	EXP 	window1: mouseVisible = True
+180.5384 	EXP 	moose: autoDraw = True
+181.1725 	DATA 	Mouse: Left button down, pos=(689,445)
+181.2228 	EXP 	Sound  started
+182.1407 	DATA 	Mouse:  Left button up, pos=(689,445)
+182.3606 	EXP 	moose: autoDraw = False
+183.7751 	DATA 	Mouse: Left button down, pos=(1160,448)
+183.7889 	EXP 	unnamed TextStim: pos = (9.777777777777779, 0)
+183.7889 	EXP 	unnamed TextStim: opacity = 1.0
+183.8968 	DATA 	Mouse:  Left button up, pos=(1160,448)
+184.2930 	EXP 	New trial (rep=0, index=20): OrderedDict([('sound_delay', 0.1)])
+184.2932 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+184.2939 	EXP 	New trial (rep=0, index=0): None
+184.2945 	EXP 	window1: mouseVisible = False
+184.2953 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+184.2959 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+184.3079 	EXP 	unnamed TextStim: opacity = 0.0
+184.8065 	EXP 	window1: mouseVisible = True
+184.8227 	EXP 	moose: autoDraw = True
+185.5401 	DATA 	Mouse: Left button down, pos=(668,473)
+185.6404 	EXP 	Sound  started
+186.3788 	DATA 	Mouse:  Left button up, pos=(668,473)
+186.5979 	EXP 	moose: autoDraw = False
+188.2432 	DATA 	Mouse: Left button down, pos=(1139,447)
+188.2562 	EXP 	unnamed TextStim: pos = (9.311111111111112, 0)
+188.2562 	EXP 	unnamed TextStim: opacity = 1.0
+188.3761 	DATA 	Mouse:  Left button up, pos=(1139,447)
+188.7604 	EXP 	New trial (rep=0, index=21): OrderedDict([('sound_delay', 0.05)])
+188.7607 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+188.7613 	EXP 	New trial (rep=0, index=0): None
+188.7620 	EXP 	window1: mouseVisible = False
+188.7628 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+188.7635 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+188.7753 	EXP 	unnamed TextStim: opacity = 0.0
+189.2739 	EXP 	window1: mouseVisible = True
+189.2902 	EXP 	moose: autoDraw = True
+189.9744 	DATA 	Mouse: Left button down, pos=(738,468)
+190.0246 	EXP 	Sound  started
+190.7228 	DATA 	Mouse:  Left button up, pos=(738,468)
+190.9332 	EXP 	moose: autoDraw = False
+192.4939 	DATA 	Mouse: Left button down, pos=(722,453)
+192.5071 	EXP 	unnamed TextStim: pos = (0.044444444444444446, 0)
+192.5071 	EXP 	unnamed TextStim: opacity = 1.0
+192.6441 	DATA 	Mouse:  Left button up, pos=(722,453)
+193.0079 	EXP 	New trial (rep=0, index=22): OrderedDict([('sound_delay', 0.0)])
+193.0081 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+193.0088 	EXP 	New trial (rep=0, index=0): None
+193.0094 	EXP 	window1: mouseVisible = False
+193.0102 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+193.0108 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+193.0226 	EXP 	unnamed TextStim: opacity = 0.0
+193.5248 	EXP 	window1: mouseVisible = True
+193.5409 	EXP 	moose: autoDraw = True
+194.0755 	DATA 	Mouse: Left button down, pos=(688,466)
+194.0760 	EXP 	Sound  started
+194.8133 	DATA 	Mouse:  Left button up, pos=(689,466)
+195.0268 	EXP 	moose: autoDraw = False
+196.7944 	DATA 	Mouse: Left button down, pos=(723,451)
+196.8080 	EXP 	unnamed TextStim: pos = (0.06666666666666667, 0)
+196.8080 	EXP 	unnamed TextStim: opacity = 1.0
+196.9762 	DATA 	Mouse:  Left button up, pos=(723,451)
+197.3124 	EXP 	New trial (rep=0, index=23): OrderedDict([('sound_delay', -1.0)])
+197.3126 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+197.3133 	EXP 	New trial (rep=0, index=0): None
+197.3139 	EXP 	window1: mouseVisible = False
+197.3147 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+197.3153 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+197.3266 	EXP 	unnamed TextStim: opacity = 0.0
+197.8256 	EXP 	window1: mouseVisible = True
+197.8418 	EXP 	moose: autoDraw = True
+198.1926 	EXP 	Sound  started
+199.1386 	EXP 	moose: autoDraw = False
+200.7118 	DATA 	Mouse: Left button down, pos=(277,447)
+200.7254 	EXP 	unnamed TextStim: pos = (-9.844444444444445, 0)
+200.7254 	EXP 	unnamed TextStim: opacity = 1.0
+200.8288 	DATA 	Mouse:  Left button up, pos=(277,447)
+201.2300 	EXP 	window1: mouseVisible = False
+201.2424 	EXP 	unnamed TextStim: opacity = 0.0
+201.2424 	EXP 	pause_text: autoDraw = True
+304.0445 	EXP 	Sound sound_1 started
+304.0492 	EXP 	pause_text: autoDraw = False
+304.0492 	EXP 	unnamed TextStim: text = '5'
+305.0759 	EXP 	unnamed TextStim: text = '4'
+306.1000 	EXP 	unnamed TextStim: text = '3'
+307.1197 	EXP 	unnamed TextStim: text = '2'
+308.1382 	EXP 	unnamed TextStim: text = '1'
+309.1396 	EXP 	Sound sound_1 reached end of file
+309.1399 	EXP 	New trial (rep=1, index=0): None
+309.1572 	EXP 	Instruction_test: autoDraw = True
+311.2500 	DEBUG 	Read csv file with pandas: delay_test_block_unadapt.csv
+311.2513 	DEBUG 	Clearing unnamed columns from delay_test_block_unadapt.csv
+311.2518 	EXP 	Imported delay_test_block_unadapt.csv as conditions, 24 conditions, 1 params
+311.2523 	EXP 	Created sequence: random, trialTypes=24, nReps=1, seed=None
+311.2525 	EXP 	New trial (rep=0, index=0): OrderedDict([('sound_delay', 0.2)])
+311.2528 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+311.2534 	EXP 	New trial (rep=0, index=0): None
+311.2535 	EXP 	window1: mouseVisible = False
+311.2543 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+311.2550 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+311.2570 	DATA 	Keypress: space
+311.2667 	EXP 	Instruction_test: autoDraw = False
+311.7645 	EXP 	window1: mouseVisible = True
+311.7808 	EXP 	moose: autoDraw = True
+312.2814 	DATA 	Mouse: Left button down, pos=(669,449)
+312.4593 	DATA 	Mouse:  Left button up, pos=(669,449)
+312.4818 	EXP 	Sound  started
+313.7047 	EXP 	moose: autoDraw = False
+314.8083 	DATA 	Mouse: Left button down, pos=(1146,447)
+314.8186 	EXP 	unnamed TextStim: pos = (9.466666666666667, 0)
+314.8186 	EXP 	unnamed TextStim: opacity = 1.0
+314.9508 	DATA 	Mouse:  Left button up, pos=(1146,447)
+315.3186 	EXP 	New trial (rep=0, index=1): OrderedDict([('sound_delay', -1.0)])
+315.3189 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+315.3195 	EXP 	New trial (rep=0, index=0): None
+315.3201 	EXP 	window1: mouseVisible = False
+315.3209 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+315.3215 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+315.3332 	EXP 	unnamed TextStim: opacity = 0.0
+315.8320 	EXP 	window1: mouseVisible = True
+315.8481 	EXP 	moose: autoDraw = True
+316.1655 	EXP 	Sound  started
+316.3235 	DATA 	Mouse: Left button down, pos=(673,456)
+316.9728 	DATA 	Mouse:  Left button up, pos=(673,456)
+316.9822 	EXP 	moose: autoDraw = False
+318.1013 	DATA 	Mouse: Left button down, pos=(283,453)
+318.1149 	EXP 	unnamed TextStim: pos = (-9.71111111111111, 0)
+318.1149 	EXP 	unnamed TextStim: opacity = 1.0
+318.2520 	DATA 	Mouse:  Left button up, pos=(284,453)
+318.6195 	EXP 	New trial (rep=0, index=2): OrderedDict([('sound_delay', 0.05)])
+318.6198 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+318.6205 	EXP 	New trial (rep=0, index=0): None
+318.6212 	EXP 	window1: mouseVisible = False
+318.6219 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+318.6226 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+318.6395 	EXP 	unnamed TextStim: opacity = 0.0
+319.1326 	EXP 	window1: mouseVisible = True
+319.1488 	EXP 	moose: autoDraw = True
+319.6829 	DATA 	Mouse: Left button down, pos=(680,458)
+319.7335 	EXP 	Sound  started
+320.4649 	DATA 	Mouse:  Left button up, pos=(681,457)
+320.6751 	EXP 	moose: autoDraw = False
+321.8353 	DATA 	Mouse: Left button down, pos=(1160,444)
+321.8489 	EXP 	unnamed TextStim: pos = (9.777777777777779, 0)
+321.8489 	EXP 	unnamed TextStim: opacity = 1.0
+322.0187 	DATA 	Mouse:  Left button up, pos=(1160,445)
+322.3532 	EXP 	New trial (rep=0, index=3): OrderedDict([('sound_delay', 0.25)])
+322.3535 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+322.3542 	EXP 	New trial (rep=0, index=0): None
+322.3550 	EXP 	window1: mouseVisible = False
+322.3557 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+322.3564 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+322.3681 	EXP 	unnamed TextStim: opacity = 0.0
+322.8666 	EXP 	window1: mouseVisible = True
+322.8829 	EXP 	moose: autoDraw = True
+323.4336 	DATA 	Mouse: Left button down, pos=(788,444)
+323.6354 	DATA 	Mouse:  Left button up, pos=(788,444)
+323.6850 	EXP 	Sound  started
+324.8131 	EXP 	moose: autoDraw = False
+326.1197 	DATA 	Mouse: Left button down, pos=(1155,448)
+326.1333 	EXP 	unnamed TextStim: pos = (9.666666666666666, 0)
+326.1333 	EXP 	unnamed TextStim: opacity = 1.0
+326.2367 	DATA 	Mouse:  Left button up, pos=(1155,448)
+326.6373 	EXP 	New trial (rep=0, index=4): OrderedDict([('sound_delay', 0.0)])
+326.6376 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+326.6382 	EXP 	New trial (rep=0, index=0): None
+326.6388 	EXP 	window1: mouseVisible = False
+326.6396 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+326.6402 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+326.6519 	EXP 	unnamed TextStim: opacity = 0.0
+327.1508 	EXP 	window1: mouseVisible = True
+327.1671 	EXP 	moose: autoDraw = True
+327.8345 	DATA 	Mouse: Left button down, pos=(664,466)
+327.8348 	EXP 	Sound  started
+328.6760 	DATA 	Mouse:  Left button up, pos=(664,466)
+328.8932 	EXP 	moose: autoDraw = False
+329.9039 	DATA 	Mouse: Left button down, pos=(720,451)
+329.9172 	EXP 	unnamed TextStim: pos = (0.0, 0)
+329.9172 	EXP 	unnamed TextStim: opacity = 1.0
+330.0204 	DATA 	Mouse:  Left button up, pos=(720,451)
+330.4215 	EXP 	New trial (rep=0, index=5): OrderedDict([('sound_delay', 1.25)])
+330.4217 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+330.4224 	EXP 	New trial (rep=0, index=0): None
+330.4230 	EXP 	window1: mouseVisible = False
+330.4237 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+330.4244 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+330.4361 	EXP 	unnamed TextStim: opacity = 0.0
+330.9350 	EXP 	window1: mouseVisible = True
+330.9512 	EXP 	moose: autoDraw = True
+331.6520 	DATA 	Mouse: Left button down, pos=(665,451)
+332.7042 	DATA 	Mouse:  Left button up, pos=(665,451)
+332.9034 	EXP 	Sound  started
+334.0607 	EXP 	moose: autoDraw = False
+336.3122 	DATA 	Mouse: Left button down, pos=(273,448)
+336.3303 	EXP 	unnamed TextStim: pos = (-9.933333333333334, 0)
+336.3303 	EXP 	unnamed TextStim: opacity = 1.0
+336.4885 	DATA 	Mouse:  Left button up, pos=(273,448)
+336.8229 	EXP 	New trial (rep=0, index=6): OrderedDict([('sound_delay', 0.1)])
+336.8231 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+336.8238 	EXP 	New trial (rep=0, index=0): None
+336.8245 	EXP 	window1: mouseVisible = False
+336.8253 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+336.8260 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+336.8372 	EXP 	unnamed TextStim: opacity = 0.0
+337.3361 	EXP 	window1: mouseVisible = True
+337.3524 	EXP 	moose: autoDraw = True
+338.0364 	DATA 	Mouse: Left button down, pos=(679,453)
+338.1370 	EXP 	Sound  started
+338.8561 	DATA 	Mouse:  Left button up, pos=(680,453)
+339.0761 	EXP 	moose: autoDraw = False
+340.0555 	DATA 	Mouse: Left button down, pos=(1154,450)
+340.0691 	EXP 	unnamed TextStim: pos = (9.644444444444444, 0)
+340.0691 	EXP 	unnamed TextStim: opacity = 1.0
+340.1893 	DATA 	Mouse:  Left button up, pos=(1154,450)
+340.5734 	EXP 	New trial (rep=0, index=7): OrderedDict([('sound_delay', 0.1)])
+340.5737 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+340.5743 	EXP 	New trial (rep=0, index=0): None
+340.5750 	EXP 	window1: mouseVisible = False
+340.5757 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+340.5763 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+340.5880 	EXP 	unnamed TextStim: opacity = 0.0
+341.0869 	EXP 	window1: mouseVisible = True
+341.1032 	EXP 	moose: autoDraw = True
+341.7539 	DATA 	Mouse: Left button down, pos=(674,456)
+341.8542 	EXP 	Sound  started
+342.7963 	DATA 	Mouse:  Left button up, pos=(674,456)
+343.0164 	EXP 	moose: autoDraw = False
+344.1901 	DATA 	Mouse: Left button down, pos=(1080,444)
+344.2035 	EXP 	unnamed TextStim: pos = (8.0, 0)
+344.2035 	EXP 	unnamed TextStim: opacity = 1.0
+344.3233 	DATA 	Mouse:  Left button up, pos=(1080,444)
+344.7079 	EXP 	New trial (rep=0, index=8): OrderedDict([('sound_delay', 0.0)])
+344.7082 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+344.7088 	EXP 	New trial (rep=0, index=0): None
+344.7094 	EXP 	window1: mouseVisible = False
+344.7102 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+344.7108 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+344.7229 	EXP 	unnamed TextStim: opacity = 0.0
+345.2210 	EXP 	window1: mouseVisible = True
+345.2373 	EXP 	moose: autoDraw = True
+345.8713 	DATA 	Mouse: Left button down, pos=(740,458)
+345.8716 	EXP 	Sound  started
+346.6116 	DATA 	Mouse:  Left button up, pos=(740,458)
+346.8220 	EXP 	moose: autoDraw = False
+348.1241 	DATA 	Mouse: Left button down, pos=(1140,451)
+348.1375 	EXP 	unnamed TextStim: pos = (9.333333333333334, 0)
+348.1375 	EXP 	unnamed TextStim: opacity = 1.0
+348.2407 	DATA 	Mouse:  Left button up, pos=(1140,451)
+348.6414 	EXP 	New trial (rep=0, index=9): OrderedDict([('sound_delay', 1.25)])
+348.6417 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+348.6423 	EXP 	New trial (rep=0, index=0): None
+348.6430 	EXP 	window1: mouseVisible = False
+348.6438 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+348.6444 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+348.6557 	EXP 	unnamed TextStim: opacity = 0.0
+349.1552 	EXP 	window1: mouseVisible = True
+349.1714 	EXP 	moose: autoDraw = True
+349.9721 	DATA 	Mouse: Left button down, pos=(733,441)
+351.0245 	DATA 	Mouse:  Left button up, pos=(734,441)
+351.2236 	EXP 	Sound  started
+352.4206 	EXP 	moose: autoDraw = False
+354.2419 	DATA 	Mouse: Left button down, pos=(280,450)
+354.2555 	EXP 	unnamed TextStim: pos = (-9.777777777777779, 0)
+354.2555 	EXP 	unnamed TextStim: opacity = 1.0
+354.3586 	DATA 	Mouse:  Left button up, pos=(280,450)
+354.7596 	EXP 	New trial (rep=0, index=10): OrderedDict([('sound_delay', -1.0)])
+354.7598 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+354.7604 	EXP 	New trial (rep=0, index=0): None
+354.7610 	EXP 	window1: mouseVisible = False
+354.7618 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+354.7624 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+354.7740 	EXP 	unnamed TextStim: opacity = 0.0
+355.2730 	EXP 	window1: mouseVisible = True
+355.2893 	EXP 	moose: autoDraw = True
+355.7566 	EXP 	Sound  started
+356.9348 	EXP 	moose: autoDraw = False
+358.8433 	DATA 	Mouse: Left button down, pos=(278,449)
+358.8562 	EXP 	unnamed TextStim: pos = (-9.822222222222223, 0)
+358.8562 	EXP 	unnamed TextStim: opacity = 1.0
+359.0162 	DATA 	Mouse:  Left button up, pos=(278,449)
+359.3606 	EXP 	New trial (rep=0, index=11): OrderedDict([('sound_delay', 0.25)])
+359.3608 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+359.3615 	EXP 	New trial (rep=0, index=0): None
+359.3622 	EXP 	window1: mouseVisible = False
+359.3629 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+359.3636 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+359.3750 	EXP 	unnamed TextStim: opacity = 0.0
+359.8739 	EXP 	window1: mouseVisible = True
+359.8902 	EXP 	moose: autoDraw = True
+360.8910 	DATA 	Mouse: Left button down, pos=(767,442)
+361.0193 	DATA 	Mouse:  Left button up, pos=(767,442)
+361.1424 	EXP 	Sound  started
+362.2720 	EXP 	moose: autoDraw = False
+363.3937 	DATA 	Mouse: Left button down, pos=(1141,452)
+363.4074 	EXP 	unnamed TextStim: pos = (9.355555555555556, 0)
+363.4074 	EXP 	unnamed TextStim: opacity = 1.0
+363.5771 	DATA 	Mouse:  Left button up, pos=(1141,452)
+363.9114 	EXP 	New trial (rep=0, index=12): OrderedDict([('sound_delay', 0.15)])
+363.9116 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+363.9123 	EXP 	New trial (rep=0, index=0): None
+363.9130 	EXP 	window1: mouseVisible = False
+363.9137 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+363.9143 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+363.9260 	EXP 	unnamed TextStim: opacity = 0.0
+364.4248 	EXP 	window1: mouseVisible = True
+364.4512 	EXP 	moose: autoDraw = True
+365.2085 	DATA 	Mouse: Left button down, pos=(734,473)
+365.3589 	EXP 	Sound  started
+366.2750 	DATA 	Mouse:  Left button up, pos=(734,473)
+366.4987 	EXP 	moose: autoDraw = False
+368.6944 	DATA 	Mouse: Left button down, pos=(1154,450)
+368.7081 	EXP 	unnamed TextStim: pos = (9.644444444444444, 0)
+368.7081 	EXP 	unnamed TextStim: opacity = 1.0
+368.8779 	DATA 	Mouse:  Left button up, pos=(1154,450)
+369.2123 	EXP 	New trial (rep=0, index=13): OrderedDict([('sound_delay', 0.2)])
+369.2126 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+369.2132 	EXP 	New trial (rep=0, index=0): None
+369.2138 	EXP 	window1: mouseVisible = False
+369.2146 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+369.2152 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+369.2265 	EXP 	unnamed TextStim: opacity = 0.0
+369.7258 	EXP 	window1: mouseVisible = True
+369.7421 	EXP 	moose: autoDraw = True
+370.6927 	DATA 	Mouse: Left button down, pos=(783,472)
+370.8353 	DATA 	Mouse:  Left button up, pos=(783,472)
+370.8931 	EXP 	Sound  started
+372.0173 	EXP 	moose: autoDraw = False
+373.3960 	DATA 	Mouse: Left button down, pos=(1151,445)
+373.4091 	EXP 	unnamed TextStim: pos = (9.577777777777778, 0)
+373.4091 	EXP 	unnamed TextStim: opacity = 1.0
+373.5938 	DATA 	Mouse:  Left button up, pos=(1151,445)
+373.9135 	EXP 	New trial (rep=0, index=14): OrderedDict([('sound_delay', 0.0)])
+373.9137 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+373.9144 	EXP 	New trial (rep=0, index=0): None
+373.9150 	EXP 	window1: mouseVisible = False
+373.9158 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+373.9164 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+373.9278 	EXP 	unnamed TextStim: opacity = 0.0
+374.4267 	EXP 	window1: mouseVisible = True
+374.4430 	EXP 	moose: autoDraw = True
+375.3437 	DATA 	Mouse: Left button down, pos=(655,457)
+375.3439 	EXP 	Sound  started
+376.1029 	DATA 	Mouse:  Left button up, pos=(655,457)
+376.3232 	EXP 	moose: autoDraw = False
+378.0879 	DATA 	Mouse: Left button down, pos=(631,447)
+378.1068 	EXP 	unnamed TextStim: pos = (-1.9777777777777779, 0)
+378.1068 	EXP 	unnamed TextStim: opacity = 1.0
+378.1783 	DATA 	Mouse:  Left button up, pos=(631,447)
+378.5976 	EXP 	New trial (rep=0, index=15): OrderedDict([('sound_delay', -1.0)])
+378.5978 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+378.5985 	EXP 	New trial (rep=0, index=0): None
+378.5991 	EXP 	window1: mouseVisible = False
+378.5998 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+378.6005 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+378.6122 	EXP 	unnamed TextStim: opacity = 0.0
+379.1110 	EXP 	window1: mouseVisible = True
+379.1272 	EXP 	moose: autoDraw = True
+379.1275 	EXP 	Sound  started
+379.9874 	EXP 	moose: autoDraw = False
+381.6972 	DATA 	Mouse: Left button down, pos=(273,452)
+381.7107 	EXP 	unnamed TextStim: pos = (-9.933333333333334, 0)
+381.7107 	EXP 	unnamed TextStim: opacity = 1.0
+381.8304 	DATA 	Mouse:  Left button up, pos=(273,452)
+382.2151 	EXP 	New trial (rep=0, index=16): OrderedDict([('sound_delay', 0.15)])
+382.2154 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+382.2160 	EXP 	New trial (rep=0, index=0): None
+382.2167 	EXP 	window1: mouseVisible = False
+382.2175 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+382.2182 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+382.2295 	EXP 	unnamed TextStim: opacity = 0.0
+382.7284 	EXP 	window1: mouseVisible = True
+382.7446 	EXP 	moose: autoDraw = True
+383.5120 	DATA 	Mouse: Left button down, pos=(742,441)
+383.6623 	EXP 	Sound  started
+384.4286 	DATA 	Mouse:  Left button up, pos=(742,441)
+384.6481 	EXP 	moose: autoDraw = False
+387.0983 	DATA 	Mouse: Left button down, pos=(1146,449)
+387.1118 	EXP 	unnamed TextStim: pos = (9.466666666666667, 0)
+387.1118 	EXP 	unnamed TextStim: opacity = 1.0
+387.2649 	DATA 	Mouse:  Left button up, pos=(1146,449)
+387.6159 	EXP 	New trial (rep=0, index=17): OrderedDict([('sound_delay', 0.05)])
+387.6161 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+387.6168 	EXP 	New trial (rep=0, index=0): None
+387.6174 	EXP 	window1: mouseVisible = False
+387.6181 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+387.6189 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+387.6307 	EXP 	unnamed TextStim: opacity = 0.0
+388.1346 	EXP 	window1: mouseVisible = True
+388.1623 	EXP 	moose: autoDraw = True
+388.8964 	DATA 	Mouse: Left button down, pos=(682,427)
+388.9467 	EXP 	Sound  started
+389.7709 	DATA 	Mouse:  Left button up, pos=(682,427)
+389.9819 	EXP 	moose: autoDraw = False
+392.1565 	DATA 	Mouse: Left button down, pos=(707,451)
+392.1745 	EXP 	unnamed TextStim: pos = (-0.28888888888888886, 0)
+392.1745 	EXP 	unnamed TextStim: opacity = 1.0
+392.2919 	DATA 	Mouse:  Left button up, pos=(707,451)
+392.6672 	EXP 	New trial (rep=0, index=18): OrderedDict([('sound_delay', 0.1)])
+392.6675 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+392.6683 	EXP 	New trial (rep=0, index=0): None
+392.6690 	EXP 	window1: mouseVisible = False
+392.6697 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+392.6703 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+392.6816 	EXP 	unnamed TextStim: opacity = 0.0
+393.1804 	EXP 	window1: mouseVisible = True
+393.1966 	EXP 	moose: autoDraw = True
+393.7640 	DATA 	Mouse: Left button down, pos=(715,453)
+393.8643 	EXP 	Sound  started
+394.4977 	DATA 	Mouse:  Left button up, pos=(715,453)
+394.7217 	EXP 	moose: autoDraw = False
+396.1912 	DATA 	Mouse: Left button down, pos=(1160,448)
+396.2094 	EXP 	unnamed TextStim: pos = (9.777777777777779, 0)
+396.2094 	EXP 	unnamed TextStim: opacity = 1.0
+396.3057 	DATA 	Mouse:  Left button up, pos=(1160,448)
+396.7016 	EXP 	New trial (rep=0, index=19): OrderedDict([('sound_delay', 0.05)])
+396.7019 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+396.7026 	EXP 	New trial (rep=0, index=0): None
+396.7032 	EXP 	window1: mouseVisible = False
+396.7040 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+396.7047 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+396.7161 	EXP 	unnamed TextStim: opacity = 0.0
+397.2145 	EXP 	window1: mouseVisible = True
+397.2308 	EXP 	moose: autoDraw = True
+397.8315 	DATA 	Mouse: Left button down, pos=(653,455)
+397.8819 	EXP 	Sound  started
+398.8639 	DATA 	Mouse:  Left button up, pos=(653,455)
+399.0886 	EXP 	moose: autoDraw = False
+400.2012 	DATA 	Mouse: Left button down, pos=(1166,449)
+400.2143 	EXP 	unnamed TextStim: pos = (9.911111111111111, 0)
+400.2143 	EXP 	unnamed TextStim: opacity = 1.0
+400.4011 	DATA 	Mouse:  Left button up, pos=(1166,449)
+400.7192 	EXP 	New trial (rep=0, index=20): OrderedDict([('sound_delay', 0.25)])
+400.7195 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+400.7202 	EXP 	New trial (rep=0, index=0): None
+400.7208 	EXP 	window1: mouseVisible = False
+400.7216 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+400.7222 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+400.7336 	EXP 	unnamed TextStim: opacity = 0.0
+401.2359 	EXP 	window1: mouseVisible = True
+401.2656 	EXP 	moose: autoDraw = True
+402.1490 	DATA 	Mouse: Left button down, pos=(655,448)
+402.3313 	DATA 	Mouse:  Left button up, pos=(655,448)
+402.4003 	EXP 	Sound  started
+403.3064 	EXP 	moose: autoDraw = False
+405.3516 	DATA 	Mouse: Left button down, pos=(1168,448)
+405.3652 	EXP 	unnamed TextStim: pos = (9.955555555555556, 0)
+405.3652 	EXP 	unnamed TextStim: opacity = 1.0
+405.4853 	DATA 	Mouse:  Left button up, pos=(1168,448)
+405.8772 	EXP 	New trial (rep=0, index=21): OrderedDict([('sound_delay', 1.25)])
+405.8775 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+405.8782 	EXP 	New trial (rep=0, index=0): None
+405.8788 	EXP 	window1: mouseVisible = False
+405.8796 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+405.8803 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+405.8891 	EXP 	unnamed TextStim: opacity = 0.0
+406.3829 	EXP 	window1: mouseVisible = True
+406.3992 	EXP 	moose: autoDraw = True
+407.1667 	DATA 	Mouse: Left button down, pos=(662,452)
+408.2194 	DATA 	Mouse:  Left button up, pos=(663,451)
+408.4183 	EXP 	Sound  started
+409.2796 	EXP 	moose: autoDraw = False
+411.1362 	DATA 	Mouse: Left button down, pos=(283,448)
+411.1499 	EXP 	unnamed TextStim: pos = (-9.71111111111111, 0)
+411.1499 	EXP 	unnamed TextStim: opacity = 1.0
+411.2863 	DATA 	Mouse:  Left button up, pos=(283,448)
+411.6545 	EXP 	New trial (rep=0, index=22): OrderedDict([('sound_delay', 0.2)])
+411.6548 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+411.6554 	EXP 	New trial (rep=0, index=0): None
+411.6560 	EXP 	window1: mouseVisible = False
+411.6568 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+411.6574 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+411.6695 	EXP 	unnamed TextStim: opacity = 0.0
+412.1675 	EXP 	window1: mouseVisible = True
+412.1837 	EXP 	moose: autoDraw = True
+412.8178 	DATA 	Mouse: Left button down, pos=(569,379)
+412.8337 	EXP 	unnamed TextStim: text = 'Veuillez cliquer sur le nez.'
+412.8337 	EXP 	moose: autoDraw = False
+413.6354 	DATA 	Mouse:  Left button up, pos=(723,372)
+413.8358 	EXP 	New trial (rep=1, index=0): None
+413.8365 	EXP 	window1: mouseVisible = False
+413.8373 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+413.8379 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+413.8591 	EXP 	moose: autoDraw = False
+414.3512 	EXP 	window1: mouseVisible = True
+414.3674 	EXP 	moose: autoDraw = True
+414.9181 	DATA 	Mouse: Left button down, pos=(700,457)
+415.0513 	DATA 	Mouse:  Left button up, pos=(700,457)
+415.1185 	EXP 	Sound  started
+416.2533 	EXP 	moose: autoDraw = False
+417.8709 	DATA 	Mouse: Left button down, pos=(1150,450)
+417.8847 	EXP 	unnamed TextStim: pos = (9.555555555555555, 0)
+417.8847 	EXP 	unnamed TextStim: opacity = 1.0
+417.9876 	DATA 	Mouse:  Left button up, pos=(1150,450)
+418.3943 	EXP 	New trial (rep=0, index=23): OrderedDict([('sound_delay', 0.15)])
+418.3946 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+418.3953 	EXP 	New trial (rep=0, index=0): None
+418.3960 	EXP 	window1: mouseVisible = False
+418.3968 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+418.3975 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+418.4154 	EXP 	unnamed TextStim: opacity = 0.0
+418.9021 	EXP 	window1: mouseVisible = True
+418.9183 	EXP 	moose: autoDraw = True
+419.6024 	DATA 	Mouse: Left button down, pos=(750,433)
+419.7473 	DATA 	Mouse:  Left button up, pos=(750,433)
+419.7526 	EXP 	Sound  started
+420.9305 	EXP 	moose: autoDraw = False
+422.5554 	DATA 	Mouse: Left button down, pos=(1161,449)
+422.5686 	EXP 	unnamed TextStim: pos = (9.8, 0)
+422.5686 	EXP 	unnamed TextStim: opacity = 1.0
+422.6720 	DATA 	Mouse:  Left button up, pos=(1161,449)
+423.0732 	EXP 	window1: mouseVisible = False
+423.0858 	EXP 	unnamed TextStim: opacity = 0.0
+423.0858 	EXP 	pause_text: autoDraw = True
+538.0234 	EXP 	Sound sound_1 started
+538.0280 	EXP 	pause_text: autoDraw = False
+538.0280 	EXP 	unnamed TextStim: text = '5'
+539.0480 	EXP 	unnamed TextStim: text = '4'
+540.0666 	EXP 	unnamed TextStim: text = '3'
+541.0843 	EXP 	unnamed TextStim: text = '2'
+542.1016 	EXP 	unnamed TextStim: text = '1'
+543.1030 	EXP 	Sound sound_1 reached end of file
+543.1033 	EXP 	New trial (rep=2, index=0): None
+543.1207 	EXP 	Instruction_test: autoDraw = True
+544.9119 	DEBUG 	Read csv file with pandas: delay_test_block_unadapt.csv
+544.9130 	DEBUG 	Clearing unnamed columns from delay_test_block_unadapt.csv
+544.9135 	EXP 	Imported delay_test_block_unadapt.csv as conditions, 24 conditions, 1 params
+544.9138 	EXP 	Created sequence: random, trialTypes=24, nReps=1, seed=None
+544.9140 	EXP 	New trial (rep=0, index=0): OrderedDict([('sound_delay', 0.0)])
+544.9142 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+544.9149 	EXP 	New trial (rep=0, index=0): None
+544.9149 	EXP 	window1: mouseVisible = False
+544.9157 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+544.9163 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+544.9180 	DATA 	Keypress: space
+544.9288 	EXP 	Instruction_test: autoDraw = False
+545.4269 	EXP 	window1: mouseVisible = True
+545.4430 	EXP 	moose: autoDraw = True
+546.0274 	DATA 	Mouse: Left button down, pos=(706,453)
+546.0280 	EXP 	Sound  started
+546.7133 	DATA 	Mouse:  Left button up, pos=(707,453)
+546.9248 	EXP 	moose: autoDraw = False
+548.1871 	DATA 	Mouse: Left button down, pos=(1164,453)
+548.1980 	EXP 	unnamed TextStim: pos = (9.866666666666667, 0)
+548.1980 	EXP 	unnamed TextStim: opacity = 1.0
+548.2796 	DATA 	Mouse:  Left button up, pos=(1164,453)
+548.6975 	EXP 	New trial (rep=0, index=1): OrderedDict([('sound_delay', 0.05)])
+548.6977 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+548.6984 	EXP 	New trial (rep=0, index=0): None
+548.6990 	EXP 	window1: mouseVisible = False
+548.6997 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+548.7003 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+548.7117 	EXP 	unnamed TextStim: opacity = 0.0
+549.2109 	EXP 	window1: mouseVisible = True
+549.2271 	EXP 	moose: autoDraw = True
+549.6947 	DATA 	Mouse: Left button down, pos=(730,439)
+549.7450 	EXP 	Sound  started
+550.6840 	DATA 	Mouse:  Left button up, pos=(730,439)
+550.9026 	EXP 	moose: autoDraw = False
+552.1303 	DATA 	Mouse: Left button down, pos=(1154,450)
+552.1439 	EXP 	unnamed TextStim: pos = (9.644444444444444, 0)
+552.1439 	EXP 	unnamed TextStim: opacity = 1.0
+552.2807 	DATA 	Mouse:  Left button up, pos=(1154,449)
+552.6558 	EXP 	New trial (rep=0, index=2): OrderedDict([('sound_delay', -1.0)])
+552.6561 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+552.6568 	EXP 	New trial (rep=0, index=0): None
+552.6575 	EXP 	window1: mouseVisible = False
+552.6583 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+552.6589 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+552.6768 	EXP 	unnamed TextStim: opacity = 0.0
+553.1616 	EXP 	window1: mouseVisible = True
+553.1778 	EXP 	moose: autoDraw = True
+553.5285 	EXP 	Sound  started
+553.6594 	DATA 	Mouse: Left button down, pos=(659,440)
+554.5035 	DATA 	Mouse:  Left button up, pos=(659,440)
+554.5123 	EXP 	moose: autoDraw = False
+556.0144 	DATA 	Mouse: Left button down, pos=(283,450)
+556.0281 	EXP 	unnamed TextStim: pos = (-9.71111111111111, 0)
+556.0281 	EXP 	unnamed TextStim: opacity = 1.0
+556.1647 	DATA 	Mouse:  Left button up, pos=(283,450)
+556.5326 	EXP 	New trial (rep=0, index=3): OrderedDict([('sound_delay', 0.15)])
+556.5328 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+556.5336 	EXP 	New trial (rep=0, index=0): None
+556.5343 	EXP 	window1: mouseVisible = False
+556.5350 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+556.5357 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+556.5608 	EXP 	unnamed TextStim: opacity = 0.0
+557.0459 	EXP 	window1: mouseVisible = True
+557.0619 	EXP 	moose: autoDraw = True
+557.5797 	DATA 	Mouse: Left button down, pos=(689,453)
+557.7456 	EXP 	Sound  started
+558.6436 	DATA 	Mouse:  Left button up, pos=(689,453)
+558.8542 	EXP 	moose: autoDraw = False
+560.3487 	DATA 	Mouse: Left button down, pos=(1142,450)
+560.3622 	EXP 	unnamed TextStim: pos = (9.377777777777778, 0)
+560.3622 	EXP 	unnamed TextStim: opacity = 1.0
+560.5156 	DATA 	Mouse:  Left button up, pos=(1142,450)
+560.8667 	EXP 	New trial (rep=0, index=4): OrderedDict([('sound_delay', 0.25)])
+560.8670 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+560.8677 	EXP 	New trial (rep=0, index=0): None
+560.8683 	EXP 	window1: mouseVisible = False
+560.8692 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+560.8698 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+560.8812 	EXP 	unnamed TextStim: opacity = 0.0
+561.3799 	EXP 	window1: mouseVisible = True
+561.3961 	EXP 	moose: autoDraw = True
+561.8968 	DATA 	Mouse: Left button down, pos=(689,420)
+562.0756 	DATA 	Mouse:  Left button up, pos=(689,420)
+562.1481 	EXP 	Sound  started
+563.0179 	EXP 	moose: autoDraw = False
+564.1994 	DATA 	Mouse: Left button down, pos=(1149,447)
+564.2130 	EXP 	unnamed TextStim: pos = (9.533333333333333, 0)
+564.2130 	EXP 	unnamed TextStim: opacity = 1.0
+564.3496 	DATA 	Mouse:  Left button up, pos=(1151,446)
+564.7252 	EXP 	New trial (rep=0, index=5): OrderedDict([('sound_delay', 0.15)])
+564.7255 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+564.7261 	EXP 	New trial (rep=0, index=0): None
+564.7268 	EXP 	window1: mouseVisible = False
+564.7276 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+564.7282 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+564.7506 	EXP 	unnamed TextStim: opacity = 0.0
+565.2307 	EXP 	window1: mouseVisible = True
+565.2469 	EXP 	moose: autoDraw = True
+565.8810 	DATA 	Mouse: Left button down, pos=(678,463)
+566.0314 	EXP 	Sound  started
+566.8374 	DATA 	Mouse:  Left button up, pos=(678,463)
+567.0559 	EXP 	moose: autoDraw = False
+568.6504 	DATA 	Mouse: Left button down, pos=(1101,451)
+568.6639 	EXP 	unnamed TextStim: pos = (8.466666666666667, 0)
+568.6639 	EXP 	unnamed TextStim: opacity = 1.0
+568.8338 	DATA 	Mouse:  Left button up, pos=(1101,451)
+569.1749 	EXP 	New trial (rep=0, index=6): OrderedDict([('sound_delay', 0.25)])
+569.1752 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+569.1759 	EXP 	New trial (rep=0, index=0): None
+569.1767 	EXP 	window1: mouseVisible = False
+569.1776 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+569.1783 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+569.1963 	EXP 	unnamed TextStim: opacity = 0.0
+569.6817 	EXP 	window1: mouseVisible = True
+569.6978 	EXP 	moose: autoDraw = True
+570.3152 	DATA 	Mouse: Left button down, pos=(689,441)
+570.5314 	DATA 	Mouse:  Left button up, pos=(689,441)
+570.5663 	EXP 	Sound  started
+571.5201 	EXP 	moose: autoDraw = False
+572.6345 	DATA 	Mouse: Left button down, pos=(1165,447)
+572.6481 	EXP 	unnamed TextStim: pos = (9.88888888888889, 0)
+572.6481 	EXP 	unnamed TextStim: opacity = 1.0
+572.7680 	DATA 	Mouse:  Left button up, pos=(1165,447)
+573.1600 	EXP 	New trial (rep=0, index=7): OrderedDict([('sound_delay', 0.2)])
+573.1602 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+573.1609 	EXP 	New trial (rep=0, index=0): None
+573.1615 	EXP 	window1: mouseVisible = False
+573.1622 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+573.1631 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+573.1859 	EXP 	unnamed TextStim: opacity = 0.0
+573.6657 	EXP 	window1: mouseVisible = True
+573.6819 	EXP 	moose: autoDraw = True
+574.2660 	DATA 	Mouse: Left button down, pos=(742,443)
+574.4112 	DATA 	Mouse:  Left button up, pos=(743,443)
+574.4666 	EXP 	Sound  started
+575.5958 	EXP 	moose: autoDraw = False
+577.5018 	DATA 	Mouse: Left button down, pos=(1166,449)
+577.5156 	EXP 	unnamed TextStim: pos = (9.911111111111111, 0)
+577.5156 	EXP 	unnamed TextStim: opacity = 1.0
+577.6354 	DATA 	Mouse:  Left button up, pos=(1166,448)
+578.0201 	EXP 	New trial (rep=0, index=8): OrderedDict([('sound_delay', 0.2)])
+578.0203 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+578.0211 	EXP 	New trial (rep=0, index=0): None
+578.0217 	EXP 	window1: mouseVisible = False
+578.0225 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+578.0231 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+578.0345 	EXP 	unnamed TextStim: opacity = 0.0
+578.5332 	EXP 	window1: mouseVisible = True
+578.5495 	EXP 	moose: autoDraw = True
+579.1835 	DATA 	Mouse: Left button down, pos=(707,458)
+579.2833 	DATA 	Mouse:  Left button up, pos=(708,457)
+579.3838 	EXP 	Sound  started
+580.2552 	EXP 	moose: autoDraw = False
+581.8680 	DATA 	Mouse: Left button down, pos=(1171,449)
+581.9865 	DATA 	Mouse:  Left button up, pos=(1171,449)
+582.3528 	DATA 	Mouse: Left button down, pos=(1167,448)
+582.3666 	EXP 	unnamed TextStim: pos = (9.933333333333334, 0)
+582.3666 	EXP 	unnamed TextStim: opacity = 1.0
+582.4864 	DATA 	Mouse:  Left button up, pos=(1167,448)
+582.8707 	EXP 	New trial (rep=0, index=9): OrderedDict([('sound_delay', 0.15)])
+582.8709 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+582.8716 	EXP 	New trial (rep=0, index=0): None
+582.8723 	EXP 	window1: mouseVisible = False
+582.8730 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+582.8736 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+582.8854 	EXP 	unnamed TextStim: opacity = 0.0
+583.3804 	EXP 	window1: mouseVisible = True
+583.4048 	EXP 	moose: autoDraw = True
+584.1179 	DATA 	Mouse: Left button down, pos=(720,453)
+584.2354 	DATA 	Mouse:  Left button up, pos=(720,453)
+584.2682 	EXP 	Sound  started
+585.3176 	EXP 	moose: autoDraw = False
+587.3039 	DATA 	Mouse: Left button down, pos=(1161,451)
+587.3175 	EXP 	unnamed TextStim: pos = (9.8, 0)
+587.3175 	EXP 	unnamed TextStim: opacity = 1.0
+587.4872 	DATA 	Mouse:  Left button up, pos=(1161,451)
+587.8125 	EXP 	New trial (rep=0, index=10): OrderedDict([('sound_delay', -1.0)])
+587.8128 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+587.8134 	EXP 	New trial (rep=0, index=0): None
+587.8141 	EXP 	window1: mouseVisible = False
+587.8149 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+587.8155 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+587.8338 	EXP 	unnamed TextStim: opacity = 0.0
+588.3185 	EXP 	window1: mouseVisible = True
+588.3347 	EXP 	moose: autoDraw = True
+588.3355 	EXP 	Sound  started
+589.3194 	EXP 	moose: autoDraw = False
+590.5879 	DATA 	Mouse: Left button down, pos=(277,447)
+590.6016 	EXP 	unnamed TextStim: pos = (-9.844444444444445, 0)
+590.6016 	EXP 	unnamed TextStim: opacity = 1.0
+590.7716 	DATA 	Mouse:  Left button up, pos=(277,447)
+591.1056 	EXP 	New trial (rep=0, index=11): OrderedDict([('sound_delay', 1.25)])
+591.1059 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+591.1065 	EXP 	New trial (rep=0, index=0): None
+591.1071 	EXP 	window1: mouseVisible = False
+591.1079 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+591.1085 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+591.1202 	EXP 	unnamed TextStim: opacity = 0.0
+591.6192 	EXP 	window1: mouseVisible = True
+591.6354 	EXP 	moose: autoDraw = True
+592.2032 	DATA 	Mouse: Left button down, pos=(664,440)
+593.2554 	DATA 	Mouse:  Left button up, pos=(664,440)
+593.4546 	EXP 	Sound  started
+594.4269 	EXP 	moose: autoDraw = False
+595.7056 	DATA 	Mouse: Left button down, pos=(1164,450)
+595.7194 	EXP 	unnamed TextStim: pos = (9.866666666666667, 0)
+595.7194 	EXP 	unnamed TextStim: opacity = 1.0
+595.8057 	DATA 	Mouse:  Left button up, pos=(1164,450)
+596.2233 	EXP 	New trial (rep=0, index=12): OrderedDict([('sound_delay', 0.0)])
+596.2235 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+596.2242 	EXP 	New trial (rep=0, index=0): None
+596.2249 	EXP 	window1: mouseVisible = False
+596.2256 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+596.2263 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+596.2377 	EXP 	unnamed TextStim: opacity = 0.0
+596.7369 	EXP 	window1: mouseVisible = True
+596.7531 	EXP 	moose: autoDraw = True
+597.5539 	DATA 	Mouse: Left button down, pos=(664,433)
+597.5542 	EXP 	Sound  started
+598.1771 	DATA 	Mouse:  Left button up, pos=(664,433)
+598.3954 	EXP 	moose: autoDraw = False
+600.4230 	DATA 	Mouse: Left button down, pos=(725,447)
+600.4367 	EXP 	unnamed TextStim: pos = (0.1111111111111111, 0)
+600.4367 	EXP 	unnamed TextStim: opacity = 1.0
+600.6235 	DATA 	Mouse:  Left button up, pos=(725,447)
+600.9412 	EXP 	New trial (rep=0, index=13): OrderedDict([('sound_delay', -1.0)])
+600.9415 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+600.9421 	EXP 	New trial (rep=0, index=0): None
+600.9427 	EXP 	window1: mouseVisible = False
+600.9435 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+600.9441 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+600.9559 	EXP 	unnamed TextStim: opacity = 0.0
+601.4525 	EXP 	window1: mouseVisible = True
+601.4751 	EXP 	moose: autoDraw = True
+601.4755 	EXP 	Sound  started
+602.3994 	EXP 	moose: autoDraw = False
+603.8950 	DATA 	Mouse: Left button down, pos=(280,446)
+603.9127 	EXP 	unnamed TextStim: pos = (-9.777777777777779, 0)
+603.9127 	EXP 	unnamed TextStim: opacity = 1.0
+604.0444 	DATA 	Mouse:  Left button up, pos=(280,446)
+604.4082 	EXP 	New trial (rep=0, index=14): OrderedDict([('sound_delay', 0.1)])
+604.4085 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+604.4091 	EXP 	New trial (rep=0, index=0): None
+604.4097 	EXP 	window1: mouseVisible = False
+604.4105 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+604.4111 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+604.4226 	EXP 	unnamed TextStim: opacity = 0.0
+604.9219 	EXP 	window1: mouseVisible = True
+604.9381 	EXP 	moose: autoDraw = True
+605.7056 	DATA 	Mouse: Left button down, pos=(640,473)
+605.8062 	EXP 	Sound  started
+606.5563 	DATA 	Mouse:  Left button up, pos=(647,474)
+606.7759 	EXP 	moose: autoDraw = False
+608.1249 	DATA 	Mouse: Left button down, pos=(1163,451)
+608.1382 	EXP 	unnamed TextStim: pos = (9.844444444444445, 0)
+608.1382 	EXP 	unnamed TextStim: opacity = 1.0
+608.2581 	DATA 	Mouse:  Left button up, pos=(1163,451)
+608.6426 	EXP 	New trial (rep=0, index=15): OrderedDict([('sound_delay', 0.1)])
+608.6429 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+608.6435 	EXP 	New trial (rep=0, index=0): None
+608.6442 	EXP 	window1: mouseVisible = False
+608.6449 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+608.6455 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+608.6569 	EXP 	unnamed TextStim: opacity = 0.0
+609.1559 	EXP 	window1: mouseVisible = True
+609.1721 	EXP 	moose: autoDraw = True
+609.8229 	DATA 	Mouse: Left button down, pos=(759,449)
+609.9233 	EXP 	Sound  started
+610.6152 	DATA 	Mouse:  Left button up, pos=(759,449)
+610.8261 	EXP 	moose: autoDraw = False
+611.8252 	DATA 	Mouse: Left button down, pos=(1165,448)
+611.8388 	EXP 	unnamed TextStim: pos = (9.88888888888889, 0)
+611.8388 	EXP 	unnamed TextStim: opacity = 1.0
+611.9086 	DATA 	Mouse:  Left button up, pos=(1165,448)
+612.3432 	EXP 	New trial (rep=0, index=16): OrderedDict([('sound_delay', 0.05)])
+612.3435 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+612.3441 	EXP 	New trial (rep=0, index=0): None
+612.3447 	EXP 	window1: mouseVisible = False
+612.3455 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+612.3461 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+612.3578 	EXP 	unnamed TextStim: opacity = 0.0
+612.8568 	EXP 	window1: mouseVisible = True
+612.8729 	EXP 	moose: autoDraw = True
+613.4402 	DATA 	Mouse: Left button down, pos=(719,431)
+613.4905 	EXP 	Sound  started
+614.3300 	DATA 	Mouse:  Left button up, pos=(720,431)
+614.5483 	EXP 	moose: autoDraw = False
+616.0097 	DATA 	Mouse: Left button down, pos=(1163,448)
+616.0232 	EXP 	unnamed TextStim: pos = (9.844444444444445, 0)
+616.0232 	EXP 	unnamed TextStim: opacity = 1.0
+616.1597 	DATA 	Mouse:  Left button up, pos=(1163,448)
+616.5259 	EXP 	New trial (rep=0, index=17): OrderedDict([('sound_delay', 0.25)])
+616.5262 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+616.5268 	EXP 	New trial (rep=0, index=0): None
+616.5275 	EXP 	window1: mouseVisible = False
+616.5283 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+616.5290 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+616.5531 	EXP 	unnamed TextStim: opacity = 0.0
+617.0410 	EXP 	window1: mouseVisible = True
+617.0570 	EXP 	moose: autoDraw = True
+617.7077 	DATA 	Mouse: Left button down, pos=(725,443)
+617.8512 	DATA 	Mouse:  Left button up, pos=(726,443)
+617.9590 	EXP 	Sound  started
+619.1322 	EXP 	moose: autoDraw = False
+620.6437 	DATA 	Mouse: Left button down, pos=(1160,452)
+620.6575 	EXP 	unnamed TextStim: pos = (9.777777777777779, 0)
+620.6575 	EXP 	unnamed TextStim: opacity = 1.0
+620.7440 	DATA 	Mouse:  Left button up, pos=(1160,452)
+621.1617 	EXP 	New trial (rep=0, index=18): OrderedDict([('sound_delay', 1.25)])
+621.1620 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+621.1626 	EXP 	New trial (rep=0, index=0): None
+621.1633 	EXP 	window1: mouseVisible = False
+621.1640 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+621.1647 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+621.1763 	EXP 	unnamed TextStim: opacity = 0.0
+621.6754 	EXP 	window1: mouseVisible = True
+621.6912 	EXP 	moose: autoDraw = True
+622.4420 	DATA 	Mouse: Left button down, pos=(714,430)
+623.4933 	DATA 	Mouse:  Left button up, pos=(714,430)
+623.6926 	EXP 	Sound  started
+624.7327 	EXP 	moose: autoDraw = False
+626.2287 	DATA 	Mouse: Left button down, pos=(276,447)
+626.2417 	EXP 	unnamed TextStim: pos = (-9.866666666666667, 0)
+626.2417 	EXP 	unnamed TextStim: opacity = 1.0
+626.3949 	DATA 	Mouse:  Left button up, pos=(276,447)
+626.7464 	EXP 	New trial (rep=0, index=19): OrderedDict([('sound_delay', 0.0)])
+626.7467 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+626.7475 	EXP 	New trial (rep=0, index=0): None
+626.7481 	EXP 	window1: mouseVisible = False
+626.7489 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+626.7496 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+626.7610 	EXP 	unnamed TextStim: opacity = 0.0
+627.2594 	EXP 	window1: mouseVisible = True
+627.2757 	EXP 	moose: autoDraw = True
+627.9264 	DATA 	Mouse: Left button down, pos=(684,446)
+627.9266 	EXP 	Sound  started
+628.8091 	DATA 	Mouse:  Left button up, pos=(684,446)
+629.0328 	EXP 	moose: autoDraw = False
+630.3789 	DATA 	Mouse: Left button down, pos=(721,447)
+630.3926 	EXP 	unnamed TextStim: pos = (0.022222222222222223, 0)
+630.3926 	EXP 	unnamed TextStim: opacity = 1.0
+630.5375 	DATA 	Mouse:  Left button up, pos=(722,447)
+630.8966 	EXP 	New trial (rep=0, index=20): OrderedDict([('sound_delay', 0.1)])
+630.8969 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+630.8975 	EXP 	New trial (rep=0, index=0): None
+630.8981 	EXP 	window1: mouseVisible = False
+630.8989 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+630.8995 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+630.9112 	EXP 	unnamed TextStim: opacity = 0.0
+631.4103 	EXP 	window1: mouseVisible = True
+631.4265 	EXP 	moose: autoDraw = True
+632.0605 	DATA 	Mouse: Left button down, pos=(712,429)
+632.1609 	EXP 	Sound  started
+632.9008 	DATA 	Mouse:  Left button up, pos=(712,429)
+633.1189 	EXP 	moose: autoDraw = False
+636.2303 	DATA 	Mouse: Left button down, pos=(1172,450)
+636.3799 	DATA 	Mouse:  Left button up, pos=(1172,450)
+636.7572 	DATA 	Mouse: Left button down, pos=(1167,448)
+636.7668 	EXP 	unnamed TextStim: pos = (9.933333333333334, 0)
+636.7668 	EXP 	unnamed TextStim: opacity = 1.0
+636.8969 	DATA 	Mouse:  Left button up, pos=(1167,448)
+637.2646 	EXP 	New trial (rep=0, index=21): OrderedDict([('sound_delay', 0.05)])
+637.2649 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+637.2655 	EXP 	New trial (rep=0, index=0): None
+637.2661 	EXP 	window1: mouseVisible = False
+637.2669 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+637.2675 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+637.2793 	EXP 	unnamed TextStim: opacity = 0.0
+637.7782 	EXP 	window1: mouseVisible = True
+637.7944 	EXP 	moose: autoDraw = True
+638.3619 	DATA 	Mouse: Left button down, pos=(692,449)
+638.4122 	EXP 	Sound  started
+639.2573 	DATA 	Mouse:  Left button up, pos=(692,449)
+639.4769 	EXP 	moose: autoDraw = False
+640.9644 	DATA 	Mouse: Left button down, pos=(1158,451)
+640.9781 	EXP 	unnamed TextStim: pos = (9.733333333333333, 0)
+640.9781 	EXP 	unnamed TextStim: opacity = 1.0
+641.0979 	DATA 	Mouse:  Left button up, pos=(1158,451)
+641.4822 	EXP 	New trial (rep=0, index=22): OrderedDict([('sound_delay', 1.25)])
+641.4825 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+641.4833 	EXP 	New trial (rep=0, index=0): None
+641.4839 	EXP 	window1: mouseVisible = False
+641.4847 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+641.4853 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+641.4971 	EXP 	unnamed TextStim: opacity = 0.0
+641.9956 	EXP 	window1: mouseVisible = True
+642.0118 	EXP 	moose: autoDraw = True
+642.6792 	DATA 	Mouse: Left button down, pos=(780,444)
+643.7314 	DATA 	Mouse:  Left button up, pos=(780,444)
+643.9306 	EXP 	Sound  started
+645.0836 	EXP 	moose: autoDraw = False
+646.4987 	DATA 	Mouse: Left button down, pos=(270,451)
+646.5123 	EXP 	unnamed TextStim: pos = (-10.0, 0)
+646.5123 	EXP 	unnamed TextStim: opacity = 1.0
+646.6898 	DATA 	Mouse:  Left button up, pos=(270,451)
+647.0166 	EXP 	New trial (rep=0, index=23): OrderedDict([('sound_delay', 0.2)])
+647.0169 	EXP 	Created sequence: sequential, trialTypes=1, nReps=99, seed=None
+647.0175 	EXP 	New trial (rep=0, index=0): None
+647.0181 	EXP 	window1: mouseVisible = False
+647.0190 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[-1.6,  0. ],
+       [ 1.6,  0. ]]), win=Window(...), windingRule=None)
+647.0196 	EXP 	Created unnamed Line = Line(__class__=<class 'psychopy.visual.line.Line'>, autoDraw=False, autoLog=True, closeShape=False, contrast=1.0, depth=0, fillColor=None, fillColorSpace=None, interpolate=True, lineColor='white', lineColorSpace='named', lineWidth=5, name='unnamed Line', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='cm', vertices=array([[ 0. , -1.6],
+       [ 0. ,  1.6]]), win=Window(...), windingRule=None)
+647.0314 	EXP 	unnamed TextStim: opacity = 0.0
+647.5301 	EXP 	window1: mouseVisible = True
+647.5463 	EXP 	moose: autoDraw = True
+648.1638 	DATA 	Mouse: Left button down, pos=(718,448)
+648.3153 	DATA 	Mouse:  Left button up, pos=(718,448)
+648.3641 	EXP 	Sound  started
+649.2193 	EXP 	moose: autoDraw = False
+650.9331 	DATA 	Mouse: Left button down, pos=(1165,444)
+650.9465 	EXP 	unnamed TextStim: pos = (9.88888888888889, 0)
+650.9465 	EXP 	unnamed TextStim: opacity = 1.0
+651.0999 	DATA 	Mouse:  Left button up, pos=(1165,445)
+651.4513 	EXP 	window1: mouseVisible = False
+651.4636 	EXP 	unnamed TextStim: opacity = 0.0
+651.4636 	EXP 	pause_text: autoDraw = True
+656.4799 	EXP 	Sound sound_1 started
+656.4847 	EXP 	pause_text: autoDraw = False
+656.4847 	EXP 	unnamed TextStim: text = '5'
+657.5034 	EXP 	unnamed TextStim: text = '4'
+658.5229 	EXP 	unnamed TextStim: text = '3'
+659.5408 	EXP 	unnamed TextStim: text = '2'
+660.5579 	EXP 	unnamed TextStim: text = '1'
+661.5593 	EXP 	Sound sound_1 reached end of file
+661.5681 	INFO 	saved data to '/Users/etudiant.e.s/Documents/Stim_adapt_SoA/script/data/P05_moose_unadapt_2025_Oct_27_0944_raw.csv'
+661.6039 	EXP 	GoodBye: autoDraw = True
+1031.1393 	DATA 	Keypress: escape
+1031.9511 	EXP 	window1: mouseVisible = True
+1031.9512 	DEBUG 	Saving data for moose_unadapt ExperimentHandler
+1031.9560 	INFO 	saved data to /Users/etudiant.e.s/Documents/Stim_adapt_SoA/script/data/P05_moose_unadapt_2025_Oct_27_0944.psydat
+1031.9646 	INFO 	saved data to '/Users/etudiant.e.s/Documents/Stim_adapt_SoA/script/data/P05_moose_unadapt_2025_Oct_27_0944.csv'
