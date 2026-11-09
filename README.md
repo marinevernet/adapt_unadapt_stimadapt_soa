@@ -80,8 +80,15 @@ The paths are relative to this folder, so the scripts can be run from anywhere, 
 Haering, C., & Kiesel, A. (2015). Was it me when it happened too early? Experience of delayed effects shapes
 sense of agency. *Cognition*, 136, 38–42.
 
+## How to cite
+
+If you use these data or scripts, please cite the associated article:
+
+> Auvray, A., Thiboud, R., & Vernet, M. (in preparation). *[Title of the article]*. *[Journal]*. https://doi.org/[DOI]
+
 ## License
 
 - Code (`analysis/`, `psychopy/`): MIT License (see `LICENSE`).
-- Data, results and figures (`DATA/`, `results/`, `figures/`): CC0 1.0, public domain dedication (see `LICENSE-DATA`).
-  Although not legally required, please cite the associated article when you use them.
+- Data, results and figures (`DATA/`, `results/`, `figures/`): Creative Commons Attribution 4.0 International
+  (CC BY 4.0, see `LICENSE-DATA`). You may reuse them for any purpose, provided that you cite the associated
+  article (see "How to cite").
