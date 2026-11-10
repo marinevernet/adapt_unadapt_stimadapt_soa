@@ -26,11 +26,13 @@ DATA/
   adapt_unadapt/
     adapt250/        Experiment 1: participants P01 to P20 (one Adapt and one Unadapt session each)
     immediate/       Additional pilot (participants I01 to I10, adaptation to a 0-ms delay): incomplete, not reported
+    demographics.csv Age, sex and handedness (self-reported) of the participants of Experiment 1 and of the pilot
   stim_adapt/
     s033 ... s056/   Experiment 2: one folder per participant
       session1/, session2/   Task data (file names start with the blinding code of the participant, e.g. F3, M10)
       questionnaires/        BIS, AMI, AABS (Adaptive Agency Beliefs Scale, created for this study) and Edinburgh Handedness Inventory
     blinding_participants.csv   Sensations before / after each session, and guess of the stimulation (blinding check)
+    demographics.csv            Age, sex and handedness of the participants
 psychopy/
   adapt_unadapt/     Experiment 1 task (PsychoPy 2020.2.10): moose_adapt, moose_unadapt (and moose_immediate, pilot)
   stim_adapt/        Experiment 2 task, with the control of the stimulator (starstim_controller.py)
