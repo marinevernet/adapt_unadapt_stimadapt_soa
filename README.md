@@ -5,7 +5,7 @@ Participants clicked on the nose of a moose, which then bellowed after a variabl
 they felt that their click had controlled the bellow (0–100%).
 
 - **Experiment 1** (N = 20): each participant did two sessions, an **Adapt** session (adaptation to a 250-ms
-  action–outcome delay, as in Haering & Kiesel, 2015) and an **Unadapt** session (test blocks only, all delays
+  action–outcome delay, as in Haering & Kiesel, 2015) and a **Baseline** session (test blocks only, all delays
   equally frequent). Question: does adaptation change the sensitivity of the SoA to delay?
 - **Experiment 2** (N = 24): each participant did the Adapt session twice, during cathodal high-definition
   transcranial direct current stimulation (HD-tDCS) of the right angular gyrus (**rAG**) or during **sham**
@@ -24,7 +24,7 @@ They were reviewed and edited with the help of **Claude Code** (Anthropic).
 ```
 DATA/
   adapt_unadapt/
-    adapt250/        Experiment 1: participants P01 to P20 (one Adapt and one Unadapt session each)
+    adapt250/        Experiment 1: participants P01 to P20 (one Adapt and one Baseline session each; the Baseline files are named "unadapt")
     immediate/       Additional pilot (participants I01 to I10, adaptation to a 0-ms delay): incomplete, not reported
     demographics.csv Age, sex and handedness (self-reported) of the participants of Experiment 1 and of the pilot
   stim_adapt/
@@ -34,7 +34,7 @@ DATA/
     blinding_participants.csv   Sensations before / after each session, and guess of the stimulation (blinding check)
     demographics.csv            Age, sex and handedness of the participants
 psychopy/
-  adapt_unadapt/     Experiment 1 task (PsychoPy 2020.2.10): moose_adapt, moose_unadapt (and moose_immediate, pilot)
+  adapt_unadapt/     Experiment 1 task (PsychoPy 2020.2.10): moose_adapt and moose_unadapt (Baseline session), and moose_immediate (pilot)
   stim_adapt/        Experiment 2 task, with the control of the stimulator (starstim_controller.py)
     blind/double_blind.csv   Stimulation protocol of each participant and session: A = rAG stimulation, B = sham
   questionnaire/     Questionnaires
@@ -56,15 +56,21 @@ linking these codes to the original identifiers are not shared.
 
 | Script | What it does | Main outputs |
 |---|---|---|
-| `analyze_adapt_unadapt_20261105.py` | Experiment 1: R and mean SoA per participant and session, Adapt vs Unadapt, session order, stability of the individual differences (ICC, split-half reliability) | `results/adapt_unadapt/`, Fig. 2 and Fig. 3 in `figures/adapt_unadapt/` |
-| `analyze_stim_adapt_20261105.py` | Experiment 2: R and mean SoA, rAG vs sham, session order, first session only, Bayes factor (prior from Experiment 1), stability of the individual differences | `results/stim_adapt/`, Fig. 5 and Fig. 6 in `figures/stim_adapt/` |
-| `analyze_blinding_20261106.py` | Experiment 2: blinding check (sensations, guess of the stimulation) | `results/blinding/`, Fig. 8 in `figures/blinding/` |
-| `analyse_questionnaire_20261105.py` | Experiment 2: questionnaire scores and their correlations with R and the mean SoA (sham session) | `results/questionnaire/`, Fig. 9 in `figures/questionnaire/` |
-| `analyze_movement_stim_adapt_20261107.py` | Experiment 2: cleaning of the mouse trajectories, movement parameters, rAG vs sham comparison of the movements, and (exploratory) links between the movements and the ratings | `results/movement/`, `figures/movement/` |
+| `analyze_adapt_unadapt_20261105.py` | Experiment 1: R and mean SoA per participant and session, Adapt vs Baseline, session order, stability of the individual differences (ICC, split-half reliability) | `results/adapt_unadapt/`, Fig. 2 and Fig. 3 in `figures/adapt_unadapt/` |
+| `analyze_stim_adapt_20261105.py` | Experiment 2: R, mean SoA and variability of the SoA (mean SD of the ratings at each delay), rAG vs sham, session order, first session only, Bayes factor (prior from Experiment 1), stability of the individual differences | `results/stim_adapt/`, Fig. 5 and Fig. 6 in `figures/stim_adapt/` |
+| `analyze_blinding_20261106.py` | Experiment 2: blinding check (sensations, guess of the stimulation) | `results/blinding/`, Fig. 7 in `figures/blinding/` |
+| `analyse_questionnaire_20261105.py` | Experiment 2: questionnaire scores and their correlations with R and the mean SoA (sham session) | `results/questionnaire/`, Fig. 8 in `figures/questionnaire/` |
+| `compare_experiments_20261124.py` | Comparison between the experiments (different participants): R in the rAG and sham sessions of Experiment 2 vs R in the Adapt and Baseline sessions of Experiment 1, with Bayes factors | `results/comparison_between_experiments/` |
+| `plot_glass_brain_coordinates_20261123.py` | Experiment 2: stimulation target and centres of the regions of interest of the SimNIBS simulation, on a glass brain (MNI152), and their distances | `figures/stimulation/` |
+
+**Outliers (Experiment 2).** Two participants met the outlier criteria of the preregistration (see `analysis/outlier_participants_stim_adapt.py`).
+The main analyses include all the participants; the scripts of Experiment 2 also report the results without the outliers.
+In the figures, the outliers are shown in gray.
 
 **Order.** Run `analyze_adapt_unadapt_20261105.py` before `analyze_stim_adapt_20261105.py` (the Bayes factor
 uses the results of Experiment 1), and `analyze_stim_adapt_20261105.py` before `analyse_questionnaire_20261105.py`
-(the correlations use the results of Experiment 2). The other scripts are independent.
+(the correlations use the results of Experiment 2). `compare_experiments_20261124.py` uses the results of both
+experiments, so run it last. The other scripts are independent.
 
 `analyze_stim_adapt_20261105.py` analyses R by default; set `comp_value = 'soa_mean'` at the top of the script to
 analyse the mean SoA (or `'slope'` for the slope of the ratings over delays).
@@ -76,6 +82,7 @@ The paths are relative to this folder, so the scripts can be run from anywhere, 
 - Tasks: PsychoPy 2020.2.10 (environment in `psychopy/*/py36.yml`).
 - Analyses: Python 3.12, with numpy 1.26.4, pandas 2.1.1, scipy 1.16.3, matplotlib 3.8.4, seaborn 0.13.2,
   pingouin 0.5.5 and statsmodels 0.15.0.
+- Glass brain figure: nilearn 0.10.0.
 
 ## Reference
 

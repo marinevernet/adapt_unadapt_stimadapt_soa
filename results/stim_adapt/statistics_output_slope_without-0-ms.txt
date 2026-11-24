@@ -147,33 +147,36 @@ Summary of results:
 47        s056           sham  session2  ...  2.582275e-05   50.709541  81.450893
 
 [48 rows x 7 columns]
-   participant first_session  ...  soa_mean_session2   delta_R
-0         s033          real  ...          92.155258 -0.373994
-1         s034          sham  ...          93.989087  0.231969
-2         s035          sham  ...          72.828869  0.069678
-3         s036          real  ...          72.229663 -0.015180
-4         s037          sham  ...          80.300595  0.305158
-5         s038          real  ...          50.420139  0.041282
-6         s039          real  ...          69.795635  0.012897
-7         s040          sham  ...          74.171131  0.092279
-8         s041          real  ...          94.562500  0.093169
-9         s042          sham  ...          97.912202  0.096594
-10        s043          real  ...          72.960317 -0.025580
-11        s044          sham  ...          97.588790  0.276011
-12        s045          sham  ...          83.519345 -0.004777
-13        s046          sham  ...          92.545139  0.087076
-14        s047          real  ...          99.622024  0.133707
-15        s048          real  ...          59.715774 -0.019344
-16        s049          real  ...          80.235119  0.246553
-17        s050          sham  ...          85.277282 -0.219835
-18        s051          sham  ...          92.367560  0.174033
-19        s052          real  ...          98.305060 -0.147292
-20        s053          sham  ...          83.929067 -0.060260
-21        s054          real  ...          95.611607  0.012238
-22        s055          sham  ...          88.420635 -0.152353
-23        s056          real  ...          81.450893  0.146333
+   participant first_session    R_real  ...  soa_mean_session2   delta_R  outlier
+0         s033          real -0.010316  ...          92.155258 -0.373994    False
+1         s034          sham  0.458148  ...          93.989087  0.231969    False
+2         s035          sham  0.670312  ...          72.828869  0.069678    False
+3         s036          real  0.532285  ...          72.229663 -0.015180    False
+4         s037          sham  0.725691  ...          80.300595  0.305158    False
+5         s038          real  0.708385  ...          50.420139  0.041282    False
+6         s039          real  0.677949  ...          69.795635  0.012897    False
+7         s040          sham  0.603962  ...          74.171131  0.092279    False
+8         s041          real  0.417549  ...          94.562500  0.093169    False
+9         s042          sham  0.488365  ...          97.912202  0.096594    False
+10        s043          real  0.647528  ...          72.960317 -0.025580    False
+11        s044          sham  0.411498  ...          97.588790  0.276011    False
+12        s045          sham  0.663205  ...          83.519345 -0.004777    False
+13        s046          sham  0.432916  ...          92.545139  0.087076    False
+14        s047          real  0.003938  ...          99.622024  0.133707    False
+15        s048          real  0.800430  ...          59.715774 -0.019344    False
+16        s049          real  0.510185  ...          80.235119  0.246553     True
+17        s050          sham  0.513078  ...          85.277282 -0.219835    False
+18        s051          sham  0.232483  ...          92.367560  0.174033    False
+19        s052          real  0.210795  ...          98.305060 -0.147292    False
+20        s053          sham  0.747263  ...          83.929067 -0.060260    False
+21        s054          real -0.021925  ...          95.611607  0.012238     True
+22        s055          sham  0.498728  ...          88.420635 -0.152353    False
+23        s056          real  0.555714  ...          81.450893  0.146333    False
 
-[24 rows x 17 columns]
+[24 rows x 18 columns]
+
+
+################################ MAIN ANALYSIS, ALL PARTICIPANTS: N=24 ################################
 
 *************** slope ***************
 
@@ -216,15 +219,73 @@ sham first (n=12): 110.17 +/- 99.45
 
 *************** Bayes factors (slope) ***************
 Difference real-sham: 22.9075; standard error: 12.1127
-SD of p(population value|theory), mean 0: 48.6277 (difference adapt-unadapt of Experiment 1)
+SD of p(population value|theory), mean 0: 48.6277 (difference Adapt - Baseline of Experiment 1)
 BF<1/3: evidence for no effect; BF>3: evidence for an effect; otherwise: inconclusive
-real > sham, half-normal: BF=2.52; RR=[37.443, 418.198]
-real < sham, half-normal: BF=0.08; RR=[11.184, 485.791]
-real different from sham, normal: BF=1.30; RR=[0.486, 215.421]
+real > sham, half-normal: BF=2.52; RR[1/3<B<3] = [37.443, >2]
+real < sham, half-normal: BF=0.08; RR[B<1/3] = [11.184, >2]
+real different from sham, normal: BF=1.30; RR[1/3<B<3] = [0.486, >2]
 
 + Correlation between real and sham (slope): r=0.90; p=3.27e-09
 
 + ICC(3,1) between the real and sham sessions (slope): ICC=0.90; 95% CI [0.77, 0.95]; F(23,23)=18.22; p=7.12e-10
+
++ Split-half reliability within each condition (slope)
+real: split-half r=0.90; Spearman-Brown corrected=0.95
+sham: split-half r=0.91; Spearman-Brown corrected=0.95
+
+
+################################ WITHOUT THE OUTLIERS: N=22, without s054, s049 ################################
+
+*************** slope ***************
+
+*************** 0 ms delay is NOT in the correlation ***************
+
+*************** real vs sham ***************
+paired
+alternative: less
+slope_real: 157.33 +/- 131.57
+slope_sham: 135.97 +/- 132.94
+(Paired t-test): t(21)=1.65; p=0.943; Cohen's effect size d=0.35
+
+*************** real vs 0 ***************
+against_0
+alternative: greater
+real_alone
+157.33 +/- 131.57
+(t-test) t(21) = 5.61; p = 7.23e-06; Cohen d=1.20
+
+*************** sham vs 0 ***************
+against_0
+alternative: greater
+sham_alone
+135.97 +/- 132.94
+(pingouin Wilcoxon) W = 252.00; p = 4.77e-07; effect size r(rb)=0.99
+
+*************** Session order ***************
+paired
+alternative: two-sided
+slope_session1: 147.48 +/- 141.21
+slope_session2: 145.82 +/- 123.61
+(Paired t-test): t(21)=0.12; p=0.905; Cohen's effect size d=0.03
+
+*************** First session (real first vs sham first) ***************
+unpaired
+alternative: less
+real first (n=10): 192.25 +/- 174.24
+sham first (n=12): 110.17 +/- 99.45
+(Unpaired t-test): t(13.7)=1.32; p=0.896; effect size d=0.59
+
+*************** Bayes factors (slope) ***************
+Difference real-sham: 21.3628; standard error: 12.9334
+SD of p(population value|theory), mean 0: 48.6277 (difference Adapt - Baseline of Experiment 1)
+BF<1/3: evidence for no effect; BF>3: evidence for an effect; otherwise: inconclusive
+real > sham, half-normal: BF=1.73; RR[1/3<B<3] = [0.486, >2]
+real < sham, half-normal: BF=0.10; RR[B<1/3] = [13.616, >2]
+real different from sham, normal: BF=0.92; RR[1/3<B<3] = [0.486, >2]
+
++ Correlation between real and sham (slope): r=0.89; p=1.92e-08
+
++ ICC(3,1) between the real and sham sessions (slope): ICC=0.89; 95% CI [0.76, 0.95]; F(21,21)=18.01; p=4.2e-09
 
 + Split-half reliability within each condition (slope)
 real: split-half r=0.90; Spearman-Brown corrected=0.95

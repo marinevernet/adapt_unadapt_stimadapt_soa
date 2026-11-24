@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
 from scipy.stats import binomtest, shapiro, ttest_rel, wilcoxon, rankdata
+from outlier_participants_stim_adapt import OUTLIER_PARTICIPANTS
 
 
 class Tee:
@@ -71,40 +72,20 @@ for condition, sessions in [('real', real_session), ('sham', sham_session)]:
     df[f'{condition}_sensation_during'] = [df.loc[i, f'{session}_sensation_during'] for i, session in zip(df.index, sessions)]
 
 # The yes/no questions
-questions = {
-    'Increase\nafter\nrAG stim.': df['real_increase'] > 0,
-    'Increase\nafter\nsham stim.': df['sham_increase'] > 0,
-    'Sensations\nduring\nrAG stim.': df['real_sensation_during'],
-    'Sensations\nduring\nsham stim.': df['sham_sensation_during'],
-    'Noticed a\ndifference': df['notice_anything'] == 'oui',
-    'Identified\nrAG stim.\nsession': df['S1_guess'] == df['S1_truth'],
-}
+def yes_no_questions(df):
+    return {
+        'Increase\nafter\nrAG stim.': df['real_increase'] > 0,
+        'Increase\nafter\nsham stim.': df['sham_increase'] > 0,
+        'Sensations\nduring\nrAG stim.': df['real_sensation_during'],
+        'Sensations\nduring\nsham stim.': df['sham_sensation_during'],
+        'Noticed a\ndifference': df['notice_anything'] == 'oui',
+        'Identified\nrAG stim.\nsession': df['S1_guess'] == df['S1_truth'],
+    }
+
 
 # ==========================================
-# Statistics
+# Statistics: main analysis (all the participants), then without the outliers
 # ==========================================
-
-print('N = %d participants (%d real first, %d sham first)' %(
-    len(df), (df['first_session']=='real').sum(), (df['first_session']=='sham').sum()))
-
-print('\n*************** Sensations (mean +/- SD, median) ***************')
-for column in ['real_before', 'real_after', 'sham_before', 'sham_after', 'real_increase', 'sham_increase']:
-    print('%s: %.2f +/- %.2f, median %.1f' %(column, df[column].mean(), df[column].std(), df[column].median()))
-print('Same increase for real and sham: %d participants' %((df['real_increase'] == df['sham_increase']).sum()))
-
-print('\n*************** Yes / No ***************')
-for question, answer in questions.items():
-    print('%s: yes %d, no %d' %(question.replace('\n', ' '), answer.sum(), (~answer).sum()))
-
-for condition in ['real', 'sham']:
-    print('Participants reporting sensations during the %s stimulation: %s' %(
-        condition, ', '.join(df.loc[df[f'{condition}_sensation_during'], 'participant'])))
-
-correct = df['S1_guess'] == df['S1_truth']
-test = binomtest(int(correct.sum()), len(df), 0.5)
-print('\nCorrect identification of the real session against chance (binomial test, two-sided): %d/%d, p=%.3g' %(
-    correct.sum(), len(df), test.pvalue))
-
 
 def paired_test(var1, var2, label):
     """
@@ -138,23 +119,59 @@ def mcnemar_test(yes1, yes2, label):
         label, yes1.sum(), yes2.sum(), only1, only2, p))
 
 
-print('\n*************** Real vs sham (paired, two-sided) ***************')
-paired_test(df['real_before'], df['sham_before'], 'Sensation rating before, real vs sham')
-paired_test(df['real_after'], df['sham_after'], 'Sensation rating after, real vs sham')
-paired_test(df['real_increase'], df['sham_increase'], 'Change in sensation rating (after - before), real vs sham')
+samples = [
+    ('MAIN ANALYSIS, ALL PARTICIPANTS', df),
+    ('WITHOUT THE OUTLIERS: without %s' %(', '.join(OUTLIER_PARTICIPANTS)), df[~df['participant'].isin(OUTLIER_PARTICIPANTS)].reset_index(drop=True)),
+]
 
-mcnemar_test(df['real_increase'] > 0, df['sham_increase'] > 0, 'Increase of sensations')
-mcnemar_test(df['real_sensation_during'], df['sham_sensation_during'], 'Sensations reported during the stimulation')
+for sample_title, df_sample in samples:
 
-print('\n*************** After vs before, within each session (paired, two-sided) ***************')
-paired_test(df['real_after'], df['real_before'], 'Real: after vs before')
-paired_test(df['sham_after'], df['sham_before'], 'Sham: after vs before')
+    print('\n\n################################ ' + sample_title + ' ################################')
+    questions_sample = yes_no_questions(df_sample)
+
+    print('N = %d participants (%d real first, %d sham first)' %(
+        len(df_sample), (df_sample['first_session']=='real').sum(), (df_sample['first_session']=='sham').sum()))
+
+    print('\n*************** Sensations (mean +/- SD, median) ***************')
+    for column in ['real_before', 'real_after', 'sham_before', 'sham_after', 'real_increase', 'sham_increase']:
+        print('%s: %.2f +/- %.2f, median %.1f' %(column, df_sample[column].mean(), df_sample[column].std(), df_sample[column].median()))
+    print('Same increase for real and sham: %d participants' %((df_sample['real_increase'] == df_sample['sham_increase']).sum()))
+
+    print('\n*************** Yes / No ***************')
+    for question, answer in questions_sample.items():
+        print('%s: yes %d, no %d' %(question.replace('\n', ' '), answer.sum(), (~answer).sum()))
+
+    for condition in ['real', 'sham']:
+        print('Participants reporting sensations during the %s stimulation: %s' %(
+            condition, ', '.join(df_sample.loc[df_sample[f'{condition}_sensation_during'], 'participant'])))
+
+    correct = df_sample['S1_guess'] == df_sample['S1_truth']
+    test = binomtest(int(correct.sum()), len(df_sample), 0.5)
+    print('\nCorrect identification of the real session against chance (binomial test, two-sided): %d/%d, p=%.3g' %(
+        correct.sum(), len(df_sample), test.pvalue))
+
+
+    print('\n*************** Real vs sham (paired, two-sided) ***************')
+    paired_test(df_sample['real_before'], df_sample['sham_before'], 'Sensation rating before, real vs sham')
+    paired_test(df_sample['real_after'], df_sample['sham_after'], 'Sensation rating after, real vs sham')
+    paired_test(df_sample['real_increase'], df_sample['sham_increase'], 'Change in sensation rating (after - before), real vs sham')
+
+    mcnemar_test(df_sample['real_increase'] > 0, df_sample['sham_increase'] > 0, 'Increase of sensations')
+    mcnemar_test(df_sample['real_sensation_during'], df_sample['sham_sensation_during'], 'Sensations reported during the stimulation')
+
+    print('\n*************** After vs before, within each session (paired, two-sided) ***************')
+    paired_test(df_sample['real_after'], df_sample['real_before'], 'Real: after vs before')
+    paired_test(df_sample['sham_after'], df_sample['sham_before'], 'Sham: after vs before')
 
 # ==========================================
 # Figure
 # ==========================================
 
-green = (0.2, 0.8, 0.2, 0.12)
+# All the participants (outliers in gray)
+questions = yes_no_questions(df)
+is_outlier = df['participant'].isin(OUTLIER_PARTICIPANTS).values
+
+purple = (0.5, 0.0, 0.5, 0.30)
 blue = (0.3, 0.5, 1.0, 0.20)
 order_styles = {'real': ('-', 'rAG first'), 'sham': (':', 'Sham first')}
 
@@ -175,7 +192,7 @@ fig, axes = plt.subplots(1, 2, figsize=(17, 7), gridspec_kw={'width_ratios': [1,
 # ---------- Panel A: sensations before and after each session ----------
 ax = axes[0]
 columns = ['real_before', 'real_after', 'sham_before', 'sham_after']
-palette = [green, green, blue, blue]
+palette = [purple, purple, blue, blue]
 df_plot = df[columns].melt(var_name='condition', value_name='value')
 
 sns.violinplot(data=df_plot, x='condition', y='value', hue='condition', legend=False, order=columns,
@@ -196,7 +213,9 @@ for i, row in df.reset_index(drop=True).iterrows(): # For each participant
                 color='gray', alpha=0.8, linewidth=1 if linestyle == '-' else 1.5, linestyle=linestyle)
 
 for position, column in enumerate(columns):
-    ax.scatter(position + jitter[column], df[column], color='black', s=22, zorder=3)
+    ax.scatter(position + jitter[column][~is_outlier], df[column][~is_outlier], color='black', s=22, zorder=3)
+    # Outliers: gray, circled in black, on top, so that they can be seen among the other points
+    ax.scatter(position + jitter[column][is_outlier], df[column][is_outlier], color='#a6a6a6', edgecolors='black', linewidths=1.2, s=40, zorder=4)
 
 ax.set_xticks(range(4))
 ax.set_xticklabels(['before', 'after', 'before', 'after'])
@@ -207,6 +226,7 @@ ax.set_ylabel('Sensation rating', fontsize=20)
 ax.tick_params(axis='both', labelsize=18)
 handles = [Line2D([0], [0], color='gray', linestyle=style, linewidth=1.5, label=label)
            for style, label in order_styles.values()]
+handles.append(Line2D([0], [0], marker='o', color='w', markerfacecolor='#a6a6a6', markeredgecolor='black', markeredgewidth=1.2, markersize=8, label='Outliers'))
 ax.legend(handles=handles, frameon=False, fontsize=14, loc='upper right')
 
 # ---------- Panel B: yes / no questions ----------
@@ -215,9 +235,9 @@ positions = np.arange(len(questions))
 yes = np.array([answer.sum() for answer in questions.values()])
 no = len(df) - yes
 
-# Real in green, sham in blue (light: yes, dark: no); questions about both sessions in white/gray
-yes_colors = ['#e3f6e3', '#dbe5ff', '#e3f6e3', '#dbe5ff', 'white', 'white']
-no_colors = ['#8fd18f', '#8fa9e6', '#8fd18f', '#8fa9e6', '#bdbdbd', '#bdbdbd']
+# rAG in purple, sham in blue (light: yes, dark: no); questions about both sessions in white/gray
+yes_colors = ['#eadcea', '#dbe5ff', '#eadcea', '#dbe5ff', 'white', 'white']
+no_colors = ['#a974a9', '#8fa9e6', '#a974a9', '#8fa9e6', '#bdbdbd', '#bdbdbd']
 ax.bar(positions, yes, width=0.6, color=yes_colors, edgecolor='black', linewidth=1.2)
 ax.bar(positions, no, width=0.6, bottom=yes, color=no_colors, edgecolor='black', linewidth=1.2)
 for position, n_yes, n_no in zip(positions, yes, no):
@@ -229,11 +249,11 @@ for position, n_yes, n_no in zip(positions, yes, no):
 ax.set_xticks(positions)
 ax.set_xticklabels(list(questions), fontsize=13)
 ax.set_ylim([0, len(df)])
-ax.set_yticks([0, 6, 12, 18, 24])
+ax.set_yticks(sorted(set(list(range(0, len(df) + 1, 6)) + [len(df)])))
 ax.set_ylabel('Number of participants', fontsize=20)
 ax.tick_params(axis='y', labelsize=18)
-ax.legend(handles=[Patch(facecolor='#8fd18f', edgecolor='black', label='rAG stim.: no'),
-                   Patch(facecolor='#e3f6e3', edgecolor='black', label='rAG stim.: yes'),
+ax.legend(handles=[Patch(facecolor='#a974a9', edgecolor='black', label='rAG stim.: no'),
+                   Patch(facecolor='#eadcea', edgecolor='black', label='rAG stim.: yes'),
                    Patch(facecolor='#8fa9e6', edgecolor='black', label='Sham stim.: no'),
                    Patch(facecolor='#dbe5ff', edgecolor='black', label='Sham stim.: yes'),
                    Patch(facecolor='#bdbdbd', edgecolor='black', label='No'),
@@ -250,7 +270,7 @@ for ax, letter in zip(axes, 'AB'):
     x = fig.transFigure.inverted().transform((label_box.x0, 0))[0]
     fig.text(x, ax.get_position().y1 + 0.02, letter, fontsize=22, fontweight='bold', ha='left', va='bottom')
 
-fig.savefig(os.path.join(figures_folder, 'Fig8_blinding.png'), dpi=300, bbox_inches='tight')
+fig.savefig(os.path.join(figures_folder, 'Fig7_blinding.png'), dpi=300, bbox_inches='tight')
 plt.show()
 
 # ==========================================

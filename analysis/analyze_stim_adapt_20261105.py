@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import pearsonr, ttest_rel, ttest_ind, shapiro, ttest_1samp, spearmanr
 import glob, os, sys
 import pingouin as pg
+from outlier_participants_stim_adapt import OUTLIER_PARTICIPANTS
 
 # ==========================================
 # General settings
@@ -129,8 +130,18 @@ def computing_correlation(df_calcul, delays_to_eliminate):
     soa_mean = df_calcul.groupby('scheduled_sound_delay')['rating'].mean().mean()
 
     return r, p, slope, soa_mean
-    
-    
+
+
+def computing_variability(df_calcul, delays_to_eliminate):
+    """
+    Variability of the SoA (preregistered exploratory analysis): mean of the SDs of the ratings at each delay,
+    so that it does not depend on the effect of the delay (i.e., on R), as for the mean SoA
+    """
+    df_calcul = df_calcul[~df_calcul['scheduled_sound_delay'].isin(delays_to_eliminate)]
+
+    return df_calcul.groupby('scheduled_sound_delay')['rating'].std().mean()
+
+
 
 def plotting_correlation(df_participant, delays_to_eliminate): # Replace session by stim_condition
 
@@ -182,7 +193,7 @@ def plotting_correlation(df_participant, delays_to_eliminate): # Replace session
         if stim_condition == 'sham':
             line_color = 'blue'
         elif stim_condition == 'real':
-            line_color = 'green'
+            line_color = 'purple'
         else:
             line_color = 'black'   
 
@@ -235,10 +246,11 @@ def plotting_correlation(df_participant, delays_to_eliminate): # Replace session
     plt.show()
 
 
-def plot_article_violin(ax, df, columns, labels, palette, ylabel, ylim, yticks, group_styles=None, show_legend=True, legend_above=False):
+def plot_article_violin(ax, df, columns, labels, palette, ylabel, ylim, yticks, group_styles=None, show_legend=True, legend_above=False, outliers=()):
     """
     Violin plot of paired data, with the participants as points and gray lines, without a title.
     group_styles: {first session: (line style, label)}, to distinguish the participants by the order of the sessions.
+    outliers: participants whose points are shown in gray.
     """
     from matplotlib.lines import Line2D
 
@@ -251,7 +263,11 @@ def plot_article_violin(ax, df, columns, labels, palette, ylabel, ylim, yticks, 
     for violin, color in zip(ax.collections, palette):
         violin.set_facecolor(color)
 
-    sns.stripplot(data=df_plot, x='condition', y='value', color='black', size=10, jitter=False, ax=ax)
+    # Points of the participants (outliers in gray, on top)
+    is_outlier = df['participant'].isin(outliers).values
+    for position, column in enumerate(columns):
+        ax.scatter(np.full((~is_outlier).sum(), position), df[column][~is_outlier], color='black', s=100, zorder=3)
+        ax.scatter(np.full(is_outlier.sum(), position), df[column][is_outlier], color='#a6a6a6', edgecolors='black', linewidths=1.5, s=100, zorder=4)
 
     for _, row in df.iterrows(): # For each participant
         linestyle = '-' if group_styles is None else group_styles[row['first_session']][0]
@@ -261,6 +277,8 @@ def plot_article_violin(ax, df, columns, labels, palette, ylabel, ylim, yticks, 
     if group_styles is not None and show_legend:
         handles = [Line2D([0], [0], color='gray', linestyle=style, linewidth=1.5, label=label)
                    for style, label in group_styles.values()]
+        if len(outliers) > 0:
+            handles.append(Line2D([0], [0], marker='o', color='w', markerfacecolor='#a6a6a6', markeredgecolor='black', markeredgewidth=1.5, markersize=10, label='Outliers'))
         if legend_above: # Above the plot, away from the violins
             ax.legend(handles=handles, frameon=False, fontsize=14, loc='lower center', bbox_to_anchor=(0.5, 1.02), ncol=2)
         else:
@@ -276,14 +294,16 @@ def plot_article_violin(ax, df, columns, labels, palette, ylabel, ylim, yticks, 
     ax.tick_params(axis='both', labelsize=20)
 
 
-def plotting_all_participants(df_all, participants, column, conditions, labels, delays_to_eliminate, n_rows, n_columns, file_name):
+def plotting_all_participants(df_all, participants, column, conditions, labels, delays_to_eliminate, n_rows, n_columns, file_name, outliers=()):
     """
     One panel per participant, with half-violins, the trials and the regression line of the two conditions
-    (first condition in green on the left, second condition in blue on the right).
+    (first condition in purple on the left, second condition in blue on the right).
+    The outliers are shown on a gray background.
     """
 
-    colors = ['green', 'blue']
-    pale_colors = ['#cfeccf', '#d6e0ff']
+    # rAG in purple, sham in blue (as Adapt in Experiment 1): these two colours stay distinct for colour-blind readers
+    colors = ['purple', 'blue']
+    pale_colors = ['#d9b3d9', '#d6e0ff']
     offsets = [-0.12, 0.12] # So that the trials of the two conditions do not overlap
     delay_positions = {-1: 0, 0: 1, 0.05: 2, 0.1: 3, 0.15: 4, 0.2: 5, 0.25: 6, 1.25: 7}
     rng = np.random.default_rng(1) # So that the jitter is the same at each run
@@ -339,7 +359,11 @@ def plotting_all_participants(df_all, participants, column, conditions, labels, 
             l1, = ax.plot([x1-0.05, x1], [-0.015, 0.015], transform=ax.get_xaxis_transform(), color='black', lw=1)
             l1.set_clip_on(False)
 
-        ax.set_title(participant, fontsize=11)
+        if participant in outliers:
+            ax.set_facecolor('#e6e6e6')
+            ax.set_title(participant + ' (outlier)', fontsize=11)
+        else:
+            ax.set_title(participant, fontsize=11)
         ax.set_ylim([-3, 103])
         ax.set_yticks([0, 50, 100])
         ax.set_xticks(range(8))
@@ -362,16 +386,17 @@ def variables_for_specific_comparisons(comparison, wide, comp_value):
         if comp_value == 'R': columns = ['R_real', 'R_sham']
         elif comp_value == 'slope': columns = ['slope_real', 'slope_sham']
         elif comp_value == 'soa_mean': columns = ['soa_mean_real', 'soa_mean_sham']
+        elif comp_value == 'soa_sd': columns = ['soa_sd_real', 'soa_sd_sham']
         order = ['real', 'sham']
         x = None
         y = None
-        # Hypothesis: the stimulation impairs the adaptation, so R real < R sham (no prediction for the mean SoA)
+        # Hypothesis: the stimulation impairs the adaptation, so R real < R sham (no prediction for the mean and SD of the SoA)
         if comp_value in ['R', 'slope']: alternative = 'less'
         else: alternative = 'two-sided'
         pairing = 'paired'
-        light_green = (0.2, 0.8, 0.2, 0.12)
+        light_purple = (0.5, 0.0, 0.5, 0.30)
         light_blue = (0.3, 0.5, 1.0, 0.20)
-        palette = [light_green, light_blue]
+        palette = [light_purple, light_blue]
 
     if comparison == 'order':
         title='Session order'
@@ -399,9 +424,9 @@ def variables_for_specific_comparisons(comparison, wide, comp_value):
         if comp_value in ['R', 'slope']: alternative = 'less'
         else: alternative = 'two-sided'
         pairing = 'unpaired'
-        light_green = (0.2, 0.8, 0.2, 0.12)
+        light_purple = (0.5, 0.0, 0.5, 0.30)
         light_blue = (0.3, 0.5, 1.0, 0.20)
-        palette = [light_green, light_blue]
+        palette = [light_purple, light_blue]
 
     if comparison == 'real_alone':
         title='real vs 0'
@@ -782,6 +807,7 @@ for participant in df_all['participant'].unique():
 
         df_stim_condition = df_participant[df_participant['stim_condition']==stim_condition]
         r, p, slope, soa_mean = computing_correlation(df_stim_condition, delays_to_eliminate)
+        soa_sd = computing_variability(df_stim_condition, delays_to_eliminate)
 
         results.append({
             "participant": participant,
@@ -790,7 +816,8 @@ for participant in df_all['participant'].unique():
             "R": r,
             "p": p,
             "slope": slope,
-            "soa_mean": soa_mean
+            "soa_mean": soa_mean,
+            "soa_sd": soa_sd
             })
 
 # Create summary DataFrame
@@ -812,7 +839,7 @@ df_results['first_session'] = df_results['participant'].map(first_sessions)
 wide = df_results.pivot_table(
     index=['participant','first_session'],
     columns='stim_condition',
-    values=['R','p','slope', 'soa_mean'],
+    values=['R','p','slope', 'soa_mean', 'soa_sd'],
     aggfunc='first'  # because pivot_table requires an aggregation
 )
 
@@ -821,8 +848,8 @@ wide.columns = [f"{metric}_{sess}" for metric, sess in wide.columns]
 
 # Reorder columns
 col_order = [
-    'R_real', 'p_real', 'slope_real', 'soa_mean_real',
-    'R_sham', 'p_sham', 'slope_sham', 'soa_mean_sham'
+    'R_real', 'p_real', 'slope_real', 'soa_mean_real', 'soa_sd_real',
+    'R_sham', 'p_sham', 'slope_sham', 'soa_mean_sham', 'soa_sd_sham'
 ]
 wide = wide[[c for c in col_order if c in wide.columns]]
 
@@ -846,6 +873,11 @@ wide.loc[wide['first_session']=='sham', 'soa_mean_session2'] = wide.loc[wide['fi
 # Add delta_R column
 wide["delta_R"] = wide["R_real"] - wide["R_sham"]
 
+# Outliers (see outlier_participants_stim_adapt.py): the results are also computed without them
+wide['outlier'] = wide['participant'].isin(OUTLIER_PARTICIPANTS)
+wide_without_outliers = wide[~wide['outlier']]
+df_without_outliers = df_all[~df_all['participant'].isin(OUTLIER_PARTICIPANTS)]
+
 # Export
 wide.to_csv(os.path.join(results_folder,'results_'+elim+'.csv'))
 print(wide)
@@ -860,16 +892,16 @@ if plotting_the_article_figures:
         .assign(group=wide['first_session'].map({'real': 0, 'sham': 1}))
         .sort_values(['group', 'R_sham'], ascending=[True, False])['participant'].tolist())
     plotting_all_participants(df_all, participants_sorted, 'stim_condition', ['real', 'sham'], ['rAG stimulation', 'Sham stimulation'],
-                              delays_to_eliminate, 4, 6, 'Fig5_all_participants_'+elim+'.png')
+                              delays_to_eliminate, 4, 6, 'Fig5_all_participants_'+elim+'.png', outliers=OUTLIER_PARTICIPANTS)
 
-    # Fig. 6: real vs sham, for the R value and for the SoA mean
-    palette = [(0.2, 0.8, 0.2, 0.12), (0.3, 0.5, 1.0, 0.20)]
+    # Fig. 6: real vs sham, for the R value and for the SoA mean (outliers in gray)
+    palette = [(0.5, 0.0, 0.5, 0.30), (0.3, 0.5, 1.0, 0.20)]
     fig, axes = plt.subplots(1, 2, figsize=(14,6))
     order_styles = {'real': ('-', 'rAG first'), 'sham': (':', 'Sham first')}
     plot_article_violin(axes[0], wide, ['R_real', 'R_sham'], ['rAG\nstimulation', 'Sham\nstimulation'], palette, 'R value', [-0.5, 1], [-0.5, 0, 0.5, 1],
-                        group_styles=order_styles, show_legend=False)
+                        group_styles=order_styles, show_legend=False, outliers=OUTLIER_PARTICIPANTS)
     plot_article_violin(axes[1], wide, ['soa_mean_real', 'soa_mean_sham'], ['rAG\nstimulation', 'Sham\nstimulation'], palette, 'Mean SoA', [25, 100], [25, 50, 75, 100],
-                        group_styles=order_styles)
+                        group_styles=order_styles, outliers=OUTLIER_PARTICIPANTS)
     fig.tight_layout(rect=[0, 0, 1, 0.94])
 
     # Panel letters, aligned with the left of the y-axis labels
@@ -887,87 +919,117 @@ if plotting_the_article_figures:
 for comparison in ['main', 'order']:
     plot_the_violin(comparison, wide, comp_value)
 
-# ************* Statistical comparison *************
+# ************* Statistics: main analysis (all the participants), then without the outliers *************
 
-print('\n*************** ' + comp_value + ' ***************')
-if 0 in delays_to_eliminate:
-    print('\n*************** ' + '0 ms delay is NOT in the correlation' + ' ***************')
-else:
-    print('\n*************** ' + '0 ms delay IS in the correlation' + ' ***************')
+samples = [
+    ('MAIN ANALYSIS, ALL PARTICIPANTS: N=%d' %(len(wide)), wide, df_all),
+    ('WITHOUT THE OUTLIERS: N=%d, without %s' %(len(wide_without_outliers), ', '.join(OUTLIER_PARTICIPANTS)), wide_without_outliers, df_without_outliers),
+]
 
-# Comparing the mean SoA against 0 would not be meaningful
-if comp_value == 'soa_mean':
-    comparisons = ['main', 'order', 'first_session']
-else:
-    comparisons = ['main', 'real_alone', 'sham_alone', 'order', 'first_session']
+for sample_title, wide_sample, df_sample in samples:
 
-for comparison in comparisons:
-    compute_the_stats(comparison, wide, comp_value)
+    print('\n\n################################ ' + sample_title + ' ################################')
 
-# ************* Bayes factors: is the absence of effect meaningful? *************
+    # ************* Statistical comparison *************
 
-# The expected effect is the difference adapt-unadapt of Experiment 1 (run analyze_adapt_unadapt first)
-file_exp1 = os.path.join(project_folder, 'results', 'adapt_unadapt', 'results_'+elim+'.csv')
+    print('\n*************** ' + comp_value + ' ***************')
+    if 0 in delays_to_eliminate:
+        print('\n*************** ' + '0 ms delay is NOT in the correlation' + ' ***************')
+    else:
+        print('\n*************** ' + '0 ms delay IS in the correlation' + ' ***************')
 
-if comp_value not in ['R', 'slope']:
+    # Comparing the mean SoA against 0 would not be meaningful
+    if comp_value == 'soa_mean':
+        comparisons = ['main', 'order', 'first_session']
+    else:
+        comparisons = ['main', 'real_alone', 'sham_alone', 'order', 'first_session']
 
-    print('\n+ Bayes factors not computed for %s: Experiment 1 does not provide an expected effect for this measure' %(comp_value))
+    for comparison in comparisons:
+        compute_the_stats(comparison, wide_sample, comp_value)
 
-elif not os.path.exists(file_exp1):
+    # ************* Variability of the SoA (preregistered exploratory analysis) *************
 
-    print('\nWARNING: Bayes factors NOT computed, because this file is missing: ' + os.path.relpath(file_exp1, project_folder))
-    print('Run analyze_adapt_unadapt_20261105.py first, with the same delays_to_eliminate.')
+    print('\n*************** Variability of the SoA: mean of the SDs of the ratings at each delay ***************')
+    compute_the_stats('main', wide_sample, 'soa_sd')
 
-else:
+    # ************* Bayes factors: is the absence of effect meaningful? *************
 
-    df_exp1 = pd.read_csv(file_exp1)
-    df_exp1 = df_exp1[df_exp1['experiment']=='adapt250']
-    sdtheory = (df_exp1[comp_value+'_adapt'] - df_exp1[comp_value+'_unadapt']).mean()
+    # As preregistered, the Bayes factor is computed on the scale of Cohen's d (dz), with a half-normal p(population value|theory)
+    # whose SD is the effect size of Experiment 1, Adapt vs Baseline (dz = 0.74 for R; run analyze_adapt_unadapt first)
+    file_exp1 = os.path.join(project_folder, 'results', 'adapt_unadapt', 'results_'+elim+'.csv')
 
-    distrib = wide[comp_value+'_real'] - wide[comp_value+'_sham']
-    obtained = distrib.mean()
-    sd = distrib.std(ddof=1)/np.sqrt(distrib.size)
+    if comp_value not in ['R', 'slope']:
 
-    print('\n*************** Bayes factors (%s) ***************' %(comp_value))
-    print('Difference real-sham: %.4f; standard error: %.4f' %(obtained, sd))
-    print('SD of p(population value|theory), mean 0: %.4f (difference adapt-unadapt of Experiment 1)' %(sdtheory))
-    print('BF<1/3: evidence for no effect; BF>3: evidence for an effect; otherwise: inconclusive')
+        print('\n+ Bayes factors not computed for %s: Experiment 1 does not provide an expected effect for this measure' %(comp_value))
 
-    for hypothesis, obtained_for_theory, tail in [('real > sham, half-normal', obtained, 1),
-                                                  ('real < sham, half-normal', -obtained, 1),
-                                                  ('real different from sham, normal', obtained, 2)]:
-        Bayesfactor = BayesianFactorsNormal(obtained_for_theory, sd, 0, sdtheory, tail)
-        # A difference of R cannot be larger than 2 (R between -1 and 1), so the search stops there
-        max_sd = 2
-        lower, upper, conclusion, no_upper_limit = robustness_region(obtained_for_theory, sd, 0, sdtheory, tail, max_sd)
-        upper_text = '>%g' %(max_sd) if no_upper_limit else '%.3f' %(upper)
-        print('%s: BF=%.2f; RR[%s] = [%.3f, %s]' %(hypothesis, Bayesfactor, conclusion, lower, upper_text))
+    elif not os.path.exists(file_exp1):
 
-# ************* Quick check of the correlation real sham *************
+        print('\nWARNING: Bayes factors NOT computed, because this file is missing: ' + os.path.relpath(file_exp1, project_folder))
+        print('Run analyze_adapt_unadapt_20261105.py first, with the same delays_to_eliminate.')
 
-r, p = pearsonr(wide[comp_value+'_real'], wide[comp_value+'_sham'])
-print('\n+ Correlation between real and sham (%s): r=%.2f; p=%.3g' %(comp_value, r, p))
+    else:
 
-# ************* Stability of the individual differences across sessions (ICC) *************
+        df_exp1 = pd.read_csv(file_exp1)
+        df_exp1 = df_exp1[df_exp1['experiment']=='adapt250']
+        distrib_exp1 = df_exp1[comp_value+'_adapt'] - df_exp1[comp_value+'_baseline']
+        sdtheory = round(distrib_exp1.mean()/distrib_exp1.std(ddof=1), 2) # Rounded as in the preregistration
 
-# ICC3 (consistency) rather than absolute agreement, as stimulation could shift the mean between sessions
-df_icc = wide.melt(
-    id_vars='participant',
-    value_vars=[comp_value+'_real', comp_value+'_sham'],
-    var_name='stim_condition',
-    value_name='value'
-)
-icc = pg.intraclass_corr(data=df_icc, targets='participant', raters='stim_condition', ratings='value').set_index('Type').loc['ICC3']
-print('\n+ ICC(3,1) between the real and sham sessions (%s): ICC=%.2f; 95%% CI [%.2f, %.2f]; F(%d,%d)=%.2f; p=%.3g' %(
-    comp_value, icc['ICC'], icc['CI95%'][0], icc['CI95%'][1], icc['df1'], icc['df2'], icc['F'], icc['pval']))
+        distrib = wide_sample[comp_value+'_real'] - wide_sample[comp_value+'_sham']
+        obtained = distrib.mean()/distrib.std(ddof=1) # Cohen's dz, with its sign
+        sd = 1/np.sqrt(distrib.size) # Standard error of dz
 
-# ************* Split-half reliability within each condition *************
+        print('\n*************** Bayes factors (%s, Cohen\'s dz) ***************' %(comp_value))
+        print('Effect size real-sham: dz=%.3f; standard error: %.3f' %(obtained, sd))
+        print('SD of p(population value|theory), mean 0: %.2f (effect size dz Adapt - Baseline of Experiment 1)' %(sdtheory))
+        print('BF<1/3: evidence for no effect; BF>3: evidence for an effect; otherwise: inconclusive')
 
-print('\n+ Split-half reliability within each condition (%s)' %(comp_value))
-for stim_condition in ['real', 'sham']:
-    df_split = df_all[df_all['stim_condition']==stim_condition]
-    r_half, r_corrected = split_half_reliability(df_split, delays_to_eliminate, comp_value)
-    print('%s: split-half r=%.2f; Spearman-Brown corrected=%.2f' %(stim_condition, r_half, r_corrected))
+        for hypothesis, obtained_for_theory, tail in [('real > sham, half-normal', obtained, 1),
+                                                      ('real < sham, half-normal', -obtained, 1),
+                                                      ('real different from sham, normal', obtained, 2)]:
+            Bayesfactor = BayesianFactorsNormal(obtained_for_theory, sd, 0, sdtheory, tail)
+            # Effect sizes above 5 are not plausible, so the search stops there
+            max_sd = 5
+            lower, upper, conclusion, no_upper_limit = robustness_region(obtained_for_theory, sd, 0, sdtheory, tail, max_sd)
+            upper_text = '>%g' %(max_sd) if no_upper_limit else '%.3f' %(upper)
+            print('%s: BF=%.2f; RR[%s] = [%.3f, %s]' %(hypothesis, Bayesfactor, conclusion, lower, upper_text))
+
+    # ************* Quick check of the correlation real sham *************
+
+    r, p = pearsonr(wide_sample[comp_value+'_real'], wide_sample[comp_value+'_sham'])
+    print('\n+ Correlation between real and sham (%s): r=%.2f; p=%.3g' %(comp_value, r, p))
+
+    # ************* Does the stimulation effect depend on the amount of adaptation (floor effect)? *************
+
+    # Preregistered: correlation between the sham session and the difference real - sham. As the sham session
+    # contributes to both variables, this correlation is biased towards negative values by construction,
+    # so the difference is also correlated with the mean of the two sessions (Oldham's method)
+    delta = wide_sample[comp_value+'_real'] - wide_sample[comp_value+'_sham']
+    mean_sessions = (wide_sample[comp_value+'_real'] + wide_sample[comp_value+'_sham'])/2
+    r, p = pearsonr(wide_sample[comp_value+'_sham'], delta)
+    print('\n+ Correlation between sham and real - sham (%s), preregistered but biased: r=%.2f; p=%.3g' %(comp_value, r, p))
+    r, p = pearsonr(mean_sessions, delta)
+    print('+ Correlation between the mean of the two sessions and real - sham (%s), Oldham\'s method: r=%.2f; p=%.3g' %(comp_value, r, p))
+
+    # ************* Stability of the individual differences across sessions (ICC) *************
+
+    # ICC3 (consistency) rather than absolute agreement, as stimulation could shift the mean between sessions
+    df_icc = wide_sample.melt(
+        id_vars='participant',
+        value_vars=[comp_value+'_real', comp_value+'_sham'],
+        var_name='stim_condition',
+        value_name='value'
+    )
+    icc = pg.intraclass_corr(data=df_icc, targets='participant', raters='stim_condition', ratings='value').set_index('Type').loc['ICC3']
+    print('\n+ ICC(3,1) between the real and sham sessions (%s): ICC=%.2f; 95%% CI [%.2f, %.2f]; F(%d,%d)=%.2f; p=%.3g' %(
+        comp_value, icc['ICC'], icc['CI95%'][0], icc['CI95%'][1], icc['df1'], icc['df2'], icc['F'], icc['pval']))
+
+    # ************* Split-half reliability within each condition *************
+
+    print('\n+ Split-half reliability within each condition (%s)' %(comp_value))
+    for stim_condition in ['real', 'sham']:
+        df_split = df_sample[df_sample['stim_condition']==stim_condition]
+        r_half, r_corrected = split_half_reliability(df_split, delays_to_eliminate, comp_value)
+        print('%s: split-half r=%.2f; Spearman-Brown corrected=%.2f' %(stim_condition, r_half, r_corrected))
 
 # ************* Stop saving what is printed *************
 

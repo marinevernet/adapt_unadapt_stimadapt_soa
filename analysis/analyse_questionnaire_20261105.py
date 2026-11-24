@@ -4,6 +4,7 @@ import glob
 import numpy as np
 import pandas as pd
 import pingouin as pg
+from outlier_participants_stim_adapt import OUTLIER_PARTICIPANTS
 import seaborn as sns
 import matplotlib.pyplot as plt
 # import statsmodels.api as sm # For the regressions
@@ -345,10 +346,10 @@ def holm_correction(pvalues):
     return list(pg.multicomp(list(pvalues), method='holm')[1])
 
 
-def run_correlations(outcome, family, predictors):
+def run_correlations(outcome, family, predictors, plotting=True):
     """
     Spearman correlations, Holm-corrected within the family of predictors.
-    Predictors with an uncorrected p < 0.05 are plotted.
+    Predictors with an uncorrected p < 0.05 are plotted (if plotting).
     """
     print(f"\n----- {outcome}: {family} -----")
 
@@ -362,7 +363,7 @@ def run_correlations(outcome, family, predictors):
         ci = correlation['CI95%'].iloc[0]
         print('%s: rho=%.2f; 95%% CI [%.2f, %.2f]; p=%.3g; Holm p=%.3g' %(predictor, rho, ci[0], ci[1], p, p_corrected))
 
-        if p < 0.05:
+        if plotting and p < 0.05:
             plt.figure()
             sns.regplot(data=df_csv_dimensions, x=predictor, y=outcome)
             plt.title('%s vs %s (rho=%.2f, p=%.3g)' %(predictor, outcome, rho, p))
@@ -374,7 +375,9 @@ def plot_figure_correlations(panels, file_name):
     """
     One panel per correlation. The line is a linear fit, shown as a visual guide
     (the statistics, reported in the figure legend, are from the Spearman correlation).
+    The outliers (see outlier_participants_stim_adapt.py) are shown in gray.
     """
+    from matplotlib.lines import Line2D
     marker_color = '#3a6ea5'
     line_color = '#1f3f66'
     ink = '#2b2b2b'
@@ -389,7 +392,9 @@ def plot_figure_correlations(panels, file_name):
 
         # Discrete scores: a small horizontal jitter so that the points do not overlap
         x_jittered = x + rng.uniform(-panel['jitter'], panel['jitter'], len(x))
-        ax.scatter(x_jittered, y, s=70, color=marker_color, edgecolors='white', linewidths=1, zorder=3)
+        is_outlier = df_csv_dimensions['participant'].isin(OUTLIER_PARTICIPANTS).values
+        ax.scatter(x_jittered[~is_outlier], y[~is_outlier], s=70, color=marker_color, edgecolors='white', linewidths=1, zorder=3)
+        ax.scatter(x_jittered[is_outlier], y[is_outlier], s=70, color='#a6a6a6', edgecolors='black', linewidths=1.2, zorder=4)
 
         line = np.polyfit(x, y, 1)
         line_x = np.array([x.min(), x.max()])
@@ -406,7 +411,9 @@ def plot_figure_correlations(panels, file_name):
         ax.spines['top'].set_visible(False)
         ax.spines['right'].set_visible(False)
 
-    fig.tight_layout()
+    fig.legend(handles=[Line2D([0], [0], marker='o', color='w', markerfacecolor='#a6a6a6', markeredgecolor='black', markeredgewidth=1.2, markersize=9, label='Outliers')],
+               loc='upper right', frameon=False, fontsize=11)
+    fig.tight_layout(rect=[0, 0, 1, 0.97])
     fig.savefig(os.path.join(figures_folder, file_name), dpi=300)
     plt.show()
 
@@ -473,12 +480,23 @@ FAMILIES = {
 # ANALYSES
 # ========================================
 
-print('\n*************** Correlations (Spearman, Holm correction within each family and outcome) ***************')
-for outcome in ["R_sham", "soa_mean_sham"]:
-    for family, predictors in FAMILIES.items():
-        run_correlations(outcome, family, predictors)
+# Main analysis (all the participants), then without the outliers (see outlier_participants_stim_adapt.py)
+df_all_participants = df_csv_dimensions
+df_without_outliers = df_all_participants[~df_all_participants['participant'].isin(OUTLIER_PARTICIPANTS)]
+samples = [
+    ('MAIN ANALYSIS, ALL PARTICIPANTS: N=%d' %(len(df_all_participants)), df_all_participants, True),
+    ('WITHOUT THE OUTLIERS: N=%d, without %s' %(len(df_without_outliers), ', '.join(OUTLIER_PARTICIPANTS)), df_without_outliers, False),
+]
+for sample_title, df_csv_dimensions, plotting in samples: # The functions use df_csv_dimensions
+    print('\n\n################################ ' + sample_title + ' ################################')
+    print('\n*************** Correlations (Spearman, Holm correction within each family and outcome) ***************')
+    # delta_R (R_real - R_sham): effect of the stimulation on the adaptation (preregistered)
+    for outcome in ["R_sham", "soa_mean_sham", "delta_R"]:
+        for family, predictors in FAMILIES.items():
+            run_correlations(outcome, family, predictors, plotting)
 
-# Figure for the article
+# Figure for the article (all the participants, outliers in gray)
+df_csv_dimensions = df_all_participants
 plot_figure_correlations(
     [
         {'x': 'AABS_dweck', 'y': 'R_sham', 'jitter': 0,
@@ -494,7 +512,7 @@ plot_figure_correlations(
          'xlabel': 'BIS self-control', 'ylabel': 'Mean SoA',
          'left': 'More self-control', 'right': 'Less self-control'},
     ],
-    'Fig9_correlations_without-0-ms.png'
+    'Fig8_correlations_without-0-ms.png'
 )
 
 # print('\n*************** Regressions (Holm correction within each model) ***************')

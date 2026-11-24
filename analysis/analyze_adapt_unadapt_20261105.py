@@ -30,6 +30,9 @@ def extract_info(filename):
     parts = filename.split("_")
     participant = parts[0]
     session = parts[2]
+    # The files of the Baseline session are named 'unadapt' (name of the PsychoPy script used to collect the data)
+    if session == 'unadapt':
+        session = 'baseline'
     year = parts[3]
     month = parts[4]
     day = parts[5]
@@ -124,7 +127,7 @@ def plotting_correlation(df_participant, R_or_slope, delays_to_eliminate):
 
     for session in df_participant['session'].unique():
         df_test = df_participant[df_participant['session']==session].copy()
-        if session == "unadapt":
+        if session == "baseline":
             column = 0
         else:
             column = 1
@@ -165,7 +168,7 @@ def plotting_correlation(df_participant, R_or_slope, delays_to_eliminate):
         )
 
         # regression line color
-        if session == 'unadapt':
+        if session == 'baseline':
             line_color = 'green'
         elif session == 'adapt':
             line_color = 'blue'
@@ -345,11 +348,11 @@ def plotting_all_participants(df_all, participants, column, conditions, labels, 
 def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope):
 
     if comparison == 'adapt250':
-        title='Experiment 1 (Unadapt vs Adapt 250)'
+        title='Experiment 1 (Baseline vs Adapt 250)'
         df = wide[wide['experiment']=='adapt250']
-        if R_or_slope == 'R': columns = ['R_unadapt', 'R_adapt']
-        else: columns = ['slope_unadapt', 'slope_adapt']
-        order = ['unadapt', 'adapt']
+        if R_or_slope == 'R': columns = ['R_baseline', 'R_adapt']
+        else: columns = ['slope_baseline', 'slope_adapt']
+        order = ['baseline', 'adapt']
         x = None
         y = None
         alternative = 'less'
@@ -359,10 +362,10 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         palette = [light_green, light_blue]
 
     if comparison == 'adapt250 soa_mean':
-        title='Experiment 1 (Unadapt vs Adapt 250), mean SoA'
+        title='Experiment 1 (Baseline vs Adapt 250), mean SoA'
         df = wide[wide['experiment']=='adapt250']
-        columns = ['soa_mean_unadapt', 'soa_mean_adapt']
-        order = ['unadapt', 'adapt']
+        columns = ['soa_mean_baseline', 'soa_mean_adapt']
+        order = ['baseline', 'adapt']
         x = None
         y = None
         alternative = 'two-sided'
@@ -372,11 +375,11 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         palette = [light_green, light_blue]
 
     if comparison == 'adapt250 as unpaired':
-        title='Experiment 1 (Unadapt vs Adapt 250) as unpaired'
+        title='Experiment 1 (Baseline vs Adapt 250) as unpaired'
         df = wide[wide['experiment']=='adapt250']
-        if R_or_slope == 'R': columns = ['R_unadapt', 'R_adapt']
-        else: columns = ['slope_unadapt', 'slope_adapt']
-        order = ['unadapt', 'adapt']
+        if R_or_slope == 'R': columns = ['R_baseline', 'R_adapt']
+        else: columns = ['slope_baseline', 'slope_adapt']
+        order = ['baseline', 'adapt']
         x = None
         y = None
         alternative = 'less'
@@ -386,11 +389,11 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         palette = [light_green, light_blue]
 
     if comparison == 'adapt0':
-        title='Experiment 2 (Unadapt vs Adapt 0)'
+        title='Experiment 2 (Baseline vs Adapt 0)'
         df = wide[wide['experiment']=='adapt0']
-        if R_or_slope == 'R': columns = ['R_unadapt', 'R_adapt']
-        else: columns = ['slope_unadapt', 'slope_adapt']
-        order = ['unadapt', 'adapt']
+        if R_or_slope == 'R': columns = ['R_baseline', 'R_adapt']
+        else: columns = ['slope_baseline', 'slope_adapt']
+        order = ['baseline', 'adapt']
         x = None
         y = None
         alternative = 'greater'
@@ -449,11 +452,11 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         light_blue = (0.3, 0.5, 1.0, 0.20)
         palette = [light_red, light_blue]
 
-    if comparison == 'unadapt':
-        title='Unadapt sessions (Exp 1 vs 2)'
+    if comparison == 'baseline':
+        title='Baseline sessions (Exp 1 vs 2)'
         df = wide
-        if R_or_slope == 'R': columns = ['experiment', 'R_unadapt']
-        else: columns = ['experiment', 'slope_unadapt']
+        if R_or_slope == 'R': columns = ['experiment', 'R_baseline']
+        else: columns = ['experiment', 'slope_baseline']
         order = df[columns[0]].unique()
         x = columns[0]
         y = columns[1]
@@ -486,11 +489,11 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         y = None
         palette = None
         
-    if comparison == 'unadapt_alone':
-        title='Unadapt vs 0'
+    if comparison == 'baseline_alone':
+        title='Baseline vs 0'
         df = wide
-        if R_or_slope == 'R': columns = ['R_unadapt']
-        else: columns = ['slope_unadapt']
+        if R_or_slope == 'R': columns = ['R_baseline']
+        else: columns = ['slope_baseline']
         alternative = 'two-sided'
         pairing = 'against_0'
         order = None
@@ -498,11 +501,11 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         y = None
         palette = None
 
-    if comparison == 'unadapt_alone_exp1':
-        title='Unadapt vs 0 - Exp1'
+    if comparison == 'baseline_alone_exp1':
+        title='Baseline vs 0 - Exp1'
         df = wide[wide['experiment']=='adapt250']
-        if R_or_slope == 'R': columns = ['R_unadapt']
-        else: columns = ['slope_unadapt']
+        if R_or_slope == 'R': columns = ['R_baseline']
+        else: columns = ['slope_baseline']
         alternative = 'two-sided'
         pairing = 'against_0'
         order = None
@@ -510,11 +513,11 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         y = None
         palette = None
 
-    if comparison == 'unadapt_alone_exp2':
-        title='Unadapt vs 0 - Exp2'
+    if comparison == 'baseline_alone_exp2':
+        title='Baseline vs 0 - Exp2'
         df = wide[wide['experiment']=='adapt0']
-        if R_or_slope == 'R': columns = ['R_unadapt']
-        else: columns = ['slope_unadapt']
+        if R_or_slope == 'R': columns = ['R_baseline']
+        else: columns = ['slope_baseline']
         alternative = 'two-sided'
         pairing = 'against_0'
         order = None
@@ -522,15 +525,15 @@ def variables_for_specific_comparisons(comparison, wide, df_results, R_or_slope)
         y = None
         palette = None
 
-    if comparison == 'adapt250(exp1) vs unadapt(exp2)':
-        title='adapt250(exp1) vs unadapt(exp2)'
+    if comparison == 'adapt250(exp1) vs baseline(exp2)':
+        title='adapt250(exp1) vs baseline(exp2)'
         df = df_results.loc[
             ((df_results["experiment"] == "adapt250") & (df_results["session"] == "adapt")) |
-            ((df_results["experiment"] == "adapt0") & (df_results["session"] == "unadapt"))
+            ((df_results["experiment"] == "adapt0") & (df_results["session"] == "baseline"))
         ].copy()
         if R_or_slope == 'R': columns = ['experiment', 'R']
         else: columns = ['experiment', 'slope']
-        order = ['adapt250 (exp1)', 'unadapt (exp2)']
+        order = ['adapt250 (exp1)', 'baseline (exp2)']
         x = columns[0]
         y = columns[1]
         alternative = 'less'
@@ -667,8 +670,8 @@ def compute_the_stats(comparison, wide, df_results, R_or_slope):
     elif pairing=='unpaired':
         var1 = df[df[columns[0]]=='adapt0'][columns[1]]
         var2 = df[df[columns[0]]=='adapt250'][columns[1]]
-        if comparison == 'adapt250(exp1) vs unadapt(exp2)':
-            label1, label2 = 'unadapt (exp2)', 'adapt250 (exp1)'
+        if comparison == 'adapt250(exp1) vs baseline(exp2)':
+            label1, label2 = 'baseline (exp2)', 'adapt250 (exp1)'
         else:
             label1, label2 = 'adapt0', 'adapt250'
         print(label1 + ': %.2f +/- %.2f' %(var1.mean(), var1.std()))
@@ -938,7 +941,7 @@ first_sessions = (
 )
 df_results['first_session'] = df_results['participant'].map(first_sessions)
 
-# Pivot to wide format (adapt vs unadapt)
+# Pivot to wide format (adapt vs baseline)
 wide = df_results.pivot_table(
     index=['experiment','participant','first_session'],
     columns='session',
@@ -952,7 +955,7 @@ wide.columns = [f"{metric}_{sess}" for metric, sess in wide.columns]
 # Reorder columns
 col_order = [
     'R_adapt', 'p_adapt', 'slope_adapt', 'n_adapt', 'soa_mean_adapt',
-    'R_unadapt', 'p_unadapt', 'slope_unadapt', 'n_unadapt', 'soa_mean_unadapt'
+    'R_baseline', 'p_baseline', 'slope_baseline', 'n_baseline', 'soa_mean_baseline'
 ]
 wide = wide[[c for c in col_order if c in wide.columns]]
 
@@ -961,13 +964,13 @@ wide = wide.reset_index()
 
 # Add directly 
 wide.loc[wide['first_session']=='adapt', 'R_session1'] = wide.loc[wide['first_session']=='adapt', 'R_adapt']
-wide.loc[wide['first_session']=='unadapt', 'R_session1'] = wide.loc[wide['first_session']=='unadapt', 'R_unadapt']
-wide.loc[wide['first_session']=='adapt', 'R_session2'] = wide.loc[wide['first_session']=='adapt', 'R_unadapt']
-wide.loc[wide['first_session']=='unadapt', 'R_session2'] = wide.loc[wide['first_session']=='unadapt', 'R_adapt']
+wide.loc[wide['first_session']=='baseline', 'R_session1'] = wide.loc[wide['first_session']=='baseline', 'R_baseline']
+wide.loc[wide['first_session']=='adapt', 'R_session2'] = wide.loc[wide['first_session']=='adapt', 'R_baseline']
+wide.loc[wide['first_session']=='baseline', 'R_session2'] = wide.loc[wide['first_session']=='baseline', 'R_adapt']
 wide.loc[wide['first_session']=='adapt', 'slope_session1'] = wide.loc[wide['first_session']=='adapt', 'slope_adapt']
-wide.loc[wide['first_session']=='unadapt', 'slope_session1'] = wide.loc[wide['first_session']=='unadapt', 'slope_unadapt']
-wide.loc[wide['first_session']=='adapt', 'slope_session2'] = wide.loc[wide['first_session']=='adapt', 'slope_unadapt']
-wide.loc[wide['first_session']=='unadapt', 'slope_session2'] = wide.loc[wide['first_session']=='unadapt', 'slope_adapt']
+wide.loc[wide['first_session']=='baseline', 'slope_session1'] = wide.loc[wide['first_session']=='baseline', 'slope_baseline']
+wide.loc[wide['first_session']=='adapt', 'slope_session2'] = wide.loc[wide['first_session']=='adapt', 'slope_baseline']
+wide.loc[wide['first_session']=='baseline', 'slope_session2'] = wide.loc[wide['first_session']=='baseline', 'slope_adapt']
 
 # Export
 wide.to_csv(os.path.join(results_folder,'results_'+elim+'.csv'))
@@ -980,21 +983,21 @@ if plotting_the_article_figures:
     wide_exp1 = wide[wide['experiment']=='adapt250']
     df_exp1 = df_all[df_all['experiment']=='adapt250']
 
-    # All participants: those who started with the unadapt session first (two first rows),
+    # All participants: those who started with the baseline session first (two first rows),
     # then those who started with the adapt session; within each group, sorted by R in the adapt session
     participants_sorted = (wide_exp1
-        .assign(group=wide_exp1['first_session'].map({'unadapt': 0, 'adapt': 1}))
+        .assign(group=wide_exp1['first_session'].map({'baseline': 0, 'adapt': 1}))
         .sort_values(['group', 'R_adapt'], ascending=[True, False])['participant'].tolist())
-    plotting_all_participants(df_exp1, participants_sorted, 'session', ['unadapt', 'adapt'], ['Unadapt', 'Adapt'],
+    plotting_all_participants(df_exp1, participants_sorted, 'session', ['baseline', 'adapt'], ['Baseline', 'Adapt'],
                               delays_to_eliminate, 4, 5, 'Fig2_all_participants_'+elim+'.png')
 
-    # Fig. 3: unadapt vs adapt, for the R value and for the SoA mean
+    # Fig. 3: baseline vs adapt, for the R value and for the SoA mean
     palette = [(0.2, 0.8, 0.2, 0.12), (0.3, 0.5, 1.0, 0.20)]
-    order_styles = {'unadapt': ('-', 'Unadapt first'), 'adapt': (':', 'Adapt first')}
+    order_styles = {'baseline': ('-', 'Baseline first'), 'adapt': (':', 'Adapt first')}
     fig, axes = plt.subplots(1, 2, figsize=(14,6))
-    plot_article_violin(axes[0], wide_exp1, ['R_unadapt', 'R_adapt'], ['Unadapt', 'Adapt'], palette, 'R value',
+    plot_article_violin(axes[0], wide_exp1, ['R_baseline', 'R_adapt'], ['Baseline', 'Adapt'], palette, 'R value',
                         [-0.5, 1], [-0.5, 0, 0.5, 1], group_styles=order_styles, show_legend=False)
-    plot_article_violin(axes[1], wide_exp1, ['soa_mean_unadapt', 'soa_mean_adapt'], ['Unadapt', 'Adapt'], palette, 'Mean SoA',
+    plot_article_violin(axes[1], wide_exp1, ['soa_mean_baseline', 'soa_mean_adapt'], ['Baseline', 'Adapt'], palette, 'Mean SoA',
                         [25, 100], [25, 50, 75, 100], group_styles=order_styles)
     fig.tight_layout(rect=[0, 0, 1, 0.94])
 
@@ -1006,12 +1009,12 @@ if plotting_the_article_figures:
         x = fig.transFigure.inverted().transform((label_box.x0, 0))[0]
         fig.text(x, ax.get_position().y1 + 0.02, letter, fontsize=22, fontweight='bold', ha='left', va='bottom')
 
-    fig.savefig(os.path.join(figures_folder,'Fig3_violin_R_soa_mean_unadapt_adapt_'+elim+'.png'), dpi=300, bbox_inches='tight')
+    fig.savefig(os.path.join(figures_folder,'Fig3_violin_R_soa_mean_baseline_adapt_'+elim+'.png'), dpi=300, bbox_inches='tight')
     plt.show()
 
 # ************* Violin plots *************
 
-for comparison in ['adapt250', 'adapt250 as unpaired', 'adapt0', 'adapt', 'unadapt', 'session_order', 'adapt250(exp1) vs unadapt(exp2)']:
+for comparison in ['adapt250', 'adapt250 as unpaired', 'adapt0', 'adapt', 'baseline', 'session_order', 'adapt250(exp1) vs baseline(exp2)']:
     plot_the_violin(comparison, wide, df_results, R_or_slope)
 
 # ************* Statistical comparison *************
@@ -1022,7 +1025,7 @@ if 0 in delays_to_eliminate:
 else:
     print('\n*************** ' + '0 ms delay IS in the correlation' + ' ***************')
 
-for comparison in ['adapt250', 'adapt250 as unpaired', 'adapt0', 'adapt', 'unadapt', 'session_order', 'session_order_exp1', 'session_order_exp2', 'adapt250_alone', 'adapt0_alone', 'unadapt_alone', 'unadapt_alone_exp1', 'unadapt_alone_exp2', 'adapt250(exp1) vs unadapt(exp2)']:
+for comparison in ['adapt250', 'adapt250 as unpaired', 'adapt0', 'adapt', 'baseline', 'session_order', 'session_order_exp1', 'session_order_exp2', 'adapt250_alone', 'adapt0_alone', 'baseline_alone', 'baseline_alone_exp1', 'baseline_alone_exp2', 'adapt250(exp1) vs baseline(exp2)']:
     compute_the_stats(comparison, wide, df_results, R_or_slope)
 
 # Mean SoA (independent of R_or_slope)
@@ -1030,7 +1033,7 @@ compute_the_stats('adapt250 soa_mean', wide, df_results, R_or_slope)
 
 # ************* Fisher test *************
 
-# Count the number of significant t-test for p adapt and p unadapt
+# Count the number of significant t-test for p adapt and p baseline
 
 print('\n+ *************** Tests that Gérard suggested ***************')
 
@@ -1039,36 +1042,36 @@ for experiment in ['adapt250', 'adapt0']:
     count = 0
     df_fish = wide[wide['experiment']==experiment]
     if experiment == 'adapt250':
-        alternative = 'less' # R_unadapt < R_adapt
+        alternative = 'less' # R_baseline < R_adapt
     else:
-        alternative = 'greater' # R_unadapt > R_adapt
+        alternative = 'greater' # R_baseline > R_adapt
     for _, row in df_fish.iterrows():
-        z, p = fisher_z_diff(row['R_unadapt'], row['R_adapt'], row['n_unadapt'], row['n_adapt'], alternative)
+        z, p = fisher_z_diff(row['R_baseline'], row['R_adapt'], row['n_baseline'], row['n_adapt'], alternative)
         if p < 0.05:
             count += 1
-    print('For %s, there are %d participants (out of %d) with a R significantly different in the adapt and unadapt sessions' %(experiment, count, len(df_fish)))
+    print('For %s, there are %d participants (out of %d) with a R significantly different in the adapt and baseline sessions' %(experiment, count, len(df_fish)))
 
 print('\n+ 2. Treating all datapoints from all participants as if it was a single participant')
 print('WARNING: this test may not be appropriate, and its p values should be considered as descriptive only.')
 print('It assumes that all trials are independent, but trials from the same participant are not.')
 print('In addition, for adapt250, adapt0 and session_order, the same participants are in both groups, whereas the test assumes independent correlations.')
 print('The p values are therefore probably too small. The paired tests and the ANOVA above and below are more appropriate.')
-for comparison in ['adapt250', 'adapt0', 'adapt', 'unadapt', 'session_order']:
+for comparison in ['adapt250', 'adapt0', 'adapt', 'baseline', 'session_order']:
     if comparison == 'adapt250':
-        df1 = df_all[(df_all['experiment']=='adapt250') & (df_all['session']=='unadapt')]
+        df1 = df_all[(df_all['experiment']=='adapt250') & (df_all['session']=='baseline')]
         df2 = df_all[(df_all['experiment']=='adapt250') & (df_all['session']=='adapt')]
         alternative = 'less'
     if comparison == 'adapt0':
-        df1 = df_all[(df_all['experiment']=='adapt0') & (df_all['session']=='unadapt')]
+        df1 = df_all[(df_all['experiment']=='adapt0') & (df_all['session']=='baseline')]
         df2 = df_all[(df_all['experiment']=='adapt0') & (df_all['session']=='immediate')]
         alternative = 'greater'
     if comparison == 'adapt':
         df1 = df_all[(df_all['experiment']=='adapt250') & (df_all['session']=='adapt')]
         df2 = df_all[(df_all['experiment']=='adapt0') & (df_all['session']=='immediate')]
         alternative = 'greater'
-    if comparison == 'unadapt':
-        df1 = df_all[(df_all['experiment']=='adapt250') & (df_all['session']=='unadapt')]
-        df2 = df_all[(df_all['experiment']=='adapt0') & (df_all['session']=='unadapt')]
+    if comparison == 'baseline':
+        df1 = df_all[(df_all['experiment']=='adapt250') & (df_all['session']=='baseline')]
+        df2 = df_all[(df_all['experiment']=='adapt0') & (df_all['session']=='baseline')]
         alternative = 'two-sided'
     if comparison == 'session_order':
         df1 = df_all[(df_all['session_order']==1)]
@@ -1101,29 +1104,29 @@ aov = pg.mixed_anova(
 )
 print(aov)
 
-# ************* Quick check of the correlation adapt unadapt *************
+# ************* Quick check of the correlation adapt baseline *************
 
 wide_quicktest = wide[wide['experiment']=='adapt250']
-r, p = pearsonr(wide_quicktest['R_adapt'], wide_quicktest['R_unadapt'])
-print('\n+ Correlation between R_adapt and R_unadapt in adapt250: r=%.2f; p=%.3g' %(r, p))
+r, p = pearsonr(wide_quicktest['R_adapt'], wide_quicktest['R_baseline'])
+print('\n+ Correlation between R_adapt and R_baseline in adapt250: r=%.2f; p=%.3g' %(r, p))
 
 # ************* Stability of the individual differences across sessions (ICC) *************
 
 # ICC3 (consistency) rather than absolute agreement, because adaptation is expected to shift the mean between sessions
 df_icc = wide_quicktest.melt(
     id_vars='participant',
-    value_vars=[R_or_slope+'_unadapt', R_or_slope+'_adapt'],
+    value_vars=[R_or_slope+'_baseline', R_or_slope+'_adapt'],
     var_name='session',
     value_name='value'
 )
 icc = pg.intraclass_corr(data=df_icc, targets='participant', raters='session', ratings='value').set_index('Type').loc['ICC3']
-print('\n+ ICC(3,1) between the adapt and unadapt sessions in adapt250 (%s): ICC=%.2f; 95%% CI [%.2f, %.2f]; F(%d,%d)=%.2f; p=%.3g' %(
+print('\n+ ICC(3,1) between the adapt and baseline sessions in adapt250 (%s): ICC=%.2f; 95%% CI [%.2f, %.2f]; F(%d,%d)=%.2f; p=%.3g' %(
     R_or_slope, icc['ICC'], icc['CI95%'][0], icc['CI95%'][1], icc['df1'], icc['df2'], icc['F'], icc['pval']))
 
 # ************* Split-half reliability within each session *************
 
 print('\n+ Split-half reliability within each session in adapt250 (%s)' %(R_or_slope))
-for session in ['unadapt', 'adapt']:
+for session in ['baseline', 'adapt']:
     df_split = df_all[(df_all['experiment']=='adapt250') & (df_all['session']==session)]
     r_half, r_corrected = split_half_reliability(df_split, delays_to_eliminate, R_or_slope)
     print('%s: split-half r=%.2f; Spearman-Brown corrected=%.2f' %(session, r_half, r_corrected))

@@ -1,3 +1,6 @@
+
+
+################################ MAIN ANALYSIS, ALL PARTICIPANTS ################################
 N = 24 participants (12 real first, 12 sham first)
 
 *************** Sensations (mean +/- SD, median) ***************
@@ -36,3 +39,44 @@ Real: after vs before: 1.75 +/- 1.54 vs 1.15 +/- 1.26
    (Wilcoxon signed-rank test, zero-split, n=24): W=62.5; p=0.0106; effect size (RBC)=0.58; participants with a difference of 0: 13
 Sham: after vs before: 1.38 +/- 1.41 vs 1.58 +/- 1.25
    (Wilcoxon signed-rank test, zero-split, n=24): W=133.5; p=0.633; effect size (RBC)=-0.11; participants with a difference of 0: 11
+
+
+################################ WITHOUT THE OUTLIERS: without s054, s049 ################################
+N = 22 participants (10 real first, 12 sham first)
+
+*************** Sensations (mean +/- SD, median) ***************
+real_before: 1.25 +/- 1.27, median 1.0
+real_after: 1.86 +/- 1.55, median 1.0
+sham_before: 1.59 +/- 1.22, median 2.0
+sham_after: 1.36 +/- 1.40, median 1.0
+real_increase: 0.61 +/- 1.00, median 0.0
+sham_increase: -0.23 +/- 1.51, median 0.0
+Same increase for real and sham: 9 participants
+
+*************** Yes / No ***************
+Increase after rAG stim.: yes 9, no 13
+Increase after sham stim.: yes 6, no 16
+Sensations during rAG stim.: yes 3, no 19
+Sensations during sham stim.: yes 2, no 20
+Noticed a difference: yes 10, no 12
+Identified rAG stim. session: yes 20, no 2
+Participants reporting sensations during the real stimulation: s033, s040, s041
+Participants reporting sensations during the sham stimulation: s037, s051
+
+Correct identification of the real session against chance (binomial test, two-sided): 20/22, p=0.000121
+
+*************** Real vs sham (paired, two-sided) ***************
+Sensation rating before, real vs sham: 1.25 +/- 1.27 vs 1.59 +/- 1.22
+   (Paired t-test): t(21)=-1.19; p=0.246; Cohen's d=0.25
+Sensation rating after, real vs sham: 1.86 +/- 1.55 vs 1.36 +/- 1.40
+   (Wilcoxon signed-rank test, zero-split, n=22): W=91.5; p=0.251; effect size (RBC)=0.28; participants with a difference of 0: 8
+Change in sensation rating (after - before), real vs sham: 0.61 +/- 1.00 vs -0.23 +/- 1.51
+   (Wilcoxon signed-rank test, zero-split, n=22): W=72.5; p=0.0763; effect size (RBC)=0.43; participants with a difference of 0: 9
+Increase of sensations: real yes 9, sham yes 6; yes for real only 5, yes for sham only 2; (exact McNemar test): p=0.453
+Sensations reported during the stimulation: real yes 3, sham yes 2; yes for real only 3, yes for sham only 2; (exact McNemar test): p=1
+
+*************** After vs before, within each session (paired, two-sided) ***************
+Real: after vs before: 1.86 +/- 1.55 vs 1.25 +/- 1.27
+   (Wilcoxon signed-rank test, zero-split, n=22): W=54.5; p=0.0169; effect size (RBC)=0.57; participants with a difference of 0: 12
+Sham: after vs before: 1.36 +/- 1.40 vs 1.59 +/- 1.22
+   (Paired t-test): t(21)=-0.71; p=0.488; Cohen's d=0.15

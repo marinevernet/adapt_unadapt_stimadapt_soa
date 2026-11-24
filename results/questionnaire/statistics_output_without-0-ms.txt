@@ -95,6 +95,9 @@ Loading ehi files for s042
 Loading ehi files for s043
 Loading ehi files for s044
 
+
+################################ MAIN ANALYSIS, ALL PARTICIPANTS: N=24 ################################
+
 *************** Correlations (Spearman, Holm correction within each family and outcome) ***************
 
 ----- R_sham: Global scores -----
@@ -120,3 +123,56 @@ BIS_perseverance: rho=-0.42; 95% CI [-0.70, -0.02]; p=0.0432; Holm p=0.216
 BIS_Self_Control: rho=-0.41; 95% CI [-0.70, -0.01]; p=0.0441; Holm p=0.216
 AABS_dweck: rho=-0.27; 95% CI [-0.61, 0.15]; p=0.199; Holm p=0.596
 AABS_ambition_achievement: rho=-0.10; 95% CI [-0.49, 0.31]; p=0.629; Holm p=1
+
+----- delta_R: Global scores -----
+BIS_total: rho=0.24; 95% CI [-0.18, 0.58]; p=0.266; Holm p=0.532
+AABS_total: rho=-0.29; 95% CI [-0.62, 0.13]; p=0.168; Holm p=0.504
+AMI_total: rho=0.12; 95% CI [-0.30, 0.50]; p=0.569; Holm p=0.569
+
+----- delta_R: Detailed dimensions -----
+AMI_Behavioural: rho=-0.05; 95% CI [-0.44, 0.36]; p=0.82; Holm p=1
+BIS_perseverance: rho=-0.20; 95% CI [-0.56, 0.22]; p=0.353; Holm p=1
+BIS_Self_Control: rho=-0.10; 95% CI [-0.48, 0.32]; p=0.653; Holm p=1
+AABS_dweck: rho=-0.38; 95% CI [-0.68, 0.02]; p=0.0636; Holm p=0.318
+AABS_ambition_achievement: rho=-0.35; 95% CI [-0.66, 0.06]; p=0.0892; Holm p=0.357
+
+
+################################ WITHOUT THE OUTLIERS: N=22, without s054, s049 ################################
+
+*************** Correlations (Spearman, Holm correction within each family and outcome) ***************
+
+----- R_sham: Global scores -----
+BIS_total: rho=0.01; 95% CI [-0.42, 0.43]; p=0.982; Holm p=1
+AABS_total: rho=0.27; 95% CI [-0.17, 0.62]; p=0.231; Holm p=0.692
+AMI_total: rho=0.01; 95% CI [-0.41, 0.43]; p=0.96; Holm p=1
+
+----- R_sham: Detailed dimensions -----
+AMI_Behavioural: rho=0.14; 95% CI [-0.30, 0.53]; p=0.539; Holm p=0.713
+BIS_perseverance: rho=0.30; 95% CI [-0.14, 0.64]; p=0.178; Holm p=0.713
+BIS_Self_Control: rho=0.23; 95% CI [-0.21, 0.59]; p=0.306; Holm p=0.713
+AABS_dweck: rho=0.47; 95% CI [0.05, 0.74]; p=0.029; Holm p=0.145
+AABS_ambition_achievement: rho=0.28; 95% CI [-0.16, 0.63]; p=0.201; Holm p=0.713
+
+----- soa_mean_sham: Global scores -----
+BIS_total: rho=-0.37; 95% CI [-0.69, 0.06]; p=0.0877; Holm p=0.263
+AABS_total: rho=-0.09; 95% CI [-0.49, 0.34]; p=0.685; Holm p=1
+AMI_total: rho=-0.05; 95% CI [-0.46, 0.38]; p=0.812; Holm p=1
+
+----- soa_mean_sham: Detailed dimensions -----
+AMI_Behavioural: rho=-0.09; 95% CI [-0.49, 0.34]; p=0.682; Holm p=0.682
+BIS_perseverance: rho=-0.41; 95% CI [-0.71, 0.01]; p=0.0557; Holm p=0.279
+BIS_Self_Control: rho=-0.40; 95% CI [-0.70, 0.03]; p=0.0658; Holm p=0.279
+AABS_dweck: rho=-0.35; 95% CI [-0.67, 0.08]; p=0.106; Holm p=0.318
+AABS_ambition_achievement: rho=-0.22; 95% CI [-0.59, 0.22]; p=0.328; Holm p=0.657
+
+----- delta_R: Global scores -----
+BIS_total: rho=0.13; 95% CI [-0.31, 0.52]; p=0.569; Holm p=0.945
+AABS_total: rho=-0.22; 95% CI [-0.59, 0.22]; p=0.315; Holm p=0.945
+AMI_total: rho=0.21; 95% CI [-0.23, 0.58]; p=0.344; Holm p=0.945
+
+----- delta_R: Detailed dimensions -----
+AMI_Behavioural: rho=0.02; 95% CI [-0.41, 0.44]; p=0.936; Holm p=1
+BIS_perseverance: rho=-0.28; 95% CI [-0.63, 0.16]; p=0.206; Holm p=0.825
+BIS_Self_Control: rho=-0.10; 95% CI [-0.50, 0.33]; p=0.65; Holm p=1
+AABS_dweck: rho=-0.31; 95% CI [-0.65, 0.13]; p=0.165; Holm p=0.823
+AABS_ambition_achievement: rho=-0.27; 95% CI [-0.62, 0.17]; p=0.23; Holm p=0.825
